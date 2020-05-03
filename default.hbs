@@ -3,52 +3,23 @@
 
     <head>
 
-        {{! SITES META DATA }}
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="HandheldFriendly" content="True">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="theme-color" content="#7254c9"/>
-
+        {{! DNS, Meta }}
+        {{> vendor/universal-meta-and-dns}}
         {{! SITES DESCRIPTION }}
         <title>{{meta_title}} {{^is "home, paged"}}| {{@site.title}}{{/is}}</title>
-        <meta name="description" content="{{@site.description}}">
-
-        {{!CSS ASSETS / FONTS }}
-        <style>
-            .dark .background-pattern{background-image:url("{{asset "images/dark-pattern.png"}}")}.light .background-pattern{background-image:url("{{asset "images/light-pattern.png"}}")}.dark .post-presentation .author-image-fill{background-image:url("{{asset "images/prof-icon-white.png"}}")}.light .post-presentation .author-image-fill{background-image:url("{{asset "images/prof-icon-dark.png"}}")}.dark .logo-light,.light .logo-dark{display:inline-block}.dark .logo-dark,.light .logo-light{display:none}
-        </style>
-
-		<link rel="stylesheet" href="{{asset "vendors/liquid-icon/liquid-icon.min.css"}}" />
-		<link rel="stylesheet" href="{{asset "css/theme-vendors.min.css"}}" />
-		<link rel="stylesheet" href="{{asset "ave/styles/theme.css"}}" />
-		<link rel="stylesheet" href="{{asset "ave/styles/themes/original.css"}}" />
-	
-	<!-- Head Libs -->
-	<script src="http://localhost:2888/assets/vendors/modernizr.min.js"></script>
-		<link href="https://fonts.googleapis.com/css2?family=Fjalla+One&family=Noto+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
-
-    <link rel="alternate" type="application/rss+xml" href="{{@site.url}}/feed.xml">        
-    <link href="{{asset "built/css/extra.css"}}" rel="stylesheet" type="text/css">
+        {{!CSS ASSETS / FONTS / SCRIPTS }}
+        {{> layout/global-styles}}
+         {{> layout/global-head-scripts}}
+	    <!-- Non-global styles Libs -->
+<link rel="stylesheet" href="{{asset "ave/styles/themes/original.css"}}" />
         {{{block "post-styles"}}}
-        <link href="{{asset "built/css/style.css"}}" rel="stylesheet" type="text/css">
-
-        {{! DNS PREFETCH }}
-        <link rel="dns-prefetch" href="https://cdnjs.cloudflare.com">
-        <link rel="dns-prefetch" href="https://code.jquery.com">
-        <link rel="dns-prefetch" href="https://fonts.googleapis.com">
-
-        <script>
-            var switcherActive = false;
-            var themeColors = "{{> themeColors}}";
-        </script>
+        {{{block "page-styles"}}}
+        {{{> vendor/vendors}}}
         {{ghost_head}}
-
     </head>
-
     <body class="{{body_class}}">
         {{! Navbar - Go to partials/navbar.hbs to view this partial. }}
-        {{> navbar switcher=""}}
+        {{> navbar2 switcher=""}}
 
         {{{body}}}
 
@@ -59,14 +30,8 @@
         {{> "footer"}}
 
         {{! JS ASSETS }}
-
-        <script>
-            var ghosthunter_key = "";
-            var maxPages = parseInt('{{pagination.pages}}');
-            var endMessage = '{{t "No more posts"}}';
-            var Message = '{{t "More posts"}}';
-        </script>
-<script src="{{asset "vendors/jquery.min.js"}}"></script>
+        {{> layout/global-footer-scripts}}
+ 
 <script src="{{asset "built/js/main.js"}}"></script>
 <script src="{{asset "built/js/extra.js"}}"></script>
 <script src="{{asset "built/js/popper.min.js"}}"></script>
@@ -82,8 +47,14 @@
 
                 {{{block "post-scripts"}}}
 
+<!--Local Footer Scripts-->
+<script>
+            var ghosthunter_key = "";
+            var maxPages = parseInt('{{pagination.pages}}');
+            var endMessage = '{{t "No more posts"}}';
+            var Message = '{{t "More posts"}}';
+        </script>  
 
-{{>"hubspot"}}
         {{ghost_foot}}
 
     </body>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="{{@site.lang}}">
+
+    <head>
+
+        {{! site'S META DATA }}
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="HandheldFriendly" content="True">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        {{! site'S DESCRIPTION }}
+        <title>{{@site.title}}</title>
+        <meta name="description" content="{{@site.description}}">
+
+        {{! CSS ASSETS / FONTS }}
+       <style>
+            .dark .background-pattern{background-image:url("{{asset "images/dark-pattern.png"}}")}.light .background-pattern{background-image:url("{{asset "images/light-pattern.png"}}")}.dark .post-presentation .author-image-fill{background-image:url("{{asset "images/prof-icon-white.png"}}")}.light .post-presentation .author-image-fill{background-image:url("{{asset "images/prof-icon-dark.png"}}")}.dark .logo-light,.light .logo-dark{display:inline-block}.dark .logo-dark,.light .logo-light{display:none}
+        </style>
+
+        <link href='https://fonts.googleapis.com/css?family=Noto Sans:400,300,600|Fjalla One:400,700|Montserrat:400,700' rel='stylesheet' type='text/css'>
+        <link href="{{asset "css/extra.css"}}" rel="stylesheet" type="text/css">
+        {{{block "post-styles"}}}
+        <link href="{{asset "css/style.css"}}" rel="stylesheet" type="text/css">
+
+        {{! DNS PREFETCH }}
+        <link rel="dns-prefetch" href="//cdnjs.cloudflare.com">
+        <link rel="dns-prefetch" href="//maxcdn.bootstrapcdn.com">
+        <link rel="dns-prefetch" href="//code.jquery.com">
+        <link rel="dns-prefetch" href="//fonts.googleapis.com">
+
+        <script>var switcherActive = false</script>
+        {{ghost_head}}
+
+    </head>
+
+    <body id="error-page">
+
+    {{! Navbar - Go to partials/navbar.hbs to view this partial. }}
+    {{> navbar switcher=""}}
+
+    <div class="post post-presentation lazy {{#if @site.cover_image}}background{{else}}background-pattern{{/if}}"
+    {{#if @site.cover_image}}style="background-image:url({{@site.cover_image}})"{{/if}}>
+        <div class="gradient gradient2 d-flex align-items-center">
+            <div class="container">
+                <h1>{{t "Error:"}} {{statusCode}}</h1>
+                <p>{{message}}</p>
+                <a href="{{@site.url}}" class="btn btn-no-background"><i class="fa fa-chevron-left"></i> {{t "Return"}}</a>
+            </div>
+        </div>
+    </div>
+
+    {{! SEARCH PANEL }}
+    <div id="search-section">
+        <form class="container">
+            <input autocomplete="off" ype="text" class="form form-control" id="search-field" placeholder="{{t "Search a post..."}}">
+            <input type="submit" value="search" class="d-none">
+            <div id="results"></div>
+        </form>
+        <i class="search-panel-toggle fa fa-close"></i>
+    </div>
+
+    {{! JS ASSETS }}
+
+    <script>
+        var ghosthunter_key = "";
+    </script>
+
+    <script src="{{asset "js/extra.js"}}"></script>
+
+    {{{block "post-scripts"}}}
+
+    <script src="{{asset "js/main.js"}}"></script>
+
+    {{ghost_foot}}
+    </body>
+
+</html>

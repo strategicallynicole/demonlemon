@@ -1,4 +1,40 @@
-		<header class="main-header main-header-overlay">
+	<style>
+		.nav {
+    display: flex;
+    flex-wrap: nowrap !important;}
+.latest-post {
+    width: 100vw;
+    padding: .625rem 0;
+    background-color: transparent !important; 
+}
+	.main-header-overlay {
+   
+    top: 7% !important;
+    left: 0;
+}
+
+.main-nav-hover-underline-2 > li > a .link-ext {
+    display: inline-block;
+    width: 107%;
+    height: 0.4em;
+    position: absolute;
+    bottom: 0.25em;
+    left: -3.5%;
+    background: #7254c9;
+    background: -webkit-gradient(linear, left top, right top, from(#7254c9), to(lighten(#7254c9, 50%)));
+    background: linear-gradient(to right, #7254c9 0%, lighten(#7254c9, 50%) 100%);
+    -webkit-transform: scaleY(0);
+    transform: scaleY(0);
+    -webkit-transform-origin: right top;
+    transform-origin: right top;
+    -webkit-transition: -webkit-transform 0.3s cubic-bezier(0.23, 1, 0.32, 1);
+    transition: -webkit-transform 0.3s cubic-bezier(0.23, 1, 0.32, 1);
+    transition: transform 0.3s cubic-bezier(0.23, 1, 0.32, 1);
+    transition: transform 0.3s cubic-bezier(0.23, 1, 0.32, 1), -webkit-transform 0.3s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+
+	</style>	<header class="main-header main-header-overlay">
 			
 			<div class="mainbar-wrap">
 				
@@ -8,11 +44,7 @@
 							
 							<div class="col">
 								<div class="navbar-header">
-									<a class="navbar-brand" href="index-services.html" rel="home">
-										<span class="navbar-brand-inner">
-											<img class="logo-default" src="./assets/img/logo/logo-1.svg" alt="Ave HTML Template">
-										</span>
-									</a>
+									    {{>"brand/logos"}}
 									<button type="button" class="navbar-toggle collapsed nav-trigger style-mobile" data-toggle="collapse" data-target="#main-header-collapse" aria-expanded="false" data-changeclassnames='{ "html": "mobile-nav-activated overflow-hidden" }'>
 										<span class="sr-only">Toggle navigation</span>
 										<span class="bars">
