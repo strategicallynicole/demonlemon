@@ -6,10 +6,6 @@ routes:
     controller: channel
     template: 
       - intro
-  /about/:
-    permalink: /about/
-    template: 
-      - pages/about
 collections:
   /blog/:
     permalink: /blog/{slug}/

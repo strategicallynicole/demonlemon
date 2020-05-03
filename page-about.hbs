@@ -1,0 +1,20 @@
+{{!< default}} 
+
+{{#contentFor "page-styles"}}
+    <link rel="stylesheet" href="{{@site.url}}/assets/css/themes/freelancer.css" />
+
+{{/contentFor}}		
+        <header class="main-header" data-react-to-megamenu="true" data-sticky-header="false">
+	  <!-- {{!-  "layout/megamenu" -!}}-->
+      {{> "ui/megamenu"}}</header>
+		<!-- /.main-header -->
+
+	    <main id="content" class="content bg-dark">
+		
+		{{> "content/lotofballs"}}
+        {{> "content/about-us"}}
+        {{> "brand/client-logos"}}
+		{{> "brand/testimonials"}}		
+	    </main><!-- /#content.content -->
+	
+		

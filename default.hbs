@@ -1,8 +1,8 @@
+
+
 <!DOCTYPE html>
 <html lang="{{@site.lang}}">
-
     <head>
-
         {{! SITES META DATA }}
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -14,78 +14,45 @@
         <title>{{meta_title}} {{^is "home, paged"}}| {{@site.title}}{{/is}}</title>
         <meta name="description" content="{{@site.description}}">
 
-        {{!CSS ASSETS / FONTS }}
-        <style>
-            .dark .background-pattern{background-image:url("{{asset "images/dark-pattern.png"}}")}.light .background-pattern{background-image:url("{{asset "images/light-pattern.png"}}")}.dark .post-presentation .author-image-fill{background-image:url("{{asset "images/prof-icon-white.png"}}")}.light .post-presentation .author-image-fill{background-image:url("{{asset "images/prof-icon-dark.png"}}")}.dark .logo-light,.light .logo-dark{display:inline-block}.dark .logo-dark,.light .logo-light{display:none}
-        </style>
-
-		<link rel="stylesheet" href="{{asset "vendors/liquid-icon/liquid-icon.min.css"}}" />
-		<link rel="stylesheet" href="{{asset "css/theme-vendors.min.css"}}" />
-		<link rel="stylesheet" href="{{asset "ave/styles/theme.css"}}" />
-		<link rel="stylesheet" href="{{asset "ave/styles/themes/original.css"}}" />
-	
-	<!-- Head Libs -->
-	<script src="http://localhost:2888/assets/vendors/modernizr.min.js"></script>
-		<link href="https://fonts.googleapis.com/css2?family=Fjalla+One&family=Noto+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
-
-    <link rel="alternate" type="application/rss+xml" href="{{@site.url}}/feed.xml">        
-    <link href="{{asset "built/css/extra.css"}}" rel="stylesheet" type="text/css">
-        {{{block "post-styles"}}}
-        <link href="{{asset "built/css/style.css"}}" rel="stylesheet" type="text/css">
 
         {{! DNS PREFETCH }}
         <link rel="dns-prefetch" href="https://cdnjs.cloudflare.com">
         <link rel="dns-prefetch" href="https://code.jquery.com">
         <link rel="dns-prefetch" href="https://fonts.googleapis.com">
 
-        <script>
-            var switcherActive = false;
-            var themeColors = "{{> themeColors}}";
-        </script>
-        {{ghost_head}}
+        <link rel="sitemap" type="application/xml" title="Sitemap" href="{{@site.url}}/sitemap.xml" />
+        <meta property="og:locale" content="en_US" />
 
+
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Fjalla+One&display=swap">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+Sans:400,400italic,700,700italic&display=swap">
+        <!-- Twitter cards -->
+        <meta name="twitter:site"    content="{{@site.twitter}}">
+        <meta name="twitter:creator" content="{{@site.twitter}}">
+   
+        <link rel="icon" href="{{asset "images/favicon.png"}}" type="image/x-icon"/>
+        <link rel="stylesheet" href="{{@site.url}}/assets/css/theme-vendors.min.css" />
+        <link rel="stylesheet" href="{{@site.url}}/assets/css/theme.css" />
+        {{{block "page-styles"}}}
+        <link rel="alternate" type="application/rss+xml" href="{{@site.url}}/feed.xml">
+        <!-- Head Libs -->
+        <script async src="{{@site.url}}/assets/vendors/modernizr.min.js"></script>
+        <script src="https://kit.fontawesome.com/dd47f1ac1c.js" crossorigin="anonymous"></script>
+        {{> "vendor/fbpixel"}}
+        {{!> "vendor/quora"}}
+        {{> "vendor/google-analytics"}}
+        {{!> "vendor/hotjar"}}
+        {{ghost_head}}
     </head>
 
-    <body class="{{body_class}}">
-        {{! Navbar - Go to partials/navbar.hbs to view this partial. }}
-        {{> navbar switcher=""}}
+    <body class="{{body_class}} {{{block "body-parts"}}}" data-mobile-nav-trigger-alignment="right" data-mobile-nav-align="left" data-mobile-nav-style="modern" data-mobile-nav-shceme="gray" data-mobile-header-scheme="gray" data-mobile-nav-breakpoint="1199">
+        <div id="wrap">
+            {{{body}}}
+            {{> "ui/footer"}}
+        </div> 
+    {{> "layout/global-scripts"}}
+    {{{block "page-scripts"}}}
+            {{ghost_foot}}
 
-        {{{body}}}
-
-        {{! Search - Go to partials/search.hbs to view this partial. }}
-        {{> "search"}}
-
-        {{! Footer - Go to partials/footer.hbs to view this partial. }}
-        {{> "footer"}}
-
-        {{! JS ASSETS }}
-
-        <script>
-            var ghosthunter_key = "";
-            var maxPages = parseInt('{{pagination.pages}}');
-            var endMessage = '{{t "No more posts"}}';
-            var Message = '{{t "More posts"}}';
-        </script>
-<script src="{{asset "vendors/jquery.min.js"}}"></script>
-<script src="{{asset "built/js/main.js"}}"></script>
-<script src="{{asset "built/js/extra.js"}}"></script>
-<script src="{{asset "built/js/popper.min.js"}}"></script>
-<script src="{{asset "built/js/bootstrap.min.js"}}"></script>
-<script src="{{asset "built/js/anime.min.js"}}">
-</script>
-<script src="{{asset "built/js/scrollreveal.min.js"}}"></script>
-<script src="{{asset "built/js/main.js"}}"></script>
-<script src="{{@site.url}}/assets/js/theme-vendors.js"></script>
-<script src="{{asset "vendors/pagePiling/dist/jquery.pagepiling.min.js"}}"></script>
-
-<script src="{{asset "js/theme.min.js"}}"></script>
-
-                {{{block "post-scripts"}}}
-
-
-{{>"hubspot"}}
-        {{ghost_foot}}
-
-    </body>
-
+    </body>        
 </html>
