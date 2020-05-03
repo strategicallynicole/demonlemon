@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 24.0.3, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 213.7 301.1" style="enable-background:new 0 0 213.7 301.1;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#24205B;}
+	.st1{fill:#5F2D78;}
+	.st2{fill:#36234C;}
+	.st3{fill:#EB8B23;}
+	.st4{fill:#F6CC1B;}
+	.st5{fill:#E54355;}
+</style>
+<g>
+	<path class="st0" d="M117.1,58.4H96.6c-10.4,0-18.9,8.5-18.9,18.9v19.8H136V77.3C136,66.8,127.5,58.4,117.1,58.4z"/>
+	<path class="st0" d="M0,194.3L0,194.3c0,59,47.8,106.9,106.9,106.9h0c59,0,106.9-47.8,106.9-106.9v0c0-59-47.8-106.9-106.9-106.9h0
+		C47.8,87.4,0,135.3,0,194.3z"/>
+	<path class="st1" d="M106.9,252.5c50.7,0,93.1-35.3,104.1-82.6c-11-47.3-53.4-82.6-104.1-82.6h0c-50.7,0-93.1,35.3-104.1,82.6
+		C13.8,217.3,56.2,252.5,106.9,252.5L106.9,252.5z"/>
+	<circle class="st2" cx="34" cy="160.3" r="4.8"/>
+	<circle class="st3" cx="106.9" cy="24.3" r="24.3"/>
+	<circle class="st4" cx="106.9" cy="24.3" r="13.8"/>
+	<path class="st2" d="M184.5,160.3c0,2.7-2.2,4.8-4.8,4.8c-2.7,0-4.8-2.2-4.8-4.8s2.2-4.8,4.8-4.8
+		C182.4,155.5,184.5,157.7,184.5,160.3z"/>
+	<circle class="st2" cx="150.6" cy="131.1" r="4.8"/>
+	<path class="st2" d="M68,131.1c0,2.7-2.2,4.8-4.8,4.8c-2.7,0-4.8-2.2-4.8-4.8c0-2.7,2.2-4.8,4.8-4.8C65.8,126.3,68,128.4,68,131.1z
+		"/>
+	
+		<ellipse transform="matrix(0.1219 -0.9925 0.9925 0.1219 -59.6814 379.3854)" class="st2" cx="184.6" cy="223.4" rx="9.7" ry="9.7"/>
+	
+		<ellipse transform="matrix(0.1597 -0.9872 0.9872 0.1597 -196.0659 216.5115)" class="st2" cx="29.1" cy="223.4" rx="9.7" ry="9.7"/>
+	<ellipse transform="matrix(0.9229 -0.385 0.385 0.9229 -71.0244 33.6667)" class="st2" cx="48.6" cy="194.2" rx="9.7" ry="9.7"/>
+	
+		<ellipse transform="matrix(0.9239 -0.3827 0.3827 0.9239 -61.8075 77.7127)" class="st2" cx="164.4" cy="194.2" rx="9.7" ry="9.7"/>
+	<path class="st5" d="M106.9,20.6c-4,0-7.2,3.2-7.2,7.2v30.5h14.5V27.9C114.2,23.9,110.9,20.6,106.9,20.6z"/>
+</g>
+</svg>

@@ -1,0 +1,14 @@
+/** @section Dividers */
+
+// Hr
+hr {
+	background-image: -moz-linear-gradient(to right, #EB8B23, #E34256, #AF206E);
+    background-image: -webkit-linear-gradient(to right, #EB8B23, #E34256, #AF206E);
+    background-image: -ms-linear-gradient(to right, #EB8B23, #E34256, #AF206E);
+    background-image: linear-gradient(to right, #EB8B23, #E34256, #AF206E);
+    -moz-transition: max-width 0.2s ease;
+    -webkit-transition: max-width 0.2s ease;
+    -ms-transition: max-width 0.2s ease;
+	transition: max-width 0.2s ease;
+}
+

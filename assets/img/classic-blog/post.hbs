@@ -1,0 +1,118 @@
+{{!< default}}
+{{#post}}
+{{#contentFor "page-title"}}
+{{title}}
+{{/contentFor}}
+{{#contentFor "particles-option"}}
+<div class="particles"> {{> particles-insert}}
+</div>
+{{/contentFor}}
+{{#contentFor "header-class"}}
+section page-header breadcrumbs-custom-wrap bg-gradient bg-secondary-2
+{{/contentFor}}
+{{#contentFor "breadcrumbs-section"}}
+<section class="breadcrumbs-custom breadcrumbs-custom-svg">
+  <div class="container">
+    <p class="breadcrumbs-custom-subtitle">from the OAKwave blog</p>
+    <p class="heading-1 breadcrumbs-custom-title">{{title}}</p>
+
+
+</section>
+{{/contentFor}}
+
+    
+  
+  <!-- Single post-->
+  <section class="post section section-lg bg-default">
+    <!-- section wave-->
+   {{> wave}}
+    <div class="container-wide">
+      <div class="row justify-content-sm-center">
+        <div class="col-lg-10 col-xl-8 col-xxl-6 sections-collapsable">
+          <article class="post-full-content post-blog-article">
+            <ul class="post-blog-article-meta group-xl">
+  
+              <li>
+                <div class="box-inline"><span class="icon icon-md icon-primary fas fa-calendar"></span>
+                  <time datetime="2020">{{date}}</time>
+                </div>
+              </li>
+                                  <li><div class="box-inline"><span class="icon icon-md icon-primary fas fa-eye"></span><span>{{reading_time}}</span></div></li>
+  {{#if primary_tag}}
+    {{#primary_tag}}
+  <li>
+    <div class="box-inline"><span class="icon icon-md icon-primary fas fa-tag"></span><span><a href="{{url}}">{{name}}</a></span></div>
+  </li>  {{/primary_tag}}
+  {{/if}}
+            </ul><div id="content">
+
+
+              
+         {{content}}</div>
+            
+             
+             
+       
+           
+          </article>
+         </div></div>
+         
+         
+         
+    
+                    {{#if primary_tag}}
+              {{#get "posts" filter="tags:{{primary_tag.slug}}+id:-{{id}}" limit="3" as |related_posts|}}
+              {{#if related_posts}}
+                     {{#../primary_tag}}
+                  <p class="h1">More in &nbsp; &nbsp;<a href="{{url}}"><span class="icon icon-md icon-primary fas fa-tag"></span>&nbsp;{{name}}</a></p>
+                            <div class="divider house-gradient"></div>
+
+                  {{/../primary_tag}}
+                            <div class="row row-30 row-xl-50">
+
+                    {{#foreach related_posts}}
+                    <div class="col-md-4 col-xl-4">
+
+                   {{> post-card}}
+                   </div>
+                   {{/foreach}}
+           </div>
+
+              {{/if}}
+              {{/get}}
+              {{/if}}{{/post}}
+    <p class="h1"><a href="{{site}}/blog">More Blog Posts</a></span></p>
+    <div class="divider house-gradient"></div>
+
+
+
+              {{!-- If there's a next post, display it using the same markup included from - partials/post-card.hbs --}}
+                                      <div class="row row-30 row-xl-50">
+    {{#next_post}}
+<div class="col-md-6 col-xl-6">
+
+              {{> "post-card"}}
+</div>
+              {{/next_post}}
+              
+              {{!-- If there's a previous post, display it using the same markup included from - partials/post-card.hbs --}}
+              {{#prev_post}}
+                <div class="col-md-6 col-xl-6">
+
+              {{> "post-card"}}</div>
+              {{/prev_post}}</div>
+        </div>
+         
+         
+         </div></section>
+         
+  
+<progress class="reading-progress-bar"></progress>
+
+  
+  
+
+{{#contentFor "page-title"}}
+{{title}} | OAKwave - Sales and Marketing Strategy
+{{/contentFor}}
+

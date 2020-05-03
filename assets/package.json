@@ -1,0 +1,34 @@
+{
+    "name": "phantom",
+    "description": "Phantom is a responsive Ghost theme for blogging. ",
+    "demo": "hthttps://rupok.github.io/phantom/",
+    "version": "3.1.0",
+    "engines": {
+        "ghost": ">=1.2.0"
+    },
+    "license": "MIT",
+    "screenshots": {
+        "desktop": "assets/screenshot-desktop.jpg",
+        "mobile": "assets/screenshot-mobile.png"
+    },
+    "author": {
+        "name": "Codetic",
+        "email": "support@codetic.net",
+        "url": "https://codetic.net"
+    },
+    "gpm": {
+        "type": "theme",
+        "categories": [
+            "Minimal",
+            "Magazine"
+        ]
+    },
+    "keywords": [
+        "ghost",
+        "theme"
+    ],
+
+    "config": {
+        "posts_per_page": 25
+    }
+}

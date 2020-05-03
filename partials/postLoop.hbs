@@ -1,0 +1,12 @@
+<div class="row" id="post-loop-wrapper">
+    {{#foreach posts visibility="all"}}
+        {{! Use firstCard partial if current post is the first one }}
+        {{#if @first}}{{> firstCard}}{{/if}}
+
+        {{! Use secondCard partial if current post is the second one (has index #1) }}
+        {{#has index="1"}}{{> secondCard}}{{/has}}
+
+        {{! Use squaredCard partial for the rest of them }}
+        {{^has index="0, 1"}}{{> squaredCard}}{{/has}}
+    {{/foreach}}
+</div>

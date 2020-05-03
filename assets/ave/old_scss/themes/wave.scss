@@ -1,0 +1,141 @@
+$color-primary: #7254c9;
+$color-secondary: darken($color-primary, 25%);
+$color-primary: #7254c9;
+$color-gradient-start: $color-primary;
+$color-gradient-stop: darken($color-gradient-start, 50%);
+$white: #efefef;
+$muted-purple: #7D5BA6;
+$blue: #91C4F2;
+$off-gray:  #A2A3BB; 
+$black: #272B2C; 
+$bg-color: #27282a; 
+
+img.bob.img-fluid {
+    width: 60%;
+}
+img.img-fluid.float-left.bob {
+	padding-right:60px;
+	max-width: 300px !important;
+}
+
+img.ducky {
+    padding-left: 50px;
+    max-width: 90%; 
+}
+:root {
+	--color-primary: $color-primary;
+	--color-secondary: darken($color-primary, 25%);
+	--color-gradient-start: $color-primary;
+	--color-gradient-stop: darken($color-gradient-start, 50%);
+	--white: $white;
+	--muted-purple: $muted-purple;
+	--blue: $blue;
+	--off-gray:  $off-gray;
+	--black: $black;
+}
+.purplish {
+	color: $color-primary !important;
+}
+.font-smallish {
+	font-size: 3.5rem !important;
+}
+.leftforul {
+	padding-inline-start: 0px !important;
+	padding-left: 0px !important;
+	margin-left: -100px !important;
+}
+.less-room {
+	padding-bottom: 0px !important;
+	margin-bottom: 0px !important;
+}
+.muted-purplish {
+	color: $muted-purple;
+}
+body {
+	background-color: $black;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 400;
+	line-height: 1.7em;
+	font-size: 1em;
+	color: $white;
+}
+
+.h1, h1,
+.h2, h2,
+.h3, h3,
+.h4, h4,
+.h5, h5,
+.h6, h6 {
+	font-family: 'Roboto', sans-serif;
+	font-weight: 500;
+	color: $color-primary;
+}
+
+.h1, h1 {
+	line-height: 1.2em;
+	font-size: 52px;
+}
+
+.h2, h2 {
+	line-height: 1.2em;
+	font-size: 40px;
+}
+
+.h3, h3 {
+	line-height: 1.2em;
+	font-size: 32px;
+}
+
+.h4, h4 {
+	line-height: 1.2em;
+	font-size: 25px;
+}
+
+.h5, h5 {
+	line-height: 1.2em;
+	font-size: 21px;
+}
+
+.h6, h6 {
+	line-height: 1.2em;
+	font-size: 18px;
+}
+
+.main-nav > li > a {
+	font-size: 18px;
+	line-height: 1.5em;
+}
+
+@media (min-width: 1200px) {
+
+	.main-nav > li {
+		
+		> a {
+			font-size: 36px;
+			line-height: 1.5em;
+			font-weight: 700;
+			letter-spacing: 0.025em;
+			color: $white;
+			text-transform: uppercase;
+		
+			.link-ext {
+				background: $black;
+			}
+		}
+		&.is-active > a,
+		&.current-menu-item > a,
+		&:hover > a,
+		> a:hover {
+			color: darken($white, 10%);
+		}
+	}
+	.header-fullscreen .navbar-fullscreen {
+		background: rgba(39,33,44, 0.95);
+	}
+}
+
+
+.lqd-promo-img-inner {
+    -webkit-box-shadow: none;
+	box-shadow: none;
+}

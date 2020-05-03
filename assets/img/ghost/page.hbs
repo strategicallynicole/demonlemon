@@ -1,0 +1,59 @@
+{{!< default}}
+      {{> sidebar-page }}
+
+                        
+                        {{!-- The tag above means: insert everything in this file
+into the {body} of the default.hbs template --}}
+{{!-- The big featured header, it uses blog cover image as a BG if available --}}
+	<div id="wrapper">
+
+				<!-- Main -->
+				
+							{{#post}}	<section id="main" class="wrapper style2">
+						<div class="inner">
+
+                                    <article class="post-full {{post_class}} {{#unless feature_image}}no-image{{/unless}}">
+
+
+							<h1 class="major">{{title}}</h1>   
+                            
+                                {{#if feature_image}}                            <span class="image fit">  
+
+            <figure class="post-full-image">
+                {{!-- This is a responsive image, it loads different sizes depending on device
+                https://medium.freecodecamp.org/a-guide-to-responsive-images-with-ready-to-use-templates-c400bd65c433 --}}
+                <img
+                    srcset="{{img_url feature_image size="s"}} 300w,
+                            {{img_url feature_image size="m"}} 600w,
+                            {{img_url feature_image size="l"}} 1000w,
+                            {{img_url feature_image size="xl"}} 2000w"
+                    sizes="(max-width: 800px) 400px,
+                            (max-width: 1170px) 1170px,
+                            2000px"
+                    src="{{img_url feature_image size="xl"}}"
+                    alt="{{title}}"
+                />
+            </figure>
+             </span>
+            {{/if}}
+    {{content}}   
+							</div>
+				</article>	</section>
+                      {{/post}}   
+		 {{> recent-posts }}
+			</div>
+
+
+	
+
+{{!-- Everything inside the #post tags pulls data from the post --}}
+		
+{{!-- The #contentFor helper here will send everything inside it up to the matching #block helper found in default.hbs --}}
+{{#contentFor "scripts"}}
+<script>
+    $(function() {
+        var $postContent = $(".post-full-content");
+        $postContent.fitVids();
+    });
+</script>
+{{/contentFor}}</div>

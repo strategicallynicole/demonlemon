@@ -1,0 +1,33 @@
+
+
+.main-footer {
+	color: #fff;
+
+	a:not(.btn) {
+		color: #fff;
+		
+		&:hover {
+			color: rgba(#fff, 0.5);
+		}
+	}
+	.social-icon {
+
+		a {
+			color: rgba(#fff, 0.5);
+
+			&:hover {
+				color: #fff;
+			}
+		}
+	}
+	> section:first-child {
+		padding-top: 150px;
+	}
+}
+
+@media screen and ( min-width: 992px ) {
+
+	.main-footer > section:first-child {
+		padding-top: 400px;
+	}
+}

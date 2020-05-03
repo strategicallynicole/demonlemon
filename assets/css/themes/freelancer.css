@@ -1,0 +1,146 @@
+:root {
+    --color-font: #efefef;
+    --color-primary: #212121;
+    --color-secondary: #7245c9;
+    --color-link: #7245c9;
+    --color-link-hover: lighten(#7245c9, 10%);
+    --color-gradient-start: lighten(#7245c9, 30%);
+    --color-gradient-stop: darken(#7245c9, 30%);
+    --color-img-holder: #efefef;
+    --color-cape-cod:  #343535;
+
+}
+
+body {
+    font-family: 'Noto Sans';
+    font-weight: 400;
+    line-height: 1.7;
+    font-size: 18px;
+    color: #efefef;
+}
+
+a:hover {
+    color: var(--color-link-hover);
+}
+
+#content {
+    background-color: #212121;
+}
+
+.h1,
+h1,
+.h2,
+h2,
+.h3,
+h3,
+.h4,
+h4,
+.h5,
+h5,
+.h6,
+h6 {
+    font-family: 'Fjalla One';
+    color: #efefef;
+    text-transform: uppercase;
+}
+
+.h1,
+h1 {
+    font-size: 52px;
+    font-weight: 700;
+    line-height: 1.2em;
+}
+
+.h2,
+h2 {
+    font-size: 38px;
+    font-weight: 700;
+    line-height: 1.4em;
+}
+
+.h3,
+h3 {
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 1.6em;
+}
+
+.h4,
+h4 {
+    font-size: 25px;
+    font-weight: 400;
+    line-height: 1.6em;
+}
+
+.h5,
+h5 {
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 1.8em;
+}
+
+.h6,
+h6 {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.8em;
+}
+
+.main-nav > li > a {
+    font-size: 16px;
+    letter-spacing: 0.05em;
+    color: white;
+}
+
+.main-nav > li > a .link-ext {
+    background: #212121;
+}
+
+.main-nav > li.is-active > a,
+.main-nav > li.current-menu-item > a,
+.main-nav > li:hover > a,
+.main-nav > li > a:hover {
+    color: white;
+}
+
+.main-footer {
+    background-repeat: no-repeat;
+    background-color: #212121;
+    color: #efefef;
+}
+
+.main-footer a:not(.btn) {
+    color: #7245c9;
+}
+
+.main-footer a:not(.btn):hover {
+    color: #fff;
+}
+
+.main-footer .social-icon a {
+    color: #fff;
+}
+
+.main-footer .contact-form input,
+.main-footer .contact-form select,
+.main-footer .contact-form textarea,
+.main-footer .contact-form .ui-selectmenu-button {
+    color: white;
+    border-color: rgba(255, 255, 255, 0.2);
+}
+
+.main-footer .contact-form input:focus,
+.main-footer .contact-form select:focus,
+.main-footer .contact-form textarea:focus,
+.main-footer .contact-form .ui-selectmenu-button:focus {
+    border-color: #fff;
+}
+
+.main-footer .contact-form input[type=submit] {
+    border-color: var(--color-secondary);
+    color: var(--color-secondary);
+}
+
+.main-footer .contact-form input[type=submit]:hover {
+    color: #efefef;
+}

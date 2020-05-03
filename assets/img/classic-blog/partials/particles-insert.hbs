@@ -1,0 +1,15 @@
+<div id="particles-js"></div>
+
+<script src="{{asset "js/particles.js"}}"></script>
+<script src="{{asset "js/app.js"}}"></script>
+
+<script>
+    /*Image source array*/
+    let img_src = ['{{asset "images/elements/redleaf.svg"}}', '{{asset "images/elements/house-leaf.svg"}}', '{{asset "images/elements/redleaf.svg"}}'];
+
+
+    /* particlesJS.load(@dom-id, @path-json, @callback (optional)); */
+    particlesJS.load('particles-js', 'particles.json', function () {
+        console.log('callback - particles.js config loaded');
+    });
+</script>

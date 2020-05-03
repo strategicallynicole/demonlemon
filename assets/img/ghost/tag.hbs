@@ -1,0 +1,61 @@
+{{!< default}}
+     {{> sidebar-page }}
+
+
+
+        <!-- Wrapper -->
+            <div id="wrapper">
+    
+                    {{!-- Posts --}}
+               {{#tag}}
+
+ <section id="blog" class="wrapper style2 posts">
+                        <div class="inner">
+      {{#if description}}
+                <h1 class="major">{{description}}</h1>
+                {{else}}
+                <h1 class="major">A collection of {{plural ../pagination.total empty='posts' singular='% post' plural='% posts'}}</h1>
+                {{/if}}
+                {{/tag}}
+                        {{#foreach posts}}
+                        <div class="col-md-4">
+                        <article>
+                            
+                            {{#if feature_image}}
+                            <a href="{{url}}" class="fit image"><img src="{{img_url feature_image}}" alt="{{title}}" /></a>
+                            {{/if}}
+                            <header>
+                                <span class="date">{{date format="MMM D, YYYY"}}</span>
+                                <h2><a href="{{url}}">{{title}}</a></h2>
+                            </header>
+                            <p class="summary">{{excerpt words="15"}}</p>
+                        <ul class="actions special">
+                                <li><a href="{{url}}" class="button">Read Post</a></li>
+                            </ul>
+                        </article>
+                        </div>
+                        {{/foreach}}
+                        {{pagination}}
+</div>
+                    </section>         
+
+    
+                              
+                               
+
+
+                            </div>
+                        </div>
+                    </section>  
+            </div>
+
+
+ 
+
+{{!-- The #contentFor helper here will send everything inside it up to the matching #block helper found in default.hbs --}}
+{{#contentFor "scripts"}}
+<script>
+
+</script>
+{{/contentFor}}
+

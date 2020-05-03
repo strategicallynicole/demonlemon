@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" id="prefix__bar_vertical_reversed_gradient" width="8.706" height="541" data-name="bar / vertical / reversed gradient" viewBox="0 0 8.706 541">
+    <defs>
+        <linearGradient id="prefix__linear-gradient" x1=".5" x2=".5" y1="1" gradientUnits="objectBoundingBox">
+            <stop offset="0" stop-color="#af206e"/>
+            <stop offset=".555" stop-color="#e34256"/>
+            <stop offset="1" stop-color="#eb8b23"/>
+        </linearGradient>
+    </defs>
+    <path id="prefix__Rectangle_76" d="M0 0H8.706V541H0z" data-name="Rectangle 76" transform="rotate(180 4.353 270.5)"/>
+</svg>

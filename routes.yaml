@@ -1,0 +1,24 @@
+routes:
+  /:
+    template: 
+      - home
+  /home/:
+    controller: channel
+    template: 
+      - intro
+  /about/:
+    permalink: /about/
+    template: 
+      - pages/about
+collections:
+  /blog/:
+    permalink: /blog/{slug}/
+    template: 
+      - index
+  /page/:
+    permalink: /page/{slug}/
+    template: 
+      - index
+taxonomies:
+  tag: /tag/{slug}/
+  author: /author/{slug}/

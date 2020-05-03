@@ -1,0 +1,57 @@
+{{!< default}}
+
+{{! The tag above means: Insert everything in this file into the {body} of the default.hbs template. }}
+
+{{#post}}
+
+    <!-- POST INFO WRAPPER -->
+    <div class="page-info-wrapper post-presentation lazy active {{#if feature_image}}background{{else}}background-pattern{{/if}}"
+    {{#if feature_image}}data-src="{{feature_image}}"{{/if}}>
+        <div class="gradient gradient1">
+            <div class="container text-center">
+                <div class="row">
+                    <div class="col-sm-12 col-md col-lg col-xs-12">
+                        <h1 class="animated fadeInUp">{{title}}</h1>
+                        <p class="animated fadeInUp">{{excerpt words="10"}}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    {{! Latest Post - Go to partials/latestPost.hbs to view this partial. }}
+    {{> "latestPost"}}
+
+    <div id="main" class="container">
+        <article>
+            {{{content}}}
+        </article>
+    </div>
+
+    {{subscribe_form placeholder=(t "Your email...") }}
+
+{{/post}}
+
+{{!-- The #contentFor helper here will send everything inside it up to the matching #block helper found in default.hbs --}}
+
+{{#contentFor "post-styles"}}
+    <link href="{{asset "css/extra-post.css"}}" rel="stylesheet" type="text/css">
+{{/contentFor}}
+
+{{#contentFor "post-scripts"}}
+    <script src="{{asset "js/extra-post.js"}}"></script>
+    <script>
+    $(document).ready(function() {
+        $( "table" ).wrap( "<div class='table-responsive'></div>" );
+        $(".kg-gallery-image > img").wrap("<a data-gallery='collection-gallery' data-toggle='lightbox' class='lb-item' href=''></a>"), $(".lb-item").each(function(e, t) {
+           $(this).attr("href", $(this).children("img").attr("src"))
+        }), $(document).on("click", '[data-toggle="lightbox"]', function(e) {
+           e.preventDefault(), $(this).ekkoLightbox()
+        }), document.querySelectorAll(".kg-gallery-image img").forEach(function(e) {
+           var t = e.closest(".kg-gallery-image"),
+               a = e.attributes.width.value / e.attributes.height.value;
+           t.style.flex = a + " 1 0%"
+        })
+   });
+   </script>
+{{/contentFor}}

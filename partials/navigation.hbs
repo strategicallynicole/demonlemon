@@ -1,0 +1,7 @@
+{{#if @site.navigation}}
+    {{#foreach navigation}}
+        <li class="nav-item">
+            <a class="nav-link" href="{{url}}">{{label}}</a>
+        </li>
+    {{/foreach}}
+{{/if}}

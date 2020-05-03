@@ -1,0 +1,58 @@
+    {{!-- Navigation for Small Screen --}}
+<div class="boxy col-md-3 col-md-offset-1 scheme-light liquid-blog-scheme-light bg-vulcan sidebar-container">
+
+						<aside class="main-sidebar">
+
+							<div class="widget widget_search">
+								<form role="search" method="get" class="search-form" action="#">
+									<label>
+										<span class="screen-reader-text">Search for:</span>
+										<input type="search" class="search-field" placeholder="Search …" value="" name="s">
+									</label>
+									<input type="submit" class="search-submit" value="Search">
+								</form>
+							</div><!-- /.widget_search -->
+
+                              <div class="scheme-light widget widget_categories">
+								<h3 class="widget-title">Quick Links</h3>
+								<ul class="whitish">
+                                    
+            {{#if @site.navigation}}
+            {{navigation}}
+        {{/if}}
+
+        </ul>
+        </div>
+
+							<div class="whitish scheme-light widget widget_categories">
+								<h3 class="widget-title">Tags</h3>
+								<ul>
+					{{#get 'tags' limit='all' include='count.posts' order='count.posts desc'}}
+
+
+                    {{#foreach tags}}
+                    									<li><a class="whitish" href="{{url}}">{{name}} </a>     ({{plural ../pagination.total empty='posts' singular='% post' plural='% posts'}})
+ </li>    {{/foreach}}
+                {{/get}}
+
+
+
+								</ul>
+							</div><!-- /.widget_categories -->
+
+<h3 class="widget-title"> get updates by email </h3>               <p>   <small>we promise to only send the juciest of emails.  seriously.  our emails rock.</small></p>
+<div style="width: 95%;">
+           <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/shell.js"></script>
+<script>
+  hbspt.forms.create({
+	portalId: "6942704",
+	formId: "5eb99b16-2a74-4a05-99e7-a70bb0b34e2b"
+});
+</script></div>
+						</aside>
+
+					</div><!-- /.col-md-3 col-md-offset-1 sidebar-container -->
+
+
+
+    

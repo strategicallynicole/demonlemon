@@ -1,0 +1,20 @@
+{{!< default}}
+
+
+
+{{! The tag above means: Insert everything in this file into the {body} of the default.hbs template. }}
+
+{{! Latest Post - Go to partials/latestPost.hbs to view this partial. }}
+{{> "latestPost"}}
+
+<div id="main">
+    <div class="container">
+{{> "particles"}}
+
+        {{! Post Loop - Go to partials/postLoop.hbs to view this partial. }}
+        {{> "postLoop"}}
+    </div>
+</div>
+
+{{! Pagination - Go to partials/pagination.hbs to view this partial. }}
+{{pagination}}

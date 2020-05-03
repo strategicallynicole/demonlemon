@@ -1,0 +1,62 @@
+html,
+body {
+	max-width: 100vw;
+}
+html {
+	font-size: 100%;
+	overflow-x: hidden;
+}
+body {
+	font-family: 'Noto Sans', sans-serif;
+	font-size: 1em;
+	line-height: 1.7;
+	font-weight: 400;
+	color: #b2b2b2;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+/*
+	Base Styles
+*/
+#wrap,
+#content {
+	position: relative;
+}
+#content {
+	z-index: 2;
+	transition: transform 0.3s; // for mobile nav style modern;
+	background-color: #272B2C !important; 
+	color: #b2b2b2 !important;
+		@include clearfix;
+}
+iframe {
+	max-width: 100%;
+	border: none;
+}
+audio {
+	width: 100%;
+}
+
+// Spacing
+body {
+
+	&.archive {
+
+		#content {
+			padding-top: 70px;
+			padding-bottom: 70px;
+		}
+	}
+	&.blog {
+
+		#content {
+			padding-top:70px;
+			padding-bottom: 70px;
+		}
+		.main-sidebar {
+			margin-top: 0 !important;
+			background-color: #272B2C;;
+		}
+	}
+}

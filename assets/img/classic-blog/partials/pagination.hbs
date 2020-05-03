@@ -1,0 +1,13 @@
+
+<nav class="pagination" role="navigation">
+   
+
+    {{#if next}}
+  <li>  <a class="button button-xs button-default-outline button-nina" href="{{page_url next}}">Older Posts</a></li>
+    {{/if}}
+     <li>   <h3 class="numbered"><strong>Page {{page}} of {{pages}}</strong></h3></li>
+{{#if prev}}<li> <a class="button button-xs button-default-outline button-nina newer-posts" href="{{page_url prev}}">&larr; Newer
+        Posts</a></li>{{/if}}
+
+
+</nav>
