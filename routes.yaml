@@ -9,7 +9,7 @@ routes:
   /about/:
     permalink: /about/
     template: 
-      - about
+      - pages/about
 collections:
   /blog/:
     permalink: /blog/{slug}/
