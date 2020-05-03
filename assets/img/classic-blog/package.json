@@ -96,6 +96,6 @@
 		"gulp-sass": "^4.0.2",
 		"handlebars": "^4.7.6",
 		"handlebars-validate": "^0.1.2",
-		"jquery": "^3.4.1"
+		"jquery": "^3.5.0"
 	}
 }
