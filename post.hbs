@@ -4,7 +4,16 @@
 {{/contentFor}}
 
 {{! The tag above means: Insert everything in this file into the {body} of the default.hbs template. }}
+{{#contentFor "page-styles"}}
+    <link rel="stylesheet" href="{{@site.url}}/assets/css/themes/freelancer.css" />
 
+{{/contentFor}}		
+        <header class="main-header" data-react-to-megamenu="true" data-sticky-header="false">
+	  <!-- {{!-  "layout/megamenu" -!}}-->
+      {{> "ui/megamenu"}}</header>
+		<!-- /.main-header -->
+
+        
 {{#post}}
 
     <!-- POST INFO WRAPPER -->
