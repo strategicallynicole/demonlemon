@@ -1,0 +1,27 @@
+
+
+	<div class="lqd-column col-md-3 col-sm-6 masonry-item">
+										<article class="liquid-lp">
+
+											<figure class="liquid-lp-media">
+												<a href="{{url}}">
+													        {{#if feature_image}} <img src="{{feature_image}}"{{/if}} alt="title">
+												</a>
+											</figure>
+										
+											<header class="liquid-lp-header">
+												<ul class="liquid-lp-category">
+
+													  {{#foreach tags limit="3"}}
+                      <li><i class="fad fa-tags"></i><a class=" btn btn-underlined text-uppercase font-size-12 font-weight-bold ltr-sp-2 color-secondary lqd-unit-animation-done" href="{{url}}">{{name}}</a></li>
+                    {{/foreach}}
+												</ul>
+												<h2 class="liquid-lp-title h5 text-uppercase font-weight-bold"><a href="{{url}}">{{title}}</a></h2>
+												<time class="liquid-lp-date font-style-italic" datetime="{{date}}"><i class="fad fa-calendar"></i>{{date}}</time>
+                                             
+											</header>
+										
+										</article>
+
+									</div><!-- /.col-md-4 -->
+                 

@@ -1,0 +1,23 @@
+	<section class="vc_row pt-50 pb-50">
+				<div class="container">
+					<div class="row">
+<h2 class="text-center">From Our Blog</h2>
+				</div><div class="row">		<div class="lqd-column col-md-12">
+
+							<div class="liquid-blog-posts">
+								<div class="liquid-blog-grid row" data-liquid-masonry="true">
+
+	{{#get "posts" filter="featured:false" limit="4" include="tags"}}
+		   {{#foreach posts}}
+					{{> "ui/post-card"}}
+
+		{{/foreach}}
+		{{/get}}
+				
+
+</div></div>
+				</div>
+					</div><!-- /.row -->
+				</div><!-- /.container -->
+			</section>
+

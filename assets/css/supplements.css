@@ -32,16 +32,20 @@ div.transbox {
 
 :root {
     --color-primary: #7254c9 !important;
-    --color-secondary: darken(#7254c9, 25%) !important;
-    --color-gradient-start: $color-primary !important;
-    --color-gradient-stop: darken($color-gradient-start, 50%) !important;
-    --white: $white !important;
-    --muted-purple: $muted-purple !important;
-    --blue: $blue !important;
-    --off-gray: $off-gray !important;
-    --black: $black !important;
+    --color-secondary: #7254c9 !important;
 }
 
 .main-nav>li>a .link-ext {
     background: #7254c9 !important;
+}
+
+.liquid-counter-huge .liquid-counter-element {
+  line-height: 1.0em;
+}
+
+.liquid-counter-xl .liquid-counter-element {
+  font-size: 5.75em;
+}
+.nav-trigger.scheme-light.fill-solid .bars {
+  background-color: #494949 !important;
 }
