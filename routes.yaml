@@ -14,7 +14,11 @@ collections:
   /page/:
     permalink: /page/{slug}/
     template: 
-      - index
+      - page
+  /about/:
+    permalink: /about/
+    template: 
+      - about
 taxonomies:
   tag: /tag/{slug}/
   author: /author/{slug}/
