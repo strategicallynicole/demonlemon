@@ -23448,7 +23448,9 @@ body.search .no-results .search-form input[type=submit] {
 }
 
 .bg-dark {
-  background: #212121 !important;
+  background: url('/assets/img/dotsandwaves.svg'); 
+  background-size: contain; 
+  background-repeat: no-repeat;" 
 }
 
 .bg-mirage {
