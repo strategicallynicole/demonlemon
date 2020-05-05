@@ -1,11 +1,42 @@
 {{!< default}}
+{{#contentFor "page-styles"}}
+    <link rel="stylesheet" href="{{@site.url}}/assets/built/style.css" />
+    <link rel="stylesheet" href="{{@site.url}}/assets/built/extra.css" />
+    <link rel="stylesheet" href="{{@site.url}}/assets/built/extra-post.css" />
+
+{{/contentFor}}
+]
+
+{{#contentFor "post-scripts"}}
+    <script src="{{asset "built/js/extra-post.js"}}"></script>
+    <script src="{{asset "built/js/main.js"}}"></script>
+
+    <script src="{{asset "built/js/extra-post.js"}}"></script>
+    <script>
+        $(document).ready(function() {
+            $("article").fitVids();
+            $( "table" ).wrap("<div class='table-responsive'></div>");
+            $(".kg-gallery-image > img").wrap("<a data-gallery='collection-gallery' data-toggle='lightbox' class='lb-item' href=''></a>");
+            $(".lb-item").each(function(e, t) {
+               $(this).attr("href", $(this).children("img").attr("src"))
+            });
+            $(document).on("click", '[data-toggle="lightbox"]', function(e) {
+               e.preventDefault(), $(this).ekkoLightbox()
+            });
+            document.querySelectorAll(".kg-gallery-image img").forEach(function(e) {
+               var t = e.closest(".kg-gallery-image"),
+                   a = e.attributes.width.value / e.attributes.height.value;
+               t.style.flex = a + " 1 0%"
+            })
+       });
+   </script>
+{{/contentFor}}
 
 
 
 {{! The tag above means: Insert everything in this file into the {body} of the default.hbs template. }}
 
 {{! Latest Post - Go to partials/latestPost.hbs to view this partial. }}
-{{> "latestPost"}}
 
 <div id="main">
     <div class="container">

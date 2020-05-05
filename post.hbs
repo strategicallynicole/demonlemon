@@ -1,14 +1,12 @@
 {{!< default}}
 {{#contentFor "page-styles"}}
     <link rel="stylesheet" href="{{site.baseurl}}/assets/css/themes/original.css" />
+	    <link href="{{asset "built/css/extra-post.css"}}" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="{{@site.url}}/assets/css/themes/freelancer.css" />
+
 {{/contentFor}}
 
 {{! The tag above means: Insert everything in this file into the {body} of the default.hbs template. }}
-{{#contentFor "page-styles"}}
-    <link rel="stylesheet" href="{{@site.url}}/assets/css/themes/freelancer.css" />
-
-{{/contentFor}}		
-
         
 {{#post}}
 
@@ -414,9 +412,6 @@
 
 {{!-- The #contentFor helper here will send everything inside it up to the matching #block helper found in default.hbs --}}
 
-{{#contentFor "post-styles"}}
-    <link href="{{asset "built/css/extra-post.css"}}" rel="stylesheet" type="text/css">
-{{/contentFor}}
 
 {{#contentFor "post-scripts"}}
     <script src="{{asset "built/js/extra-post.js"}}"></script>
