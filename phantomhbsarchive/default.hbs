@@ -9,7 +9,7 @@
 
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<meta name="theme-color" content="#7254c9">
-    <title>{{meta_title}} | OAKwave Marketing Strategy &amp; Sales Enablement</title>
+    <title>{{meta_title}} </title>
     <meta name="HandheldFriendly" content="True" />
     	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     {{> fbpixel}}
@@ -17,11 +17,11 @@
     {{> google-analytics}}
     {{!> hotjar}}
 	
-		<title>{{meta_title}}</title>
 			
 	<link rel="stylesheet" href="{{@site.url}}/assets/vendors/liquid-icon/liquid-icon.min.css" />
 	<link rel="stylesheet" href="{{@site.url}}/assets/css/theme-vendors.min.css" />
 	<link rel="stylesheet" href="{{@site.url}}/assets/css/theme.css" />
+  {{{block "page-styles"}}}
 	<link rel="stylesheet" href="{{@site.url}}/assets/css/themes/original.css" />
 	
 	<!-- Head Libs -->
@@ -56,7 +56,7 @@
     {{!-- Ghost outputs important scripts and data with this tag --}}
     {{ghost_foot}}
 {{> hubspot}}
-    {{!-- The main JavaScript file for Phantom --}}
+{{{block "post-scripts"}}}    {{!-- The main JavaScript file for Phantom --}}
     <script type="text/javascript" src="{{asset "js/jquery.fitvids.js"}}"></script>
 		<!--<script src="{{asset "ave/vendors/jquery.min.js"}}"></script>-->
 		<script src="{{asset "ave/js/theme-vendors.js"}}"></script>

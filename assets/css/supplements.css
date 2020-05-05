@@ -25,10 +25,17 @@ div.transbox {
      /* background: #000 !important;
 */
   }
-  .ld-flipbox-wrap {
+  .ld-flipbox-wrap, .liquid-blog-item {
     box-shadow: 10px 10px 10px #0e1111 !important;
   }
-
+.liquid-blog-item {
+  padding: 25px;
+  color: #212121;
+}
+.liquid-blog-item .h1, .liquid-blog-item h1, .liquid-blog-item .h2, .liquid-blog-item h2, .liquid-blog-item .h3, .liquid-blog-item h3, .liquid-blog-item .h4, .liquid-blog-item h4  {
+  padding: 25px;
+  color: #212121;
+}
 
 :root {
     --color-primary: #7254c9 !important;
@@ -48,4 +55,23 @@ div.transbox {
 }
 .nav-trigger.scheme-light.fill-solid .bars {
   background-color: #494949 !important;
+}
+
+body {
+  font-family: Noto Sans;
+  font-weight: 400;
+  line-height: 1.7;
+  font-size: 18px;
+}
+
+.blog-single {
+  color: #212121;
+}
+.blog-single p, .blog-single h2, .blog-single h3, .blog-single h4, .blog-single h5, .blog-single h6, .blog-single.h1, .blog-single.h2, .blog-single.h3, .blog-single.h4, .blog-single.h5, .blog-single.h6 {
+  color: #212121;
+}
+
+.post-author {
+  border-top: 0px solid #d8dbe2;
+  border-bottom: 0px solid #d8dbe2;
 }

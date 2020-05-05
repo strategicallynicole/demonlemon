@@ -1,13 +1,8 @@
 {{!< default}}
 {{#contentFor "page-styles"}}
-    <link rel="stylesheet" href="{{site.baseurl}}/assets/css/themes/original.css" />
 {{/contentFor}}
 
 {{! The tag above means: Insert everything in this file into the {body} of the default.hbs template. }}
-{{#contentFor "page-styles"}}
-    <link rel="stylesheet" href="{{@site.url}}/assets/css/themes/freelancer.css" />
-
-{{/contentFor}}		
 
         
 {{#post}}
@@ -16,7 +11,7 @@
 	
 		<main id="content" class="content py-0">
 			
-			<div class="blog-single-cover scheme-light" data-fullheight="true" data-inview="true" data-inview-options='{ "onImagesLoaded": true }' style="background-color: #666871;">
+			<div class="blog-single-cover scheme-light" data-fullheight="true" data-inview="true" data-inview-options='{ "onImagesLoaded": true }' style="background-color: #212121;">
 
 				<figure class="blog-single-media" data-responsive-bg="true" data-parallax="true" data-parallax-options='{ "parallaxBG": true, "triggerHook": "onLeave" }' data-parallax-from='{ "translateY": "0%" }' data-parallax-to='{ "translateY": "20%" }'>
 					<img src="{{feature_image}}" alt="{{title}}">
@@ -32,33 +27,27 @@
 									<h1 class="blog-single-title entry-title h2" data-split-text="true" data-split-options='{ "type": "lines" }'>The small change that creates massive results in your life</h1>
 									<div class="post-meta">
 										<span class="byline">
-											<span class="block text-uppercase ltr-sp-1">Author:</span>
+											<span class="block text-uppercase ltr-sp-1">Reading Time:</span>
 											<span class="author vcard">
-												<a class="url fn n" href="#">{{author}}</a>
+												<a class="url fn n" href="url"><i class="fad fa-clock"></i>&nbsp; &nbsp; {{reading_time}}</a>
 											</span>
 										</span>
 										<span class="posted-on">
 											<span class="block text-uppercase ltr-sp-1">Published on:</span>
 											<a href="{{url}}" rel="bookmark">
-												<time class="entry-date published updated" datetime="{{date}}">{{date}}</time>
+												<time class="entry-date published updated" datetime="{{date}}"><i class="fad fa-calendar"></i>&nbsp; &nbsp; {{date}}</time>
 											</a>
 										</span>
 										<span class="cat-links">
 											<span class="block text-uppercase ltr-sp-1">Published in:</span>
-											{{#foreach tags limit="3"}}
-                      <li><i class="fad fa-tags"></i><a rel="category tag" class="tn btn-underlined text-uppercase font-size-12 font-weight-bold ltr-sp-2 color-secondary lqd-unit-animation-done" href="{{url}}">{{name}}</a></li>
+											{{#foreach tags limit="1"}}
+              <i class="fad fa-tags"></i>&nbsp;&nbsp;<a rel="category tag" class="tn btn-underlined text-uppercase font-size-12 font-weight-bold ltr-sp-2 color-secondary lqd-unit-animation-done" href="{{url}}">{{name}}</a>&nbsp;&nbsp;
                     {{/foreach}}
 										</span>
-                                        <span class="cat-links">
-											<span class="block text-uppercase ltr-sp-1">Reading Time:</span>
-                      <li><i class="fad fa-clock"></i><a rel="category tag" class="tn btn-underlined text-uppercase font-size-12 font-weight-bold ltr-sp-2 color-secondary lqd-unit-animation-done" href="{{url}}">{{reading_time}}</a></li>
-										</span>
-
+                                       
 									</div><!-- /.post-meta -->
 									<div class="blog-single-details-extra">
 
-											<span class="text-uppercase ltr-sp-1">Play Video</span>
-										</a>
 									</div><!-- /.blog-single-details-extra -->
 								</header><!-- /.blog-single-header -->
 								
@@ -70,8 +59,8 @@
 				
 			</div><!-- /.blog-single-cover -->
 			
-			<article class="blog-single">
-				
+			<article class="blog-single bg-dark scheme-dark liquid-blog-scheme-dark">
+				{{> "particles"}}
 				<div class="container">
 					
 					<div class="row">
@@ -81,59 +70,89 @@
 							<div class="blog-single-content entry-content pull-up expanded">
 								
 								{{{content}}}
-							</div><!-- /.blog-single-content entry-content -->
-							
+					<!-- /.blog-single-content entry-content -->
+						<div style="height: 25px; width: 25%; margin: 0 auto; padding-bottom: 25px; border-bottom-style:dotted; border-color: #7254c9; border-width: 2px;" ></div>
 							<footer class="blog-single-footer entry-footer">
 								
 								<span class="tags-links">
-									<a href="#" rel="tag">Granada</a>
-									<a href="#" rel="tag">Spain</a>
-									<a href="#" rel="tag">Travel</a>
+								{{#foreach tags limit="all"}}
+  
+             	<a href="{{url}}" rel="{{name}}"></><i class="fad fa-tags"></i> {{name}}</a>       {{/foreach}}
+						
 								</span>
 								
+
+
+  
+
+
 								<span class="share-links">
 									<span class="text-uppercase ltr-sp-1">Share On</span>
 									<ul class="social-icon circle branded social-icon-sm">
-										<li><a href="#"><i class="fa fa-facebook"></i></a></li>
-										<li><a href="#"><i class="fa fa-twitter"></i></a></li>
-										<li><a href="#"><i class="fa fa-google"></i></a></li>
-										<li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-									</ul><!-- /.social-icon -->
+											<li>
+												<a href="https://www.facebook.com/sharer/sharer.php?u={{url absolute="true"}}" onclick="window.open(this.href, 'facebook-share','width=580, height=300');return false;"><i class="fab fa-facebook-f"></i></a>
+											</li>
+											<li>
+                <a href="https://twitter.com/share?text={{encode title}}&amp;url={{url absolute="true"}}" onclick="window.open(this.href, 'twitter-share', 'width=580, height=300');return false;"><i class="fab fa-twitter"></i></a>
+											</li>
+											<li>
+												<a href="https://linkedin.com/sharearticle?mini=true&url={{url absolute="true"}}" onclick="window.open(this.href, 'linkedin-share', 'width=580, height=300');return false;"><i class="fab fa-linkedin"></i></a>
+											</li>
+										</ul>
+									
 								</span><!-- /.share-links -->
 								
-							</footer><!-- /.blog-single-footer entry-footer -->
-							
+							{{#foreach authors}}
 							<div class="post-author">
-								
+									{{#if profile_image}}
 								<figure>
-									<img src="./assets/demo/avatars/avatar-2.jpg" alt="avatar">
-								</figure>
+							<img src="{{profile_image}}" width="100" alt="avatar">
+								</figure>{{/if}}	
 								<div class="post-author-info clearfix">
-									<h3><a href="#">David Beckham</a></h3>
-									<h6>Editor</h6>
-									<p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum sed ut perspiciatis unde.</p>
+									<h3><a href="{{url}}">{{name}}</a></h3>
+									<h6>{{location}} - </h6>
+									<ul class="social-icon circle branded social-icon-sm">
+											<li>
+												<a href="{{facebook}}"><i class="fab fa-facebook-f"></i></a>
+											</li>
+												<li>
+												<a href="{{twitter}}"><i class="fab fa-twitter"></i></a>
+											</li>
+												<li>
+												<a href="{{linkedin}}"><i class="fab fa-linkedin"></i></a>
+											</li>
+										</ul>
+									<p>{{bio}}</p>
 								</div><!-- /.post-author-info -->
 								
 							</div><!-- /.post-author -->
-							
+														{{/foreach}}
+</footer><!-- /.blog-single-footer entry-footer -->
 							<nav class="post-nav">
-								
+								{{#prev_post}}
 								<div class="nav-previous">
-									<a href="#" rel="prev">
+									<a href="{{url}}" rel="{{title}}">
 										<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="none" stroke="#444" stroke-width="2" x="0px" y="0px" viewBox="0 0 24 24" xml:space="preserve" width="24" height="24">
 											<g>
 												<line stroke-miterlimit="10" x1="22" y1="12" x2="2" y2="12" stroke-linejoin="miter" stroke-linecap="butt"></line>
 												<polyline stroke-linecap="square" stroke-miterlimit="10" points="9,19 2,12 9,5 " stroke-linejoin="miter"></polyline>
 											</g>
 										</svg>
+	
 										<span class="screen-reader-text">Previous Article</span>
 										<span aria-hidden="true" class="nav-subtitle">Previous Article</span>
-										<span class="nav-title">Compare prices find the best computer accessory</span>
+										<span class="nav-title">{{title}}</span>
+								
 									</a>
 								</div>
 								
+								{{/prev_post}}
+
+								
+
+								{{#next_post}}
 								<div class="nav-next">
-									<a href="#" rel="next">
+									<a href="{{url}}" rel="{{title}}">
 										<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="none" stroke="#444" stroke-width="2" x="0px" y="0px" viewBox="0 0 24 24" xml:space="preserve" width="24" height="24">
 											<g transform="rotate(180 12,12) ">
 												<line stroke-miterlimit="10" x1="22" y1="12" x2="2" y2="12" stroke-linejoin="miter" stroke-linecap="butt"></line>
@@ -142,190 +161,26 @@
 										</svg>
 										<span class="screen-reader-text">Next Article</span>
 										<span aria-hidden="true" class="nav-subtitle">Next Article</span>
-										<span class="nav-title">Enhance wellness by doing something different!</span>
+										<span class="nav-title">{{title}}</span>
 									</a>
 								</div>
 								
+
+	{{/next_post}}											
+
 							</nav><!-- /.post-nav -->
-							
+							<div id="comments" class="comments-area">
+					{{> "disqus" shortname="www-oakwave-com"}}
+
 						</div><!-- /.col-md-8 -->
 						
 					</div><!-- /.row -->
 				</div><!-- /.container -->
-				
-				<div id="comments" class="comments-area">
-					
-					<div id="respond" class="comment-respond filled">
-						
-						<div class="container">
-							<div class="row">
-								<div class="col-md-8 col-md-offset-2">
-									
-									<h3 id="reply-title" class="comment-reply-title">Leave a comment</h3>
-									
-									<form action="#" method="post" id="commentform" class="comment-form" novalidate="">
-										<!-- <p class="comment-notes">
-											<span id="email-notes">Your email address will not be published.</span> Required fields are marked
-											<span class="required">*</span>
-										</p> -->
-										<div class="row">
-											<div class="col-md-4 col-sm-6">
-												<p class="comment-form-author">
-													<input id="author" name="author" type="text" size="30" maxlength="245" aria-required="true" required="required">
-													<span class="input-placeholder"
-													data-split-text="true" data-split-options='{ "type": "chars" }'
-													data-custom-animations="true"
-													data-ca-options='{ "triggerHandler": "focus", "triggerTarget": "input", "triggerRelation": "siblings", "offTriggerHandler": "blur", "animationTarget": "all-childs", "delay": 50, "animations": { "translateY": "-20%", "rotateX": -45, "opacity": 0 } }'
-													>Name*</span>
-												</p>
-											</div><!-- /.col-md-4 col-sm-6 -->
-											<div class="col-md-4 col-sm-6">
-												<p class="comment-form-email">
-													<input id="email" name="email" type="email" size="30" maxlength="100" aria-describedby="email-notes" aria-required="true" required="required">
-													<span class="input-placeholder"
-													data-split-text="true" data-split-options='{ "type": "chars" }'
-													data-custom-animations="true"
-													data-ca-options='{ "triggerHandler": "focus", "triggerTarget": "input", "triggerRelation": "siblings", "offTriggerHandler": "blur", "animationTarget": "all-childs", "delay": 50, "animations": { "translateY": "-20%", "rotateX": -45, "opacity": 0 } }'
-													>Email*</span>
-												</p>
-											</div><!-- /.col-md-4 col-sm-6 -->
-											<div class="col-md-4 col-sm-12">
-												<p class="comment-form-url">
-													<input id="url" name="url" type="url" size="30" maxlength="200">
-													<span class="input-placeholder"
-													data-split-text="true" data-split-options='{ "type": "chars" }'
-													data-custom-animations="true"
-													data-ca-options='{ "triggerHandler": "focus", "triggerTarget": "input", "triggerRelation": "siblings", "offTriggerHandler": "blur", "animationTarget": "all-childs", "delay": 50, "animations": { "translateY": "-20%", "rotateX": -45, "opacity": 0 } }'
-													>Website</span>
-												</p>
-											</div><!-- /.col-md-4 col-sm-12 -->
-											<div class="col-sm-12">
-												<p class="comment-form-comment">
-													<textarea id="comment" name="comment" cols="45" rows="5" maxlength="65525" aria-required="true" required="required"></textarea>
-													<span class="input-placeholder"
-													data-split-text="true" data-split-options='{ "type": "chars" }'
-													data-custom-animations="true"
-													data-ca-options='{ "triggerHandler": "focus", "triggerTarget": "textarea", "triggerRelation": "siblings", "offTriggerHandler": "blur", "animationTarget": "all-childs", "delay": 50, "animations": { "translateY": "-20%", "rotateX": -45, "opacity": 0 } }'
-													>Comment*</span>
-												</p>
-											</div><!-- /.col-sm-12 -->
-											<div class="col-sm-12 text-right">
-												<p class="form-submit">
-													<input name="submit" type="submit" id="submit" class="submit" value="Submit">
-												</p>
-											</div><!-- /.col-sm-12 -->
-										</div><!-- /.row -->
-									</form>
-									
-								</div><!-- /.col-md-8 col-md-offset-2 -->
-							</div><!-- /.row -->
-						</div><!-- /.container -->
-						
-					</div><!-- /.comment-form -->
-					
-					<div class="container">
-						<div class="row">
-							<div class="col-md-8 col-md-offset-2">
-								
-								<ol class="comment-list">
-									
-									<li class="comment">
-										<article class="comment-body">
-											<footer class="comment-meta">
-												<div class="comment-author vcard">
-													<img alt="Avatar" src="./assets/demo/avatars/avatar-3.jpg" class="avatar">
-													<b class="fn">
-														<a href="#" rel="external nofollow" class="url">Robert Stevenson</a>
-													</b>
-													<span class="says">says:</span>
-												</div> <!-- .comment-author -->
-												
-												<div class="comment-metadata">
-													<a href="#">
-														<time datetime="2018-03-13T09:25:41+00:00">3 hours ago</time>
-													</a>
-												</div> <!-- .comment-metadata -->
-												
-											</footer> <!-- .comment-meta -->
-											
-											<div class="comment-content">
-												<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-											</div> <!-- .comment-content -->
-											
-											<div class="comment-extras">
-												<div class="reply">
-													<a rel="nofollow" class="comment-reply-link" href="#" aria-label="Reply to A WordPress Commenter">Reply</a>
-												</div><!-- /.reply -->
-											</div>
-										</article> <!-- .comment-body -->
-										
-										<ol class="children">
-											<li class="comment">
-												<article class="comment-body">
-													<footer class="comment-meta">
-														<div class="comment-author vcard">
-															<img alt="Avatar" src="./assets/demo/avatars/avatar-5.jpg" class="avatar">
-															<b class="fn">
-																<a href="#" rel="external nofollow" class="url">Leona Porter</a>
-															</b>
-															<span class="says">says:</span>
-														</div> <!-- .comment-author -->
-														
-														<div class="comment-metadata">
-															<a href="#">
-																<time datetime="2018-03-14T09:13:13+00:00">2 hours ago</time>
-															</a>
-														</div> <!-- .comment-metadata -->
-													</footer> <!-- .comment-meta -->
-													
-													<div class="comment-content">
-														<p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-													</div> <!-- .comment-content -->
-													
-													<div class="comment-extras">
-														<div class="reply">
-															<a rel="nofollow" class="comment-reply-link" href="#" aria-label="Reply to Mohsen">Reply</a>
-														</div><!-- /.reply -->
-													</div>
-												</article> <!-- .comment-body -->
-											</li> <!-- #comment-## -->
-										</ol> <!-- .children -->
-									</li> <!-- #comment-## -->
-									
-									<li class="comment">
-										<article class="comment-body">
-											<footer class="comment-meta">
-												<div class="comment-author vcard">
-													<img alt="Avatar" src="./assets/demo/avatars/avatar-4.jpg" class="avatar">
-													<b class="fn">
-														<a href="#" rel="external nofollow" class="url">Janie Black</a>
-													</b>
-													<span class="says">says:</span>
-												</div> <!-- .comment-author -->
-												
-												<div class="comment-metadata">
-													<a href="#">
-														<time datetime="2018-03-14T09:13:30+00:00">December 25, 2017</time>
-													</a>
-												</div> <!-- .comment-metadata -->
-											</footer> <!-- .comment-meta -->
-											
-											<div class="comment-content">
-												<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-											</div> <!-- .comment-content -->
-											
-											<div class="comment-extras">
-												<div class="reply">
-													<a rel="nofollow" class="comment-reply-link" href="#" aria-label="Reply to Mohsen">Reply</a>
-												</div><!-- /.reply -->
-											</div>
-										</article> <!-- .comment-body -->
-									</li> <!-- #comment-## -->
-								</ol>
-								
-							</div><!-- /.col-md-8 col-md-offset-2 -->
-						</div><!-- /.row -->
-					</div><!-- /.container -->
+
+						</div>
+						</div>
+						</div>
+		
 					
 				</div><!-- /.comments-area -->
 				
@@ -336,87 +191,9 @@
 	
 
 
-    <!-- POST INFO WRAPPER -->
-    <div class="post-info-wrapper post-presentation active {{#if feature_image}}background{{else}}background-pattern{{/if}} lazy" {{#if feature_image}}data-src="{{feature_image}}"{{/if}}>
-        <div class="gradient gradient1">
-            <div class="container d-flex align-items-center">
-                
-                <div class="row">
-                    <div class="col-sm-12 col-md col-lg col-xs-12">
-                        {{#if @labs.members}}<span class="animated fadeInDown badge post-visibility post-{{visibility}}">{{visibility}}</span>{{/if}}
-                        <h1 class="animated fadeInUp">{{title}}</h1>
-                        <div class="post-tags animated fadeIn">
-                            {{#foreach tags}}
-                                <a href="{{url}}">{{name}}</a>
-                            {{/foreach}}
-                        </div>
-                    </div>
-                    <div class="col-sm-12 col-md col-lg col-xs-12 {{#if @labs.members}}spacing-{{visibility}}{{/if}}">
-                        <p class="animated fadeInDown d-none d-sm-block">{{excerpt words="30"}}</p>
-                    </div>
-                </div>
-            </div>
-
-            <!-- AUTHOR INFO -->
-            <div class="post-presentation author-wrapper container">
-                <div class="d-flex justify-content-between align-items-center author-info">
-                    <div class="multiple-authors animated fadeIn">
-                        {{#has author="count:>1"}}
-                            {{#foreach authors}}
-                            <a href="{{url}}" class="vertical-align author-info no-name">
-                                <div class="author-image background lazy {{^if profile_image}}author-image-fill{{/if}}" {{#if profile_image}}data-src="{{profile_image}}"{{/if}}></div>
-                            </a>
-                            {{/foreach}}
-                        {{else}}
-                            {{#foreach authors}}
-                                <a href="{{url}}" class="vertical-align author-info">
-                                    <div class="lazy author-image background {{^if profile_image}}author-image-fill{{/if}}" {{#if profile_image}}data-src="{{profile_image}}"{{/if}}></div>{{name}}
-                                </a>
-                            {{/foreach}}
-                        {{/has}}
-                    </div>
-                    <p class="animated fadeIn"><i class="far fa-clock"></i>{{date published_at timeago="true"}}</p>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    {{! Latest Post - Go to partials/latestPost.hbs to view this partial. }}
-    {{> "latestPost"}}
-
-    <div id="main" class="container">
-        {{#if @labs.members}}
-            {{#if access}}
-                {{> article }}
-            {{else}}
-                <div class="article-subscribe">
-                    <div class="subscribe-content">
-                        {{#if @member}}
-                            <h2>{{t "This post is for paying subscribers only"}}</h2>
-                        {{else}}
-                            <h2>{{t "This post is for subscribers only"}}</h2>
-                        {{/if}}
-                        <p>{{t "You don't have access to this post at the moment, but if you upgrade your account you'll be able to see the whole post, as well as all the other posts in the archive! Subscribing only takes a few seconds and will give you immediate access."}}</p>
-                        {{#if @member}}
-                            {{> pricing-table }}
-                        {{else}}
-                            {{> subscribe-form }}
-                        {{/if}}
-                    </div>
-                </div>
-            {{/if}}
-        {{else}}
-            {{> article }}
-        {{/if}}
-    </div>
-
+   
 {{/post}}
 
-{{!-- The #contentFor helper here will send everything inside it up to the matching #block helper found in default.hbs --}}
-
-{{#contentFor "post-styles"}}
-    <link href="{{asset "built/css/extra-post.css"}}" rel="stylesheet" type="text/css">
-{{/contentFor}}
 
 {{#contentFor "post-scripts"}}
     <script src="{{asset "built/js/extra-post.js"}}"></script>

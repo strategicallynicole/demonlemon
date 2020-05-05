@@ -1,9 +1,7 @@
-    {{!-- Navigation for Small Screen --}}
-<div class="boxy col-md-3 col-md-offset-1 scheme-light liquid-blog-scheme-light bg-vulcan sidebar-container">
+	<div class="col-md-3 col-md-offset-1 sidebar-container">
 
 						<aside class="main-sidebar">
-
-							<div class="widget widget_search">
+	<div class="widget widget_search">
 								<form role="search" method="get" class="search-form" action="#">
 									<label>
 										<span class="screen-reader-text">Search for:</span>
@@ -11,11 +9,10 @@
 									</label>
 									<input type="submit" class="search-submit" value="Search">
 								</form>
-							</div><!-- /.widget_search -->
-
-                              <div class="scheme-light widget widget_categories">
+							</div>
+ <div class="scheme-light widget widget_categories">
 								<h3 class="widget-title">Quick Links</h3>
-								<ul class="whitish">
+								<ul class="">
                                     
             {{#if @site.navigation}}
             {{navigation}}
@@ -23,23 +20,20 @@
 
         </ul>
         </div>
-
-							<div class="whitish scheme-light widget widget_categories">
+							<div class="widget widget_categories">
 								<h3 class="widget-title">Tags</h3>
 								<ul>
-					{{#get 'tags' limit='all' include='count.posts' order='count.posts desc'}}
+									{{#get 'tags' limit='all' include='count.posts' order='count.posts desc'}}
 
 
                     {{#foreach tags}}
                     									<li><a class="whitish" href="{{url}}">{{name}} </a>     ({{plural ../pagination.total empty='posts' singular='% post' plural='% posts'}})
- </li>    {{/foreach}}
-                {{/get}}
-
-
-
+ </li>    {{/foreach}}{{/get}}
+          
 								</ul>
 							</div><!-- /.widget_categories -->
 
+								
 <h3 class="widget-title"> get updates by email </h3>               <p>   <small>we promise to only send the juciest of emails.  seriously.  our emails rock.</small></p>
 <div style="width: 95%;">
            <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/shell.js"></script>
@@ -52,7 +46,3 @@
 						</aside>
 
 					</div><!-- /.col-md-3 col-md-offset-1 sidebar-container -->
-
-
-
-    

@@ -1,20 +1,70 @@
 {{!< default}}
 
-
-
-{{! The tag above means: Insert everything in this file into the {body} of the default.hbs template. }}
-
-{{! Latest Post - Go to partials/latestPost.hbs to view this partial. }}
-{{> "latestPost"}}
-
-<div id="main">
-    <div class="container">
+<div class="titlebar-inner">
+				<div class="container titlebar-container">
+					<div class="row titlebar-container">
+						<div class="titlebar-col col-md-12">
+							<h1 data-fittext="true" data-fittext-options='{ "maxFontSize": 80, "minFontSize": 32 }'>with Sidebar</h1>
+							<a class="titlebar-scroll-link" href="#content" data-localscroll="true"><i class="fa fa-angle-down"></i></a>
+						</div><!-- /.titlebar-col -->
+					</div><!-- /.titlebar-row -->
+				</div><!-- /.titlebar-container -->
+			</div><!-- /.titlebar-inner -->
+			
+		</div><!-- /.titlebar -->
+	
+		<main id="content " style="background: url('{{asset "img/bg.png"}}'); background-size: cover; background-repeat: no-repeat;" class="content">
+			
 {{> "particles"}}
+			<div class="container" >
+				<div class="row">
 
-        {{! Post Loop - Go to partials/postLoop.hbs to view this partial. }}
-        {{> "postLoop"}}
-    </div>
-</div>
+					<div class="col-md-8">
 
-{{! Pagination - Go to partials/pagination.hbs to view this partial. }}
+						<div class="liquid-blog-posts">
+							<div class="liquid-blog-grid liquid-blog-style-classic row">
+ {{#get "posts" filter="featured:false" limit="6" include="tags"}}
+                 {{#foreach posts}}
+								{{> "layout/post-card" }}
+{{/foreach}}
 {{pagination}}
+
+							</div><!-- /.liquid-blog-grid liquid-blog-style-classic row -->
+						</div><!-- /.liquid-blog-posts -->
+
+					</div><!-- /.col-md-8 -->
+
+				{{> "layout/sidebar"}}
+{{pagination}}
+      {{/get}}
+				</div><!-- /.row -->
+			</div><!-- /.container -->
+        </main>
+
+		
+	
+
+
+
+{{#contentFor "post-scripts"}}
+    <script src="{{asset "built/js/extra-post.js"}}"></script>
+    <script>
+        $(document).ready(function() {
+            $("article").fitVids();
+            $( "table" ).wrap("<div class='table-responsive'></div>");
+            $(".kg-gallery-image > img").wrap("<a data-gallery='collection-gallery' data-toggle='lightbox' class='lb-item' href=''></a>");
+            $(".lb-item").each(function(e, t) {
+               $(this).attr("href", $(this).children("img").attr("src"))
+            });
+            $(document).on("click", '[data-toggle="lightbox"]', function(e) {
+               e.preventDefault(), $(this).ekkoLightbox()
+            });
+            document.querySelectorAll(".kg-gallery-image img").forEach(function(e) {
+               var t = e.closest(".kg-gallery-image"),
+                   a = e.attributes.width.value / e.attributes.height.value;
+               t.style.flex = a + " 1 0%"
+            })
+       });
+   </script>
+{{/contentFor}}
+
