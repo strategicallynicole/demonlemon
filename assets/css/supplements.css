@@ -12,25 +12,63 @@
         transition: all 0.5s ease;
 
 }
+.fadpurple {
+  --fa-secondary-color: #BF92FF; 
+  --fa-primary-color: #fff;"
+}
 
 div.transbox {
     margin: 30px;
     background-color: #ffffff;
     opacity: 0.6;
   }
+  .main-nav .link-txt .txt:hover, .main-nav .link-txt .txt:focus {
+ 
+    color: #ffffff !important;
+}
 
+.bg-dark {
+  background: url('/assets/img/bg.png') !important;
+  background-size: cover !important;
+  background-repeat: no-repeat;
+}
+.gradient.gradient2 {
+  background: rgba(15,15,15,.55);
+  min-height: 250px;
+}
+#main .post, .form-template, article>*, article pre[class*=language-] {
+  margin-bottom: 2.5rem;
+  min-height: 250px; 
+}
+.post-presentation .post-tags a:hover, .post-presentation .post-tags a:focus, #main .post.second-post.post-presentation h3:hover, .post-presentation h3>a:hover, #main .post.second-post.post-presentation h3:focus, .post-presentation h3>a:focus {
+
+  color: #BF92FF !important;
+}
+
+.main-nav .link-txt .txt, .main-nav .link-txt .txt {
+ 
+  color: #FFF !important;
+  font-family: 'Fjalla One';
+}
   .box-shadow-dark   {
       /*box-shadow: 10px 10px 5px #c4c4c4;
       transition: all 0.5s ease;*/
      /* background: #000 !important;
 */
   }
-  .ld-flipbox-wrap, .liquid-blog-item {
+  .ld-flipbox-wrap {
     box-shadow: 10px 10px 10px #0e1111 !important;
   }
 .liquid-blog-item {
   padding: 25px;
   color: #212121;
+  bg-color: #efefef;
+  box-shadow: 20px 20px 20px #000000 !important;
+
+}
+.liquid-blog-item span.btn-txt:focus, .liquid-blog-item span.btn-txt:hover {
+  color: #212121 !important;
+
 }
 .liquid-blog-item .h1, .liquid-blog-item h1, .liquid-blog-item .h2, .liquid-blog-item h2, .liquid-blog-item .h3, .liquid-blog-item h3, .liquid-blog-item .h4, .liquid-blog-item h4  {
   padding: 25px;
@@ -41,6 +79,13 @@ div.transbox {
     --color-primary: #7254c9 !important;
     --color-secondary: #7254c9 !important;
 }
+
+.main-nav>li>a {
+  font-size: 1.5rem !important; }
+
+.main-nav.link-txt.txt:hover, .main-nav.link-txt.txt:focus, {
+    color: #BF92FF !important; 
+  }
 
 .main-nav>li>a .link-ext {
     background: #7254c9 !important;
@@ -56,7 +101,13 @@ div.transbox {
 .nav-trigger.scheme-light.fill-solid .bars {
   background-color: #494949 !important;
 }
-
+.nav {
+  display: flex;
+  flex-wrap: nowrap;
+  padding-left: 0;
+  margin-bottom: 0;
+  list-style: none;
+}
 body {
   font-family: Noto Sans;
   font-weight: 400;

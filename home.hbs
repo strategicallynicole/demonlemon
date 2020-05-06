@@ -2,13 +2,17 @@
 {{!< default}}
 
 {{#contentFor "page-styles"}}
-    <link rel="stylesheet" href="{{site.baseurl}}/assets/css/themes/wave.css" />
+    <link rel="stylesheet" href="{{asset "css/themes/wave.css"}}" />
+		<link rel="stylesheet" href="{{asset "css/theme-vendors.min.css"}}" />
+ <link rel="stylesheet" href="{{asset "css/theme.css"}}" />
 {{/contentFor}}
 {{#contentFor "page-scripts"}}
         <script src="{{asset "vendors/pagePiling/dist/jquery.pagepiling.min.js"}}"></script>
+		   <script src="{{asset "js/theme-vendors.js"}}"></script>
+   <script src="{{asset "js/theme.min.js"}}"></script>
 {{/contentFor}}
 {{#contentFor "body-parts"}}
-lqd-stack-buttons-style-2 header-style-fullscreen bg-vulcan
+lqd-stack-buttons-style-2 header-style-fullscreen bg-dark
 {{/contentFor}}
 
 			<main id="content" class="content" data-liquid-stack="true" data-stack-options='{"navigation":false,"prevNextButtons":true,"pageNumber":true,"prevNextLabels":{"prev":"Previous","next":"Next"},"effect":"fadeScale", "disableOnMobile": false}'>
@@ -17,3 +21,5 @@ lqd-stack-buttons-style-2 header-style-fullscreen bg-vulcan
 				{{> "content/bobtheblob-homepage"}}
 				{{> "content/dragon-homepage"}}
 			</main><!-- /#content.content -->
+
+   

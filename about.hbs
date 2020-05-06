@@ -16,3 +16,9 @@
 		{{> "ui/latest-posts-2"}}
 
 	    </main><!-- /#content.content -->
+
+
+   {{#contentFor "page-scripts"}}
+   <script src="{{asset "js/theme-vendors.js"}}"></script>
+   <script src="{{asset "js/theme.min.js"}}"></script>
+{{/contentFor}}

@@ -11,10 +11,6 @@ collections:
     permalink: /blog/{slug}/
     template: 
       - index
-  /page/:
-    permalink: /page/{slug}/
-    template: 
-      - page
   /about/:
     permalink: /about/
     template: 

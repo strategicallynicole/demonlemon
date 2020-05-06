@@ -1,9 +1,18 @@
 {{!< default}}
 {{#contentFor "page-styles"}}
-    <link rel="stylesheet" href="{{site.baseurl}}/assets/css/themes/original.css" />
-	    <link href="{{asset "built/css/extra-post.css"}}" rel="stylesheet" type="text/css">
-    <link rel="stylesheet" href="{{@site.url}}/assets/css/themes/freelancer.css" />
 
+    <link href="{{asset "built/css/extra-post.css"}}" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" href="{{asset "css/themes/freelancer.css"}}" />
+	<link rel="stylesheet" href="{{asset "css/theme-vendors.min.css"}}" />
+ <link rel="stylesheet" href="{{asset "css/theme.css"}}" />
+
+{{/contentFor}}
+{{#contentFor "page-scripts"}}
+		   <script src="{{asset "js/theme-vendors.js"}}"></script>
+   <script src="{{asset "js/theme.min.js"}}"></script>
+{{/contentFor}}
+{{#contentFor "body-parts"}}
+lqd-stack-buttons-style-2 header-style-fullscreen bg-dark
 {{/contentFor}}
 
 {{! The tag above means: Insert everything in this file into the {body} of the default.hbs template. }}
@@ -80,7 +89,7 @@
 								<span class="tags-links">
 								{{#foreach tags limit="all"}}
 
-             	<a href="{{url}}" rel="{{name}}"></><i class="fad fa-tags"></i> {{name}}</a>       {{/foreach}}
+             	<a href="{{url}}" rel="{{name}}"><i class="fad fa-tags"></i> {{name}}</a>       {{/foreach}}
 
 								</span>
 
