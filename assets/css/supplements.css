@@ -12,7 +12,13 @@
         transition: all 0.5s ease;
 
 }
-
+.navbar-brand img {
+  max-width: 60% !important;
+  height: auto;
+} 
+.main-header .navbar-header {
+  background-color: transparent !important;
+}
 
 .fadpurple {
   --fa-secondary-color: #BF92FF; 
