@@ -1,13 +1,14 @@
 {
   "name": "demonlimes",
   "description": "Ghost Blog",
-  "version": "1.4.0",
+  "version": "1.5.0",
   "engines": {
     "ghost": ">=3.0.0",
     "ghost-api": "v3"
   },
   "author": "Nicole Choman",
     "email": "n@oakwave.com",
+    "author.email": "n@oakwave.com",
   "scripts": {
     "dev": "gulp",
     "zip": "gulp zip",
