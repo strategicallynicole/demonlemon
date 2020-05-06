@@ -5,10 +5,6 @@ routes:
   /about/:
     data: page.about
     template: about
-  /schedule/:
-    data: page.schedule
-    template: schedule
-
 collections:
   /blog/:
     permalink: /blog/{slug}/
