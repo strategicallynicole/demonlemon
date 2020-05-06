@@ -1,12 +1,13 @@
 {
-  "name": "valkyrie",
+  "name": "demonlimes",
   "description": "Ghost Blog",
   "version": "1.4.0",
   "engines": {
     "ghost": ">=3.0.0",
     "ghost-api": "v3"
   },
-  "author": "Diego Balmaceda <designxaes@gmaail.com>",
+  "author": "Nicole Choman",
+    "email": "n@oakwave.com",
   "scripts": {
     "dev": "gulp",
     "zip": "gulp zip",

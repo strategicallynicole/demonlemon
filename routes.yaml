@@ -1,20 +1,19 @@
 routes:
   /:
-    template: 
-      - home
-  /home/:
-    controller: channel
-    template: 
-      - intro
+    data: page.home
+    template: home
+  /about/:
+    data: page.about
+    template: about
+  /schedule/:
+    data: page.schedule
+    template: schedule
+
 collections:
   /blog/:
     permalink: /blog/{slug}/
-    template: 
-      - index
-  /about/:
-    permalink: /about/
-    template: 
-      - about
+    template: index
+
 taxonomies:
   tag: /tag/{slug}/
   author: /author/{slug}/

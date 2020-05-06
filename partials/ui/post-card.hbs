@@ -1,23 +1,22 @@
 
 
-	<div class="lqd-column col-md-3 col-sm-6 masonry-item">
+	<div class="text-black lqd-column col-md-3 col-sm-6 masonry-item bg-center bg-cover">
 										<article class="liquid-lp">
 
-											<figure class="liquid-lp-media">
-												<a href="{{url}}">
-													        {{#if feature_image}} <img src="{{feature_image}}"{{/if}} alt="title">
-												</a>
-											</figure>
+											<a href="{{url}}">	<figure {{#if feature_image}} style="background-image: url('{{feature_image}}') !important; background-size: cover; background-positiion: top center; background-repeat: no-repeat;"{{/if}} class="liquid-lp-media">
+											
+												
+											</figure></a>
 										
 											<header class="liquid-lp-header">
 												<ul class="liquid-lp-category">
 
 													  {{#foreach tags limit="3"}}
-                      <li><i class="fad fa-tags"></i><a class=" btn btn-underlined text-uppercase font-size-12 font-weight-bold ltr-sp-2 color-secondary lqd-unit-animation-done" href="{{url}}">{{name}}</a></li>
+                      <li><i class="fad fa-tags"></i>&nbsp;<a class=" btn btn-underlined text-uppercase font-size-12 font-weight-bold ltr-sp-2 color-secondary lqd-unit-animation-done" href="{{url}}">{{name}}</a></li>
                     {{/foreach}}
 												</ul>
-												<h2 class="liquid-lp-title h5 text-uppercase font-weight-bold"><a href="{{url}}">{{title}}</a></h2>
-												<time class="liquid-lp-date font-style-italic" datetime="{{date}}"><i class="fad fa-calendar"></i>{{date}}</time>
+												<h2 class="liquid-lp-title h5 text-uppercase font-weight-bold text-black"><a href="{{url}}">{{title}}</a></h2>
+												<time class="liquid-lp-date font-style-italic" datetime="{{date}}"><i class="fad fa-calendar"></i> &nbsp;{{date}}</time>
                                              
 											</header>
 										

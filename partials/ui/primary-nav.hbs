@@ -29,7 +29,7 @@
 										
 										<ul class="main-nav main-nav-hover-underline-1 nav align-items-lg-stretch justify-content-lg-center main-nav-hover-underline-1 main-nav-fullscreen-style-1">
 											<li>
-												<a href="#">
+												<a href="https://www.oakwave.com">
 													<span class="link-icon"></span>
 													<span class="link-txt">
 														<span class="link-ext"></span>
@@ -38,16 +38,7 @@
 												</a>
 											</li>
 											<li>
-												<a href="#">
-													<span class="link-icon"></span>
-													<span class="link-txt">
-														<span class="link-ext"></span>
-														<span class="txt">Portfolio</span>
-													</span>
-												</a>
-											</li>
-											<li>
-												<a href="#">
+												<a href="{{@site.url slug="about"}}">
 													<span class="link-icon"></span>
 													<span class="link-txt">
 														<span class="link-ext"></span>
@@ -56,7 +47,7 @@
 												</a>
 											</li>
 											<li>
-												<a href="#">
+												<a href="{{@site.url slug="blog"}}">
 													<span class="link-icon"></span>
 													<span class="link-txt">
 														<span class="link-ext"></span>
@@ -65,7 +56,16 @@
 												</a>
 											</li>
 											<li>
-												<a href="#">
+												<a href="{{@site.url slug="schedule"}}">
+													<span class="link-icon"></span>
+													<span class="link-txt">
+														<span class="link-ext"></span>
+														<span class="txt">Schedule a Call</span>
+													</span>
+												</a>
+											</li>
+											<li>
+												<a href="{{@site.url slug="contact"}}">
 													<span class="link-icon"></span>
 													<span class="link-txt">
 														<span class="link-ext"></span>
@@ -76,11 +76,7 @@
 										</ul>
 
 										<div class="header-module">
-											<ul class="social-icon scheme-white social-icon-md">
-												<li><a href="#" target="_blank"><i class="fa fa-facebook"></i></a></li>
-												<li><a href="#" target="_blank"><i class="fa fa-twitter"></i></a></li>
-												<li><a href="#" target="_blank"><i class="fa fa-behance"></i></a></li>
-											</ul>
+										{{> "brand/social-icons"}}
 										</div><!-- /.header-module -->
 
 									</div><!-- /.collapse -->

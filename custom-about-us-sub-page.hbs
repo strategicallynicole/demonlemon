@@ -1,16 +1,19 @@
 {{!< default}}
 {{#contentFor "page-styles"}}
-   <link href="{{asset "built/css/extra-post.css"}}" rel="stylesheet" type="text/css">
+
+    <link href="{{asset "built/css/extra-post.css"}}" rel="stylesheet" type="text/css">
 	<link rel="stylesheet" href="{{asset "css/themes/freelancer.css"}}" />
 	<link rel="stylesheet" href="{{asset "css/theme-vendors.min.css"}}" />
  <link rel="stylesheet" href="{{asset "css/theme.css"}}" />
-  <link rel="stylesheet" href="{{asset "css/errors.css"}}" />
+
 {{/contentFor}}
 {{#contentFor "page-scripts"}}
-<script src="{{asset "js/theme-vendors.js"}}"></script>
+		   <script src="{{asset "js/theme-vendors.js"}}"></script>
    <script src="{{asset "js/theme.min.js"}}"></script>
 {{/contentFor}}
-
+{{#contentFor "body-parts"}}
+lqd-stack-buttons-style-2 header-style-fullscreen bg-dark
+{{/contentFor}}
 
 {{! The tag above means: Insert everything in this file into the {body} of the default.hbs template. }}
 
@@ -20,33 +23,32 @@
 
 		<main id="content" class="content py-0">
 
-			<div class="blog-single-cover scheme-light" data-fullheight="true" data-inview="true" data-inview-options='{ "onImagesLoaded": true }'">
 
-				<figure class="blog-single-media" data-responsive-bg="true" data-parallax="true" data-parallax-options='{ "parallaxBG": true, "triggerHook": "onLeave" }' data-parallax-from='{ "translateY": "0%" }' data-parallax-to='{ "translateY": "20%" }'>
-					{{#if feature_image}}<img src="{{feature_image}}" alt="{{title}}">{{else}}<img src="{{asset "img/bgfull.png"}}" alt="{{title}}">{{/if}}
-				</figure>
 
-				<div class="blog-single-details">
+                         
 
-					<div class="container">
-						<div class="row">
-							<div class="col-md-12">
+<div class="titlebar-inner text-center bg-center bg-cover" style="background: url({{asset "img/bgfull.png"}})">
+				<div class="container titlebar-container">
+					<div class="row titlebar-container">
+						<div class="titlebar-col col-md-12 text-white">
+							<h1 data-fittext="true" data-fittext-options='{ "maxFontSize": 60, "minFontSize": 32 }'>{{title}}</h1>
+						
+    <nav role="navigation" aria-label="Breadcrumbs" class="breadcrumbs">
+								<ol class="breadcrumb reset-ul inline-nav comma-sep-li">
+									<li class="breadcrumb-item"><a href="https://www.oakwave.com"><span>Home</span></a></li>
+                                    									<li class="breadcrumb-item"><a href="https://www.oakwave.com/about"><span>About</span></a></li>
 
-								<header class="entry-header blog-single-header" data-parallax="true" data-parallax-to='{ "opacity": 0, "translateY": "30%" }' data-parallax-options='{ "triggerHook": "0.3" }'>
-									<h1 class="blog-single-title entry-title text-center h1" data-split-text="false" data-split-options='{ "type": "lines" }'>{{title}}</h1>
-												
+									<li class="breadcrumb-item active"><span>{{title}}</span></li>
+								</ol>
+							</nav>			</div><!-- /.titlebar-col -->
+					</div><!-- /.titlebar-row -->
+				</div><!-- /.titlebar-container -->
+			</div><!-- /.titlebar-inner -->
 
-								</header><!-- /.blog-single-header -->
+		</div><!-- /.titlebar -->   
 
-							</div><!-- /.col-md-6 -->
-						</div><!-- /.row -->
-					</div><!-- /.container -->
-
-				</div><!-- /.blog-single-details -->
-
-			</div><!-- /.blog-single-cover -->
-
-			<article class="mt-6 mb-6 blog-single bg-dark scheme-dark liquid-blog-scheme-dark">
+			<article class="mt-6 blog-single bg-dark scheme-dark liquid-blog-scheme-dark">
+				{{> "particles"}}
 				<div class="container">
 
 
@@ -54,18 +56,18 @@
 
 								{{{content}}}
 					<!-- /.blog-single-content entry-content -->
-						<div style="height: 25px; width: 25%; margin: 0 auto; padding-bottom: 25px; border-bottom-style:dotted; border-color: #7254c9; border-width: 2px;" ></div>
-						
-						</div><!-- /.col-md-8 -->
+					
+<div style="padding-bottom: 40px;"></div>
 
-						
+
+					</div><!-- /.row -->
+				</div><!-- /.container -->
+
 						</div>
-							
-
+					
 
 
 				</div><!-- /.comments-area -->
-
 
 			</article><!-- /.blog-single -->
 

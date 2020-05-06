@@ -18,7 +18,7 @@
         <link rel="dns-prefetch" href="https://code.jquery.com">
         <link rel="dns-prefetch" href="https://fonts.googleapis.com">
 
-        <link rel="sitemap" type="application/xml" title="Sitemap" href="{{@site.url}}/sitemap.xml" />
+        <link rel="sitemap" type="application/xml" title="Sitemap" href="https://www.oakwave.coo/sitemap.xml" />
         <meta property="og:locale" content="en_US" />
 
 
@@ -29,16 +29,17 @@
         <meta name="twitter:creator" content="{{@site.twitter}}">
    
         <link rel="icon" href="{{asset "images/favicon.png"}}" type="image/x-icon"/>
-        <link rel="stylesheet" href="{{asset "theme-vendors.min.css"}}" />
+        <link rel="stylesheet" href="{{asset "css/theme-vendors.min.css"}}" />
         <link rel="stylesheet" href="{{asset "css/theme.css"}}" />
         <link rel="stylesheet" href="{{asset "css/supplements.css"}}" />
         {{{block "post-styles"}}}
 
         {{{block "page-styles"}}}
-        <link rel="alternate" type="application/rss+xml" href="{{url absolute="true"}}/feed.xml">
+        <link rel="alternate" type="application/rss+xml" href="https://www.oakwave.com/blog/rss/">
         <!-- Head Libs -->
         <script async src="{{asset "vendors/modernizr.min.js"}}"></script>
         <script src="https://kit.fontawesome.com/dd47f1ac1c.js" crossorigin="anonymous"></script>
+
         {{> "vendor/fbpixel"}}
         {{!> "vendor/quora"}}
         {{> "vendor/google-analytics"}}
@@ -48,16 +49,16 @@
 
     <body class="{{body_class}} {{{block "body-parts"}}}" data-mobile-nav-trigger-alignment="right" data-mobile-nav-align="left" data-mobile-nav-style="modern" data-mobile-nav-shceme="gray" data-mobile-header-scheme="gray" data-mobile-nav-breakpoint="1199">
 	<div id="wrap">
-{{navigation}}        
-    {{{body}}}
-    {{#has "slug=schedule"}}{{else}}
-            {{> "ui/footer"}}{{/has}}
-        </div> 
+{{navigation}}      
+    {{{body}}}				
+  {{> "ui/footer"}}
+        </div>           
+
     {{> "layout/global-scripts"}}
     {{{block "post-scripts"}}}
         {{{block "page-scripts"}}}
 
             {{ghost_foot}}
-
+<!--{{> "particles"}} --> 
     </body>        
 </html>
