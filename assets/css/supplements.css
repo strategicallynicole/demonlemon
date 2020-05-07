@@ -14,11 +14,9 @@
 }
 
 @media screen and (max-width: 1199px) {
- 
     .liquid-counter-xl .liquid-counter-element {
         font-size: 1.75em !important;
     }
-   
 }
 
 .fadpurple {
@@ -26,14 +24,11 @@
     --fa-primary-color: #fff;
 }
 
-
-
 div.transbox {
     margin: 30px;
     background-color: #ffffff;
     opacity: 0.6;
 }
-
 
 .bg-dark {
     background: url('/assets/img/bg.png') !important;
@@ -108,26 +103,27 @@ article pre[class*=language-] {
     --color-secondary: #7254c9 !important;
 }
 
-@media screen and (max-width: 1199px){
-[data-mobile-nav-style=modern]:before {
-    content: '';
-    display: inline-block;
-    width: 100vw;
-    height: 100vh;
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: -1;
-    opacity: 0;
-    transform: scale(1.75);
-    background-image: linear-gradient(to top left, #7245c9 0%, #212121 100%);
-    transition: opacity 0.3s, transform 0.3s;
-    transition-delay: 0.05s;
-}}
+@media screen and (max-width: 1199px) {
+    [data-mobile-nav-style=modern]:before {
+        content: '';
+        display: inline-block;
+        width: 100vw;
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        opacity: 0;
+        transform: scale(1.75);
+        background-image: linear-gradient(to top left, #7245c9 0%, #212121 100%);
+        transition: opacity 0.3s, transform 0.3s;
+        transition-delay: 0.05s;
+    }
+}
+
 .main-nav.link-txt.txt:hover,
 .main-nav.link-txt.txt:focus,
-{
-}
+{}
 
 .main-nav>li>a .link-ext {
     background: #7254c9 !important;
@@ -141,9 +137,7 @@ article pre[class*=language-] {
     font-size: 5.75em;
 }
 
-.nav-trigger.scheme-light.fill-solid .bars {
-}
-
+.nav-trigger.scheme-light.fill-solid .bars {}
 
 body {
     font-family: Noto Sans;
