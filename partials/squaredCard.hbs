@@ -1,6 +1,6 @@
 <div class="col-xs-12 col-sm-12 col-md-6 col-lg-4">
     <div class="post post-square lazy post-presentation {{#is "paged"}}animated fadeInUp{{/is}} {{#if feature_image}}background{{else}}background-pattern{{/if}}"
-{{#if feature_image}} style="background: url('{{feature_image}}'); background-size: contain;" data-src="{{feature_image}}"{{/if}}>        <div class="gradient gradient2 d-flex align-items-center">
+{{#if feature_image}} style="background: url('{{feature_image}}'); background-size: contain; background-repeat: no-repeat; max-height: 500px;"  data-src="{{feature_image}}"{{/if}}>        <div class="gradient gradient2 d-flex align-items-center">
             <div class="float-top">
                 <div href="#" class="share-icons d-none d-sm-block">
                     <div class="icon-container">
@@ -13,13 +13,13 @@
                 </div>
             </div>
             <div class="post-info">
-                <div class="separator"></div>
                 <h3><a href="{{url}}">{{title}}</a></h3>
                 <div class="post-tags">
                     {{#foreach tags limit="2"}}
                         <i class="fad fa-tags fadpurple"></i> <a href="{{url}}">{{name}}</a>
                     {{/foreach}}
                 </div>
+                <p class="text-white">{{excerpt}}</p>
             </div>
             <div class="float-bottom fadpurple">
               <i class="fad fa-clock fadpurple"></i>  <h3 style="font-size: small; font-family: 'Noto Sans' !important;"><a href="{{url}}">  {{reading_time}}</a></h3>

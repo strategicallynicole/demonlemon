@@ -1,5 +1,5 @@
 <div class="row" id="post-loop-wrapper">
-    {{#foreach posts visibility="all"}}
+    {{#foreach posts visibility="all" limit="5"}}
         {{! Use firstCard partial if current post is the first one }}
         {{#if @first}}{{> firstCard}}{{/if}}
 
