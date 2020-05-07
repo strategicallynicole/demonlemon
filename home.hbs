@@ -1,26 +1,19 @@
-
 {{!< default}}
-
-{{#contentFor "styles"}}
-
- 	<link rel="stylesheet" href="{{asset "css/themes/wave.css"}}" />
-
-
-{{/contentFor}}
-{{#contentFor "scripts"}}
-           <script src="{{asset "vendors/pagePiling/dist/jquery.pagepiling.min.js"}}"></script>
-
-   
-{{/contentFor}}
-{{#contentFor "body-parts"}}
-lqd-stack-buttons-style-2 header-style-fullscreen bg-dark
-{{/contentFor}}
-
 			<main id="content" class="content" data-liquid-stack="true" data-stack-options='{"navigation":false,"prevNextButtons":true,"pageNumber":true,"prevNextLabels":{"prev":"Previous","next":"Next"},"effect":"fadeScale", "disableOnMobile": false}'>
 				{{> content/cthulu-homepage}}
 				{{> content/ducky-homepage}}
 				{{> content/shark-homepage}}
 				{{> content/dragon-homepage}}
 			</main><!-- /#content.content -->
-
+{{#contentFor "styles"}}
+ 	<link rel="stylesheet" href="{{asset "css/themes/wave.css"}}" />
+{{/contentFor}}
+{{#contentFor "scripts"}}
+           <script src="{{asset "vendors/pagePiling/dist/jquery.pagepiling.min.js"}}"></script>
+		    <script src="{{asset "js/theme-vendors.js"}}"></script>
+  			<script src="{{asset "js/theme.min.js"}}"></script>
+{{/contentFor}}
+{{#contentFor "body-parts"}}
+lqd-stack-buttons-style-2 header-style-fullscreen bg-dark
+{{/contentFor}}
    
