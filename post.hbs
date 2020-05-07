@@ -1,211 +1,81 @@
 {{!< default}}
 {{#post}}
-
-
-
-		<main id="content" class="content py-0">
-
-			<div class="blog-single-cover scheme-light" data-fullheight="true" data-inview="true" data-inview-options='{ "onImagesLoaded": true }' style="background-color: #212121;">
-
-				<figure class="blog-single-media" data-responsive-bg="true" data-parallax="true" data-parallax-options='{ "parallaxBG": true, "triggerHook": "onLeave" }' data-parallax-from='{ "translateY": "0%" }' data-parallax-to='{ "translateY": "20%" }'>
-					<img src="{{feature_image}}" alt="{{title}}">
-				</figure>
-
-				<div class="blog-single-details">
-
-					<div class="container">
-						<div class="row">
-							<div class="col-md-6">
-
-								<header class="entry-header blog-single-header" data-parallax="true" data-parallax-to='{ "opacity": 0, "translateY": "30%" }' data-parallax-options='{ "triggerHook": "0.3" }'>
-									<h1 class="blog-single-title entry-title h2" data-split-text="true" data-split-options='{ "type": "lines" }'>The small change that creates massive results in your life</h1>
-									<div class="post-meta">
-										<span class="byline">
-											<span class="block text-uppercase ltr-sp-1">Reading Time:</span>
-											<span class="author vcard">
-												<a class="url fn n" href="{{url}}"><i class="fad fa-clock"></i>&nbsp; &nbsp; {{reading_time}}</a>
-											</span>
-										</span>
-										<span class="posted-on">
-											<span class="block text-uppercase ltr-sp-1">Published on:</span>
-											<a href="{{url}}" rel="bookmark">
-												<time class="entry-date published updated" datetime="{{date}}"><i class="fad fa-calendar"></i>&nbsp; &nbsp; {{date}}</time>
-											</a>
-										</span>
-										<span class="cat-links">
-											<span class="block text-uppercase ltr-sp-1">Published in:</span>
-											{{#foreach tags limit="1"}}
-              <i class="fad fa-tags"></i>&nbsp;&nbsp;<a rel="category tag" class="tn btn-underlined text-uppercase font-size-12 font-weight-bold ltr-sp-2 color-secondary lqd-unit-animation-done" href="{{url}}">{{name}}</a>&nbsp;&nbsp;
-                    {{/foreach}}
-										</span>
-
-									</div><!-- /.post-meta -->
-									<div class="blog-single-details-extra">
-
-									</div><!-- /.blog-single-details-extra -->
-								</header><!-- /.blog-single-header -->
-
-							</div><!-- /.col-md-6 -->
-						</div><!-- /.row -->
-					</div><!-- /.container -->
-
-				</div><!-- /.blog-single-details -->
-
-			</div><!-- /.blog-single-cover -->
-
-			<article class="mt-6 mb-6 blog-single bg-dark scheme-dark liquid-blog-scheme-dark">
-				<div class="container">
-
-
-							<div class="blog-single-content entry-content pull-up expanded">
-
-								{{{content}}}
-					<!-- /.blog-single-content entry-content -->
-						<div style="height: 25px; width: 25%; margin: 0 auto; padding-bottom: 25px; border-bottom-style:dotted; border-color: #7254c9; border-width: 2px;" ></div>
-							<footer class="blog-single-footer entry-footer">
-
-								<span class="tags-links">
-								{{#foreach tags limit="all"}}
-
-             	<a href="{{url}}" rel="{{name}}"><i class="fad fa-tags"></i> {{name}}</a>       {{/foreach}}
-
+<main id="content" class="content py-0">
+	<div class="blog-single-cover scheme-light bg-center" data-fullheight="true" data-inview="true"
+		data-inview-options='{ "onImagesLoaded": true }'>
+		<figure class="blog-single-media" data-responsive-bg="true" data-parallax="true"
+			data-parallax-options='{ "parallaxBG": true, "triggerHook": "onLeave" }'
+			data-parallax-from='{ "translateY": "0%" }' data-parallax-to='{ "translateY": "20%" }'>
+			<img src="{{feature_image}}" alt="{{title}}">
+		</figure>
+		<div class="blog-single-details">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-6">
+						<header class="entry-header blog-single-header" data-parallax="true"
+							data-parallax-to='{ "opacity": 0, "translateY": "30%" }'
+							data-parallax-options='{ "triggerHook": "0.3" }'>
+							<h1 class="blog-single-title entry-title h2" data-split-text="true"
+								data-split-options='{ "type": "lines" }'>{{title}}</h1>
+							<div class="post-meta">
+								<span class="byline">
+									<span class="block text-uppercase ltr-sp-1">Reading Time:</span>
+									<span class="author vcard">
+										<a class="url fn n" href="{{url}}"><i class="fad fa-clock"></i>&nbsp; &nbsp;
+											{{reading_time}}</a>
+									</span>
 								</span>
-
-
-
-
-
-
-								<span class="share-links">
-									<span class="text-uppercase ltr-sp-1">Share On</span>
-									<ul class="social-icon circle branded social-icon-sm">
-											<li>
-												<a href="https://www.facebook.com/sharer/sharer.php?u={{url absolute="true"}}" onclick="window.open(this.href, 'facebook-share','width=580, height=300');return false;"><i class="fab fa-facebook-f"></i></a>
-											</li>
-											<li>
-                <a href="https://twitter.com/share?text={{encode title}}&amp;url={{url absolute="true"}}" onclick="window.open(this.href, 'twitter-share', 'width=580, height=300');return false;"><i class="fab fa-twitter"></i></a>
-											</li>
-											<li>
-												<a href="https://linkedin.com/sharearticle?mini=true&url={{url absolute="true"}}" onclick="window.open(this.href, 'linkedin-share', 'width=580, height=300');return false;"><i class="fab fa-linkedin"></i></a>
-											</li>
-										</ul>
-
-								</span><!-- /.share-links -->
-</footer>
-							{{#foreach authors}}
-							<div class="post-author">
-							
-								<div class="post-author-info clearfix">		
-								
-									<h3>Written By: <a href="{{url}}">{{name}}</a></h3>
-									<h6>{{location}} - </h6>
-									<ul class="social-icon circle branded social-icon-sm">
-											<li>
-												<a href="{{facebook}}"><i class="fab fa-facebook-f"></i></a>
-											</li>
-												<li>
-												<a href="{{twitter}}"><i class="fab fa-twitter"></i></a>
-											</li>
-												<li>
-												<a href="{{linkedin}}"><i class="fab fa-linkedin"></i></a>
-											</li>
-										</ul>
-									<p>{{bio}}</p>
-								</div><!-- /.post-author-info -->
-
-							</div><!-- /.post-author -->
-														{{/foreach}}
-</footer><!-- /.blog-single-footer entry-footer -->
-							<nav class="post-nav">
-								{{#prev_post}}
-								<div class="nav-previous">
-									<a href="{{url}}" rel="{{title}}">
-										<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="none" stroke="#444" stroke-width="2" x="0px" y="0px" viewBox="0 0 24 24" xml:space="preserve" width="24" height="24">
-											<g>
-												<line stroke-miterlimit="10" x1="22" y1="12" x2="2" y2="12" stroke-linejoin="miter" stroke-linecap="butt"></line>
-												<polyline stroke-linecap="square" stroke-miterlimit="10" points="9,19 2,12 9,5 " stroke-linejoin="miter"></polyline>
-											</g>
-										</svg>
-
-										<span class="screen-reader-text">Previous Article</span>
-										<span aria-hidden="true" class="nav-subtitle">Previous Article</span>
-										<span class="nav-title">{{title}}</span>
-
+								<span class="posted-on">
+									<span class="block text-uppercase ltr-sp-1">Published on:</span>
+									<a href="{{url}}" rel="bookmark">
+										<time class="entry-date published updated" datetime="{{date}}"><i
+												class="fad fa-calendar"></i>&nbsp; &nbsp; {{date}}</time>
 									</a>
-								</div>
-
-								{{/prev_post}}
-
-
-
-								{{#next_post}}
-								<div class="nav-next">
-									<a href="{{url}}" rel="{{title}}">
-										<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="none" stroke="#444" stroke-width="2" x="0px" y="0px" viewBox="0 0 24 24" xml:space="preserve" width="24" height="24">
-											<g transform="rotate(180 12,12) ">
-												<line stroke-miterlimit="10" x1="22" y1="12" x2="2" y2="12" stroke-linejoin="miter" stroke-linecap="butt"></line>
-												<polyline stroke-linecap="square" stroke-miterlimit="10" points="9,19 2,12 9,5 " stroke-linejoin="miter"></polyline>
-											</g>
-										</svg>
-										<span class="screen-reader-text">Next Article</span>
-										<span aria-hidden="true" class="nav-subtitle">Next Article</span>
-										<span class="nav-title">{{title}}</span>
-									</a>
-								</div>
-
-
-	{{/next_post}}
-
-							</nav><!-- /.post-nav -->
-							<div id="comments" class="comments-area">
-					{{> "disqus" shortname="www-oakwave-com"}}
-
-						</div><!-- /.col-md-8 -->
-
-					</div><!-- /.row -->
-				</div><!-- /.container -->
-						
-						</div>	</div>
-							
-
-
-
-				</div><!-- /.comments-area -->
-
-
-			</article><!-- /.blog-single -->
-
-		</main><!-- /#content.content -->
-
-
-
-
-
+								</span>
+								<span class="cat-links">
+									<span class="block text-uppercase ltr-sp-1">Published in:</span>
+									{{#foreach tags limit="1"}}
+									<i class="fad fa-tags"></i>&nbsp;&nbsp;<a rel="category tag"
+										class="tn btn-underlined text-uppercase font-size-12 font-weight-bold ltr-sp-2 color-secondary lqd-unit-animation-done"
+										href="{{url}}">{{name}}</a>&nbsp;&nbsp;
+									{{/foreach}}
+								</span>
+							</div><!-- /.post-meta -->
+							<!--<div class="blog-single-details-extra">-->
+						</header>
+					</div><!-- /.blog-single-details-extra -->
+				</div><!-- /.row -->
+			</div><!-- /.container -->
+		</div><!-- /.blog-single-details -->
+	</div><!-- /.blog-single-cover -->
+	<article class="blog-single bg-white scheme-dark liquid-blog-scheme-dark">
+		<div class="container">
+			<div class="blog-single-content entry-content pull-up expanded">
+				{{{content}}}
+				<!-- /.blog-single-content entry-content -->
+	
+				<footer class="blog-single-footer entry-footer">
+					<span class="tags-links">
+						{{#foreach tags limit="all"}}
+						{{> "ui/tagslist"}}
+						{{/foreach}}
+					</span>
+				{{> "ui/sharelinks"}}
+				</footer>
+				{{#foreach authors}}
+				{{> "layout/author-box"}}
+				{{/foreach}}
+				{{> "ui/next-prev-post"}}
+				{{> "ui/disqus"}}
+			</div><!-- /.row -->
+		</div><!-- /.container -->
+	</article><!-- /.blog-single -->
+</main><!-- /#content.content -->
 {{/post}}
-
-{{!-- The #contentFor helper here will send everything inside it up to the matching #block helper found in default.hbs --}}
-
 
 {{#contentFor "scripts"}}
 <script src="{{asset "js/theme-vendors.js"}}"></script>
 <script src="{{asset "js/theme.min.js"}}"></script>
-    <script src="{{asset "built/js/extra-post.js"}}"></script>
-    <script>
-        $(document).ready(function() {
-            $("article").fitVids();
-            $( "table" ).wrap("<div class='table-responsive'></div>");
-            $(".kg-gallery-image > img").wrap("<a data-gallery='collection-gallery' data-toggle='lightbox' class='lb-item' href=''></a>");
-            $(".lb-item").each(function(e, t) {
-               $(this).attr("href", $(this).children("img").attr("src"))
-            });
-            $(document).on("click", '[data-toggle="lightbox"]', function(e) {
-               e.preventDefault(), $(this).ekkoLightbox()
-            });
-            document.querySelectorAll(".kg-gallery-image img").forEach(function(e) {
-               var t = e.closest(".kg-gallery-image"),
-                   a = e.attributes.width.value / e.attributes.height.value;
-               t.style.flex = a + " 1 0%"
-            })
-       });
-   </script>
+<script src="{{asset "built/js/extra-post.js"}}"></script>
+<script src="{{asset "js/kg-gallery.js"}}"></script>
 {{/contentFor}}
