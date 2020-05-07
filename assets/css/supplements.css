@@ -12,17 +12,29 @@
         transition: all 0.5s ease;
 
 }
-.navbar-brand img {
-  max-width: 60% !important;
-  height: auto;
-} 
+
+@media screen and (max-width: 1199px){
 .main-header .navbar-header {
-  background-color: transparent !important;
+  background-color: #212121 !important;
+}
+.liquid-counter-xl .liquid-counter-element {
+  font-size: 1.75em !important;
 }
 
+.nav {
+  display: flex;
+  flex-wrap: wrap !important;
+
+}
+}
 .fadpurple {
   --fa-secondary-color: #BF92FF; 
   --fa-primary-color: #fff;"
+}
+
+[data-mobile-nav-style=modern]:before {
+    background-image: linear-gradient(to top left, #BF92FF 0%, #7254c9 100%) !important;
+
 }
 
 div.transbox {

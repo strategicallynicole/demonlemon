@@ -7,37 +7,41 @@
         <meta name="HandheldFriendly" content="True">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="theme-color" content="#7254c9"/>
-
-        {{! SITES DESCRIPTION }}
         <title>{{meta_title}} {{^is "home, paged"}}| {{@site.title}}{{/is}}</title>
         <meta name="description" content="{{@site.description}}">
+        <link rel="sitemap" type="application/xml" title="Sitemap" href="https://www.oakwave.coo/sitemap.xml" />
+        <meta property="og:locale" content="en_US" />
+        <link rel="alternate" type="application/rss+xml" href="https://www.oakwave.com/blog/rss/">
+        <link rel="icon" href="{{asset "images/favicon.png"}}" type="image/x-icon"/>
 
 
         {{! DNS PREFETCH }}
         <link rel="dns-prefetch" href="https://cdnjs.cloudflare.com">
         <link rel="dns-prefetch" href="https://code.jquery.com">
         <link rel="dns-prefetch" href="https://fonts.googleapis.com">
-
-        <link rel="sitemap" type="application/xml" title="Sitemap" href="https://www.oakwave.coo/sitemap.xml" />
-        <meta property="og:locale" content="en_US" />
-
-
+        
+        <!--Fonts -->
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Fjalla+One&display=swap">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+Sans:400,400italic,700,700italic&display=swap">
+
+
         <!-- Twitter cards -->
         <meta name="twitter:site"    content="{{@site.twitter}}">
         <meta name="twitter:creator" content="{{@site.twitter}}">
    
-        <link rel="icon" href="{{asset "images/favicon.png"}}" type="image/x-icon"/>
+        <!-- Global Styles -->
+
         <link rel="stylesheet" href="{{asset "css/theme-vendors.min.css"}}" />
         <link rel="stylesheet" href="{{asset "css/theme.css"}}" />
         <link rel="stylesheet" href="{{asset "css/supplements.css"}}" />
+        <link rel="stylesheet" href="{{asset "css/themes/original.css"}}" />
+        <link rel="stylesheet" href="{{asset "css/themes/freelancer.css"}}" />
 
-        {{{block "post-styles"}}}
+        <!-- Page Styles -->
 
-        {{{block "page-styles"}}}
-        <link rel="alternate" type="application/rss+xml" href="https://www.oakwave.com/blog/rss/">
-        <!-- Head Libs -->
+        {{{block "styles"}}}
+
+        <!-- Global Libs & Vendors -->
         <script async src="{{asset "vendors/modernizr.min.js"}}"></script>
         <script src="https://kit.fontawesome.com/dd47f1ac1c.js" crossorigin="anonymous"></script>
 
@@ -45,21 +49,31 @@
         {{!> "vendor/quora"}}
         {{> "vendor/google-analytics"}}
         {{!> "vendor/hotjar"}}
+
+        <!-- The Almighty Ghost Head -->
         {{ghost_head}}
+
     </head>
 
-    <body class="{{body_class}} {{{block "body-parts"}}}" data-mobile-nav-trigger-alignment="right" data-mobile-nav-align="left" data-mobile-nav-style="modern" data-mobile-nav-shceme="gray" data-mobile-header-scheme="gray" data-mobile-nav-breakpoint="1199">
-	<div id="wrap">
-{{navigation}}      
-    {{{body}}}				
-  {{> "ui/footer"}}
+
+    <body class="{{body_class}} {{{block "body-parts"}}}" 
+        data-mobile-nav-trigger-alignment="right" 
+        data-mobile-nav-align="left" 
+        data-mobile-nav-style="modern" 
+        data-mobile-nav-shceme="gray" 
+        data-mobile-header-scheme="gray" 
+        data-mobile-nav-breakpoint="1199"
+    >
+
+	    <div id="wrap">
+            {{navigation}}      
+            {{{body}}}				
+            {{> "layout/footer"}}
         </div>           
-
-    {{> "layout/global-scripts"}}
-    {{{block "post-scripts"}}}
-        {{{block "page-scripts"}}}
-
-            {{ghost_foot}}
-
+        
+        
+        {{> "layout/global-scripts"}}
+        {{{block "scripts"}}}
+        {{ghost_foot}}
     </body>        
 </html>

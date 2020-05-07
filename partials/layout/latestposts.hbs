@@ -1,0 +1,14 @@
+<section class="vc_row pt-100 pb-50 text-black bg-white">
+				<div class="container">
+					<div class="row">
+
+						{{#get "posts" filter="featured:false" limit="3" include="tags, feature_image, authors"}}
+							{{#foreach posts}}
+								{{> "ui/squaredCardForInteriors" }}
+							{{/foreach}}
+						{{/get}}
+								
+
+					</div><!-- /.row -->
+				</div><!-- /.container -->
+			</section>
