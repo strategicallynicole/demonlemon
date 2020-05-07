@@ -67,8 +67,10 @@
 
 	    <div id="wrap">
             {{navigation}}      
-            {{{body}}}				
+            {{{body}}}	
+            {{^is "home"}}			
             {{> "layout/footer"}}
+            {{/is}}
         </div>           
         
         
