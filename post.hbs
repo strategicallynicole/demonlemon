@@ -1,18 +1,4 @@
 {{!< default}}
-{{#contentFor "page-styles"}}
-	<link rel="stylesheet" href="{{asset "css/themes/freelancer.css"}}" />
-	<link rel="stylesheet" href="{{asset "css/theme-vendors.min.css"}}" />
- <link rel="stylesheet" href="{{asset "css/theme.css"}}" />
-  <link rel="stylesheet" href="{{asset "css/errors.css"}}" />
-{{/contentFor}}
-{{#contentFor "page-scripts"}}
-<script src="{{asset "js/theme-vendors.js"}}"></script>
-   <script src="{{asset "js/theme.min.js"}}"></script>
-{{/contentFor}}
-
-
-{{! The tag above means: Insert everything in this file into the {body} of the default.hbs template. }}
-
 {{#post}}
 
 
@@ -200,7 +186,9 @@
 {{!-- The #contentFor helper here will send everything inside it up to the matching #block helper found in default.hbs --}}
 
 
-{{#contentFor "post-scripts"}}
+{{#contentFor "scripts"}}
+<script src="{{asset "js/theme-vendors.js"}}"></script>
+<script src="{{asset "js/theme.min.js"}}"></script>
     <script src="{{asset "built/js/extra-post.js"}}"></script>
     <script>
         $(document).ready(function() {

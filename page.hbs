@@ -1,22 +1,11 @@
 {{!< default}}
-{{#contentFor "page-styles"}}
-	<link rel="stylesheet" href="{{asset "css/theme-vendors.min.css"}}" />
-		<link rel="stylesheet" href="{{asset "css/themes/original.css"}}" />
-
- <link rel="stylesheet" href="{{asset "css/theme.css"}}" />
-{{/contentFor}}
-{{#contentFor "page-scripts"}}
-<script src="{{asset "js/theme-vendors.js"}}"></script>
-   <script src="{{asset "js/theme.min.js"}}"></script>
-{{/contentFor}}
-
-
-{{! The tag above means: Insert everything in this file into the {body} of the default.hbs template. }}
-
+   {{#contentFor "styles"}}
+   {{/contentFor}}
+   {{#contentFor "scripts"}}
+  	 	<script src="{{asset "js/theme-vendors.js"}}"></script>
+   		<script src="{{asset "js/theme.min.js"}}"></script>
+	{{/contentFor}}
 {{#post}}
-
-
-
 		<main id="content" class="content py-0">
 
 			<div class="blog-single-cover scheme-light" data-fullheight="false" data-inview="true" data-inview-options='{ "onImagesLoaded": true }'">
@@ -69,14 +58,5 @@
 		</main><!-- /#content.content -->
 
 
-
-
-
 {{/post}}
 
-{{!-- The #contentFor helper here will send everything inside it up to the matching #block helper found in default.hbs --}}
-
-
-{{#contentFor "post-scripts"}}
-   
-{{/contentFor}}
