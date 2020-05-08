@@ -1,0 +1,56 @@
+{{!< default}}
+   {{#contentFor "styles"}}
+   {{/contentFor}}
+   {{#contentFor "scripts"}}
+  	 	<script src="{{asset "js/theme-vendors.js"}}"></script>
+   		<script src="{{asset "js/theme.min.js"}}"></script>
+	{{/contentFor}}
+{{#post}}
+		<div class="titlebar titlebar-sm scheme-light text-center  data-parallax="true" data-parallax-options='{ "parallaxBG": true }' style="background-image: url({{asset "img/bgfull.png"}});">
+{{navigation}}
+<div class="titlebar-inner">
+				<div class="container titlebar-container">
+					<div class="row titlebar-container">
+						<div class="titlebar-col col-md-12">
+							<h1 data-fittext="true" data-fittext-options='{ "maxFontSize": 80, "minFontSize": 32 }'>{{title}}</h1>																
+
+						</div><!-- /.titlebar-col -->
+					</div><!-- /.titlebar-row -->
+		
+
+				</div><!-- /.titlebar-container -->
+				
+			</div><!-- /.titlebar-inner -->
+			
+		</div><!-- /.titlebar -->
+
+
+		<main id="content" class="content py-0">
+	{{>particles}}
+			<article class="blog-single scheme-dark liquid-blog-scheme-dark">
+				<div class="container">
+							
+
+
+							<div class="blog-single-content entry-content expanded pb-8">
+
+								{{{content}}}
+					<!-- /.blog-single-content entry-content -->
+					
+
+						
+						</div>
+							
+
+
+
+				</div><!-- /.comments-area -->
+
+
+			</article><!-- /.blog-single -->
+
+		</main><!-- /#content.content -->
+
+
+{{/post}}
+
