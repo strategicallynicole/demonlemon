@@ -14,11 +14,26 @@
 {{! The tag above means: Insert everything in this file into the {body} of the default.hbs template. }}
 
 {{#post}}
+		<div class="titlebar titlebar-sm scheme-light text-center  data-parallax="true" data-parallax-options='{ "parallaxBG": true }' style="background-image: url({{asset "img/bgfull.png"}});">
+{{navigation}}
+<div class="titlebar-inner">
+				<div class="container titlebar-container">
+					<div class="row titlebar-container">
+						<div class="titlebar-col col-md-12">
+							<h1 data-fittext="true" data-fittext-options='{ "maxFontSize": 80, "minFontSize": 32 }'>{{title}}</h1>																
 
+						</div><!-- /.titlebar-col -->
+					</div><!-- /.titlebar-row -->
+		
+
+				</div><!-- /.titlebar-container -->
+				
+			</div><!-- /.titlebar-inner -->
+			
+		</div><!-- /.titlebar -->
 
 
 		<main id="content" class="content py-0">
-
 			<div class="blog-single-cover scheme-light" data-fullheight="false" data-inview="true" data-inview-options='{ "onImagesLoaded": true }'">
 
 				<figure class="blog-single-media" data-responsive-bg="true" data-parallax="true" data-parallax-options='{ "parallaxBG": true, "triggerHook": "onLeave" }' data-parallax-from='{ "translateY": "0%" }' data-parallax-to='{ "translateY": "20%" }'>

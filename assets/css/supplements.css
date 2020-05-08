@@ -304,6 +304,24 @@ body {
     margin-top: 0;
 }
 
+.purple {
+    color: #7245c9;
+}
+
+.fancy-box-travel:after {
+    background-image: linear-gradient(to top, #000000 0%, transparent 100%);
+}
+
+.whitestroke {
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: white;
+}
+
+.blackstroke {
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #212121;
+}
+
 .post-full-content .kg-bookmark-container {
     display: flex;
     min-height: 148px;

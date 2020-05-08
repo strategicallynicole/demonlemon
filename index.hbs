@@ -4,12 +4,6 @@
 {{#contentFor "scripts"}}
 		   <script src="{{asset "js/theme-vendors.js"}}"></script>
    <script src="{{asset "js/theme.min.js"}}"></script>
-{{/contentFor}}
-
-{{#contentFor "scripts"}}
-
-    ]
-
      <script>
             var ghosthunter_key = "";
             var maxPages = parseInt('{{pagination.pages}}');
@@ -17,32 +11,33 @@
             var Message = '{{t "More posts"}}';
         </script>
 
-      
-
-
-
 {{/contentFor}}
 
-<div class="titlebar-inner text-center bg-center bg-cover" style="background: url({{asset "img/bgfull.png"}})">
+		<div class="titlebar titlebar-sm scheme-light text-center  data-parallax="true" data-parallax-options='{ "parallaxBG": true }' style="background-image: url({{asset "img/bgfull.png"}});">
+{{navigation}}
+<div class="titlebar-inner">
 				<div class="container titlebar-container">
 					<div class="row titlebar-container">
-						<div class="titlebar-col col-md-12 text-white">
-							<h1 data-fittext="true" data-fittext-options='{ "maxFontSize": 60, "minFontSize": 32 }'>A Very Opinionated Marketing Blog</h1>
-							<a class="titlebar-scroll-link" href="#content" data-localscroll="true"><i class="fa fa-angle-down"></i></a>
+						<div class="titlebar-col col-md-12">
+							<h1 data-fittext="true" data-fittext-options='{ "maxFontSize": 80, "minFontSize": 32 }'>{{title}}</h1>																
+
 						</div><!-- /.titlebar-col -->
 					</div><!-- /.titlebar-row -->
-				</div><!-- /.titlebar-container -->
-			</div><!-- /.titlebar-inner -->
+		
 
+				</div><!-- /.titlebar-container -->
+				
+			</div><!-- /.titlebar-inner -->
+			
 		</div><!-- /.titlebar -->
 
-		<main id="content " class="content bg-dark">
-{{>particles}}
+
+		<main id="content" class="content py-0 bg-dark">
+{{> "particles"}}
 <div id="main">
     
     <div class="container">
         
-        {{! Post Loop - Go to partials/postLoop.hbs to view this partial. }}
         {{> "postLoop"}}
         {{pagination}}
 
