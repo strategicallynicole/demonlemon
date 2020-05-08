@@ -31,9 +31,7 @@ div.transbox {
 }
 
 .bg-dark {
-    background: url('/assets/img/bg.png') !important;
-    background-size: cover !important;
-    background-repeat: no-repeat;
+    background-color: #212121;
 }
 
 .gradient.gradient2 {
@@ -64,20 +62,20 @@ article pre[class*=language-] {
 }
 
 .box-shadow-dark {
-    /*box-shadow: 10px 10px 5px #c4c4c4;
-      transition: all 0.5s ease;*/
-    /* background: #000 !important;
-*/
+    box-shadow: 10px 10px 5px #c4c4c4;
+    transition: all 0.5s ease;
+    background: #000 !important;
 }
 
 .ld-flipbox-wrap {
     box-shadow: 10px 10px 10px #0e1111 !important;
+    background: #efefef;
 }
 
 .liquid-blog-item {
     padding: 25px;
     color: #212121;
-    bg-color: #efefef;
+    background-color: #efefef;
     box-shadow: 20px 20px 20px #000000 !important;
 }
 
@@ -121,10 +119,6 @@ article pre[class*=language-] {
     }
 }
 
-.main-nav.link-txt.txt:hover,
-.main-nav.link-txt.txt:focus,
-{}
-
 .main-nav>li>a .link-ext {
     background: #7254c9 !important;
 }
@@ -137,10 +131,8 @@ article pre[class*=language-] {
     font-size: 5.75em;
 }
 
-.nav-trigger.scheme-light.fill-solid .bars {}
-
 body {
-    font-family: Noto Sans;
+    font-family: 'Noto Sans';
     font-weight: 400;
     line-height: 1.7;
     font-size: 18px;
@@ -304,16 +296,20 @@ body {
     display: flex;
     min-height: 148px;
     color: var(--darkgrey);
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    font-family: -apple-system, BlinkMacSystemFont, "Noto Sans", Roboto, Oxygen, Ubuntu, Cantarell, "Noto Sans", "Helvetica Neue", sans-serif;
     text-decoration: none;
     border-radius: 3px;
-    box-shadow: 0 2px 5px -1px rgba(0, 0, 0, 0.15), 0 0 1px rgba(0, 0, 0, 0.09);
+    -webkit-box-shadow: 18px 18px 29px -15px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 18px 18px 29px -15px rgba(0, 0, 0, 0.75);
+    box-shadow: 18px 18px 29px -15px rgba(0, 0, 0, 0.75);
 }
 
 .post-full-content .kg-bookmark-container:hover {
     color: var(--darkgrey);
     text-decoration: none;
-    box-shadow: 0 2px 5px -1px rgba(0, 0, 0, 0.15), 0 0 1px rgba(0, 0, 0, 0.09);
+    -webkit-box-shadow: -18px -18px -29px 15px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: -18px -18px -29px 15px rgba(0, 0, 0, 0.75);
+    box-shadow: -18px -18px -29px 15px rgba(0, 0, 0, 0.75);
 }
 
 .kg-bookmark-content {
@@ -409,6 +405,16 @@ body {
     .post-full-content h4+figure {
         margin-top: 0.9em;
     }
+}
+
+.flickity-viewport {
+    overflow: visible;
+}
+
+.fancy-box-classes {
+    background-color: transparent;
+    box-shadow: none;
+    transition: none;
 }
 
 @media (max-width: 500px) {
@@ -533,7 +539,12 @@ body {
     margin: 0 .5em;
 }
 
-kg-bookmark-publisher::before {
-    content: "•";
-    margin: 0 .5em;
+p.subtextforposts {
+    font-size: xx-small;
+    line-height: 1.0rem;
+}.subtextforposts {
+    font-size: xx-small;
+    line-height: 1.0rem;
+}   font-size: xx-small;
+    line-height: 1.0rem;
 }
