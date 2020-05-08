@@ -1,10 +1,5 @@
 {{!< default}}
 {{#contentFor "styles"}}
-        <link href="{{asset "built/css/style.css"}}" rel="stylesheet" type="text/css">
-
-           <link href="{{asset "css/themes/original.css"}}" rel="stylesheet" type="text/css">
-
-
 {{/contentFor}}
 {{#contentFor "scripts"}}
 		   <script src="{{asset "js/theme-vendors.js"}}"></script>
@@ -42,9 +37,11 @@
 		</div><!-- /.titlebar -->
 
 		<main id="content " class="content bg-dark">
-
+{{>particles}}
 <div id="main">
+    
     <div class="container">
+        
         {{! Post Loop - Go to partials/postLoop.hbs to view this partial. }}
         {{> "postLoop"}}
         {{pagination}}

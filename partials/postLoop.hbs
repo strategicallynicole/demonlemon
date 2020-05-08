@@ -1,13 +1,13 @@
 <div class="row" id="post-loop-wrapper">
     {{#foreach posts visibility="all" limit="5"}}
         {{! Use firstCard partial if current post is the first one }}
-        {{#if @first}}{{> firstCard}}{{/if}}
+        {{#if @first}}{{> "ui/fancy-post-card-large-in-charge"}}{{/if}}
 
         {{! Use secondCard partial if current post is the second one (has index #1) }}
-        {{#has index="1"}}{{> secondCard}}{{/has}}
+        {{#has index="1"}}{{> "ui/fancy-post-card-medium"}}{{/has}}
 
         {{! Use squaredCard partial for the rest of them }}
-        {{^has index="0, 1"}}{{> squaredCard}}{{/has}}
+        {{^has index="0, 1"}}{{> "ui/fancy-post-card" }}{{/has}}
     {{/foreach}}
 </div>
 

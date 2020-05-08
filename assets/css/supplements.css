@@ -16,6 +16,21 @@
     }
 }
 
+a,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+i,
+button,
+input {
+    z-index: 9999;
+    position: relative;
+}
+
 .grayme:hover,
 .grayme:focus {
     -webkit-filter: grayscale(0%);
@@ -47,19 +62,6 @@ div.transbox {
 
 .bg-dark {
     background-color: #212121;
-}
-
-.gradient.gradient2 {
-    background: rgba(15, 15, 15, .55);
-    min-height: 250px;
-}
-
-#main .post,
-.form-template,
-article>*,
-article pre[class*=language-] {
-    margin-bottom: 2.5rem;
-    min-height: 250px;
 }
 
 .post-presentation .post-tags a:hover,

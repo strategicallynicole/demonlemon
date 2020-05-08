@@ -1,7 +1,7 @@
 <div class="col-xs-12 col-sm-12 col-lg-8 col-md-12">
     <div class="post post-presentation first-post lazy {{#is "paged"}}animated fadeInUp{{/is}} {{#if feature_image}}background{{else}}background-pattern{{/if}}"
-        {{#if feature_image}} style="background: url('{{feature_image}}'); background-size: cover;" data-src="{{feature_image}}"{{/if}}>
-        <div class="gradient gradient2 d-flex align-items-center">
+        {{#if feature_image}} data-src="{{feature_image}}"{{/if}}>
+        <div class="ingradient ingradient2 d-flex align-items-center">
             {{#if @labs.members}}<span class="badge post-visibility post-{{visibility}}">{{visibility}}</span>{{/if}}
             <div class="float-top">
                 <div class="share-icons d-none d-sm-block">
@@ -18,7 +18,7 @@
                 <h2><a href="{{url}}">{{title}}</a></h2>
                 <div class="post-tags">
                     {{#foreach tags limit="3"}}
-                      <i class="fad fa-tags fadpurple"></i>   <a href="{{url}}">{{name}}</a>
+                        <a href="{{url}}">{{name}}</a>
                     {{/foreach}}
                 </div>
                 <div class="separator"></div>
@@ -26,8 +26,11 @@
                 <a href="{{url}}" class="btn btn-no-background">{{t "Read Post"}} <i class="fa fa-chevron-right"></i></a>
             </div>
             <div class="float-bottom">
-                              <i class="fad fa-clock fadpurple"></i>  <h3 style="font-size: small; font-family: 'Noto Sans' !important;"><a href="{{url}}">  {{reading_time}}</a></h3>
-
+                {{#primary_author}}
+                    <a href="{{url}}" class="vertical-align author-info">
+                        <div class="author-image background lazy {{^if profile_image}}author-image-fill{{/if}}" {{#if profile_image}} data-src="{{profile_image}}"{{/if}}></div>{{name}}
+                    </a>
+                {{/primary_author}}
             </div>
         </div>
     </div>
