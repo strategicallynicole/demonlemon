@@ -5,6 +5,17 @@
     transition: all 0.5s ease;
 }
 
+.liquid-blog-scheme-light {
+    color: #212121;
+    background: #ffffff;
+}
+
+@media screen and (max-width: 1199px) {
+    [data-mobile-header-scheme=gray] .main-header .navbar-header {
+        background-color: transparent;
+    }
+}
+
 .grayme:hover,
 .grayme:focus {
     -webkit-filter: grayscale(0%);
@@ -17,6 +28,10 @@
     .liquid-counter-xl .liquid-counter-element {
         font-size: 1.75em !important;
     }
+}
+
+.nav-trigger .bar {
+    background-color: #ffffff;
 }
 
 .fadpurple {
@@ -66,7 +81,6 @@ article pre[class*=language-] {
     transition: all 0.5s ease;
     background: #000 !important;
 }
-
 
 .liquid-blog-item {
     padding: 25px;
@@ -548,13 +562,18 @@ p.subtextforposts {
 font-size: xx-small;
 line-height: 1.0rem;
 
-}   line-height: 1.0rem;
 }
+line-height: 1.0rem;
 
+}
 font-size: xx-small;
 line-height: 1.0rem;
 
-}   line-height: 1.0rem;
-}   font-size: xx-small;
-    line-height: 1.0rem;
+}
+line-height: 1.0rem;
+
+}
+font-size: xx-small;
+line-height: 1.0rem;
+
 }
