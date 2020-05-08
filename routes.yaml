@@ -5,6 +5,9 @@ routes:
   /about/:
     data: page.about
     template: about
+  /contact/:
+    data: page.contact
+    template: contact
 collections:
   /blog/:
     permalink: /blog/{slug}/

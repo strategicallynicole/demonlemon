@@ -5,14 +5,13 @@
   	 	<script src="{{asset "js/theme-vendors.js"}}"></script>
    		<script src="{{asset "js/theme.min.js"}}"></script>
 	{{/contentFor}}
-{{#post}}
 		<div class="titlebar titlebar-sm scheme-light text-center  data-parallax="true" data-parallax-options='{ "parallaxBG": true }' style="background-image: url({{asset "img/bgfull.png"}});">
 {{navigation}}
 <div class="titlebar-inner">
 				<div class="container titlebar-container">
 					<div class="row titlebar-container">
 						<div class="titlebar-col col-md-12">
-							<h1 data-fittext="true" data-fittext-options='{ "maxFontSize": 80, "minFontSize": 32 }'>{{title}}</h1>																
+							<h1 data-fittext="true" data-fittext-options='{ "maxFontSize": 80, "minFontSize": 32 }'>Looking For Something Completely Different?</h1>																
 
 						</div><!-- /.titlebar-col -->
 					</div><!-- /.titlebar-row -->
@@ -33,8 +32,51 @@
 
 
 							<div class="blog-single-content entry-content expanded pb-8">
+	<section class="vc_row pt-60 pb-60">
+				<div class="container">
+					<div class="row">
 
-								{{{content}}}
+						<div class="lqd-column col-md-6">
+
+							<header class="fancy-title">
+                                <p class="text-center"><picture>
+  <source srcset="{{asset "img/formerlywooden.webp"}}" type="image/webp">
+  <img width="300" align="center" class="img-fluid img-center my-auto" src="{{asset "img/formerlywooden.png"}}" alt="OAKwave marketing strategy">
+</picture>	</p>
+								
+								<p class="mt-0">We are located in the better half of our namesake, <br />
+                                the City of Oaks, Raleigh, NC.</p>
+                                <h4 class="pl-5">We <img width="65" src="{{asset "img/heart.svg"}}"/> Raleigh!</h4>
+<p><i class="fad fa-map-marker-smile"></i>&nbsp; 10324-Suite B Baileywick Road <br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Raleigh, NC 27613</p>
+<p><i class="fad fa-phone"></i> &nbsp; 919.823.4333</p>
+<p><i class="fad fa-envelope-open-text"></i> &nbsp; hello@oakwave.com</p>
+<span class="purple" style="color: #7245c9 !important;">{{> "brand/social-icons"}}</span>
+</p>
+							</header><!-- /.fancy-title -->
+
+					</div>
+								<div class="lqd-column col-md-6">
+<h2 class="mb-2">Drop us a line</h2>
+								<script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/shell.js"></script>
+<script>
+  hbspt.forms.create({
+	portalId: "6942704",
+	formId: "a3a7c11e-a3cf-49ef-a2db-c4fc06661811"
+});
+</script>
+
+								</div><!-- /.lqd-column col-md-9 -->
+							</div><!-- /.row -->
+
+						</div><!-- /.lqd-column col-md-6 -->
+
+					</div><!-- /.row -->
+				</div><!-- /.container -->
+			</section>
+
+
+
+						
 					<!-- /.blog-single-content entry-content -->
 					
 
@@ -52,5 +94,4 @@
 		</main><!-- /#content.content -->
 
 
-{{/post}}
 
