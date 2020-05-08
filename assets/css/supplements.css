@@ -26,6 +26,8 @@ h6,
 p,
 i,
 button,
+embed,
+iframe,
 input {
     z-index: 9999;
     position: relative;
