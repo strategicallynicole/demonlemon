@@ -67,10 +67,6 @@ article pre[class*=language-] {
     background: #000 !important;
 }
 
-.ld-flipbox-wrap {
-    box-shadow: 10px 10px 10px #0e1111 !important;
-    background: #efefef;
-}
 
 .liquid-blog-item {
     padding: 25px;
@@ -542,9 +538,23 @@ body {
 p.subtextforposts {
     font-size: xx-small;
     line-height: 1.0rem;
-}.subtextforposts {
+}
+
+.subtextforposts {
     font-size: xx-small;
     line-height: 1.0rem;
+}
+
+font-size: xx-small;
+line-height: 1.0rem;
+
+}   line-height: 1.0rem;
+}
+
+font-size: xx-small;
+line-height: 1.0rem;
+
+}   line-height: 1.0rem;
 }   font-size: xx-small;
     line-height: 1.0rem;
 }
