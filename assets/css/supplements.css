@@ -583,21 +583,6 @@ p.subtextforposts {
     line-height: 1.0rem;
 }
 
-font-size: xx-small;
-line-height: 1.0rem;
-
-}
-line-height: 1.0rem;
-
-}
-font-size: xx-small;
-line-height: 1.0rem;
-
-}
-line-height: 1.0rem;
-
-}
-font-size: xx-small;
-line-height: 1.0rem;
-
+.wow {
+    visibility: hidden;
 }
