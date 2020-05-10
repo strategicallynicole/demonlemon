@@ -6,9 +6,14 @@
    		<script src="{{asset "js/theme.min.js"}}"></script>
 	{{/contentFor}}
 {{#post}}
+
 		<div class="titlebar titlebar-sm scheme-light text-center  data-parallax="true" data-parallax-options='{ "parallaxBG": true }' style="background-image: url({{asset "img/bgfull.png"}});">
+{{> "particles"}}
 {{navigation}}
 <div class="titlebar-inner">
+								
+
+
 				<div class="container titlebar-container">
 					<div class="row titlebar-container">
 						<div class="titlebar-col col-md-12">
@@ -24,12 +29,10 @@
 			
 		</div><!-- /.titlebar -->
 
-
 		<main id="content" class="content py-0">
-	{{>"particles"}}
+	
 			<article class="blog-single scheme-dark liquid-blog-scheme-dark">
 				<div class="container">
-							
 
 
 							<div class="blog-single-content entry-content expanded pb-8">
