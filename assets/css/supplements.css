@@ -24,6 +24,32 @@
                  28px 28px 57px #262626;
 
 }
+.icon-duotone {
+    position: relative;
+    padding-left: 1.25em; /* make space for the width of the absolutely positioned icon */
+  }
+.lqd-stack-buttons-style-1 .lqd-stack-next-button .lqd-stack-button-ext:before { 
+    font-family: "Font Awesome 5 Pro" !important;
+    font-weight: 400;
+    content: '\f061';
+    display: inline-block;
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  .lqd-stack-buttons-style-1 .lqd-stack-prev-button .lqd-stack-button-ext:before { 
+    font-family: "Font Awesome 5 Pro" !important;
+    font-weight: 400;
+    content: '\f060';
+    display: inline-block;
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+  }
+
 
 
 .accordion-sm .accordion-title a {

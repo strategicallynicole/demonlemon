@@ -2,12 +2,13 @@
 
 {{navigation}}
 
-			<main id="content" class="content" data-liquid-stack="true" data-stack-options='{"navigation":true,"prevNextButtons":true,"pageNumber":false,"prevNextLabels":{"prev":"Previous","next":"Next"},"effect":"fadeScale", "disableOnMobile": false}'>
-				{{>particles}}
+			<main id="content" class="content bg-dark" data-liquid-stack="true" data-stack-options='{"navigation":false, "prevNextButtons":true,"prevNextLabels":{"prev":"","next":""}, "pageNumber":false, "effect":"fadeScale"}'>
+
 				{{> content/cthulu-homepage}}
 				{{> content/ducky-homepage}}
 				{{> content/shark-homepage}}
 				{{> content/dragon-homepage}}
+				
 			</main><!-- /#content.content -->
 {{#contentFor "styles"}}
 {{/contentFor}}
@@ -20,6 +21,5 @@
 });</script>
 {{/contentFor}}
 {{#contentFor "body-parts"}}
-bg-dark lqd-stack-buttons-style-2 header-style-fullscreen lqd-stack-has-nav lqd-stack-has-prevnext-buttons lqd-stack-has-page-numbers lqd-stack-effect-enabled lqd-stack-effect-fadeScale overflow-hidden lqd-stack-initiated lqd-stack-has-footer lqd-stack-active-row-dark
-{{/contentFor}}
+lqd-stack-buttons-style-1 header-style-fullscreen lqd-stack-has-prevnext-buttons lqd-stack-effect-enabled lqd-stack-effect-fadeScale overflow-hidden lqd-stack-initiated pp-viewing-Section-2 lqd-stack-active-row-dark{{/contentFor}}
    
