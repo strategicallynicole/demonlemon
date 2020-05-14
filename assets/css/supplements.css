@@ -42,7 +42,10 @@
     text-rendering: auto;
     -webkit-font-smoothing: antialiased;
   }
-
+i {
+    padding-left: 2px; 
+    padding-right: 2px;
+}
   .btn-txt {
   
         color: #ffffff;
