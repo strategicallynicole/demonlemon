@@ -25,9 +25,6 @@
 
 }
 
-.btn-underlined.color-secondary:after {
-    background-color: #ffffff;
-    }
 .icon-duotone {
     position: relative;
     padding-left: 1.25em; /* make space for the width of the absolutely positioned icon */
@@ -48,7 +45,6 @@ i {
 }
   .btn-txt {
   
-        color: #ffffff;
         font-family: 'Noto Sans';
         text-transform: uppercase;
    
@@ -187,6 +183,8 @@ div.transbox {
 .post-presentation h3>a:focus {
     color: #BF92FF !important;
 }
+
+
 
 .main-nav .link-txt .txt,
 .main-nav .link-txt .txt {
