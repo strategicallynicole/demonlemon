@@ -100,7 +100,7 @@ i {
     }
 
 
-iframe {
+iframe {/*
         padding:0;
       
         transition: box-shadow 2s, background-color 2s;
@@ -108,7 +108,7 @@ iframe {
         border-radius: 50px;
         background: #ffffff;
         box-shadow:  20px 20px 60px #d9d9d9, 
-                     -20px -20px 60px #ffffff;
+                     -20px -20px 60px #ffffff;*/
     }
 
 .iconbox h3 {
@@ -124,6 +124,8 @@ iframe {
         background-color: transparent;
     }
 }
+
+
 
 a,
 h1,
