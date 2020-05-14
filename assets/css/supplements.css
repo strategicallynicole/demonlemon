@@ -142,7 +142,7 @@ iframe,
 input,
 .hbspt-form,
 .meetings-iframe-container {
-    z-index: 9999;
+    z-index: 1;
     position: relative;
 }
 
