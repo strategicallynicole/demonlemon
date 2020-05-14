@@ -46,7 +46,7 @@
   .btn-txt {
   
         color: #ffffff;
-        font-family: 'Fjalla One';
+        font-family: 'Noto Sans';
         text-transform: uppercase;
         letter-spacing: 2px !important;
         font-size: 18px !important;
@@ -187,7 +187,7 @@ div.transbox {
 
 .main-nav .link-txt .txt,
 .main-nav .link-txt .txt {
-    font-family: 'Fjalla One';
+    font-family: 'Noto Sans';
 }
 
 .box-shadow-dark {
