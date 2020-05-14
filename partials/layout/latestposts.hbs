@@ -7,9 +7,14 @@
 					
 	{{#get "posts" filter="featured:false" limit="3" include="tags, feature_image, authors"}}
 						{{#foreach posts}}
+						            <div class="lqd-column col-lg-4 col-md-4 col-sm-12">
+
 							{{> "ui/fancy-post-card" }}
+							</div>
 						{{/foreach}}
 					{{/get}}
+
+
 
 
 
