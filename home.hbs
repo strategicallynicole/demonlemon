@@ -4,23 +4,29 @@
 
 			<main id="content" class="content bg-dark" data-liquid-stack="true" data-stack-options='{"navigation":false, "prevNextButtons":true,"prevNextLabels":{"prev":"","next":""}, "pageNumber":false, "effect":"fadeScale"}'>
 
-				{{> content/home/cthulu}}
-				{{> content/home/bob}}
-				{{> content/home/ducky}}
-				{{> content/home/cutie}}
-				{{> content/home/dragon}}
+				{{> content/cthulu-homepage}}
+				{{> content/ducky-homepage}}
+				{{> content/shark-homepage}}
+				{{> content/dragon-homepage}}
 				
 			</main><!-- /#content.content -->
 {{#contentFor "styles"}}
-
 {{/contentFor}}
 {{#contentFor "scripts"}}
+           <script src="{{asset "vendors/pagePiling/dist/jquery.pagepiling.min.js"}}"></script>
 		    <script src="{{asset "js/theme-vendors.js"}}"></script>
+<<<<<<< HEAD
 			
 			           <script src="{{asset "vendors/pagePiling/dist/jquery.pagepiling.min.js"}}"></script>
 
   			<script src="{{asset "js/theme.min.js"}}"></script>
 			
+=======
+  			<script src="{{asset "js/theme.min.js"}}"></script>
+			  <script>$( document ).ready(function() {
+  new WOW().init();
+});</script>
+>>>>>>> parent of 932f8d4... up
 {{/contentFor}}
 {{#contentFor "body-parts"}}
 lqd-stack-buttons-style-1 header-style-fullscreen lqd-stack-has-prevnext-buttons lqd-stack-effect-enabled lqd-stack-effect-fadeScale overflow-hidden lqd-stack-initiated pp-viewing-Section-2 lqd-stack-active-row-dark{{/contentFor}}
