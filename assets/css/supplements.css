@@ -24,6 +24,10 @@
                  28px 28px 57px #262626;
 
 }
+
+.btn-underlined.color-secondary:after {
+    background-color: #ffffff;
+    }
 .icon-duotone {
     position: relative;
     padding-left: 1.25em; /* make space for the width of the absolutely positioned icon */
@@ -38,7 +42,6 @@
     text-rendering: auto;
     -webkit-font-smoothing: antialiased;
   }
-<<<<<<< HEAD
 i {
     padding-left: 2px; 
     padding-right: 2px;
@@ -54,8 +57,6 @@ i {
   
     letter-spacing: 2px;
     }
-=======
->>>>>>> parent of 932f8d4... up
 
   .lqd-stack-buttons-style-1 .lqd-stack-prev-button .lqd-stack-button-ext:before { 
     font-family: "Font Awesome 5 Pro" !important;
