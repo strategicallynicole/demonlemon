@@ -13,7 +13,7 @@
 
 {{/contentFor}}
 
-		<div class="titlebar titlebar-sm scheme-light text-center  data-parallax="true" data-parallax-options='{ "parallaxBG": true }' style="background-image: url({{asset "img/bgfull.png"}});">
+		<div class="titlebar titlebar-sm scheme-light text-center"  data-parallax="true" data-parallax-options='{ "parallaxBG": true }' style="background-image: url({{asset "img/bgfull.png"}});">
 {{navigation}}
 <div class="titlebar-inner">
 				<div class="container titlebar-container">
@@ -33,14 +33,13 @@
 
 
 		<main id="content" class="content py-0 bg-dark">
-{{> "particles"}}
 <div id="main">
     
     <div class="container">
         
         {{> "postLoop"}}
         {{pagination}}
-
+<br />
     </div>
 </div></div></div>
 </div>
