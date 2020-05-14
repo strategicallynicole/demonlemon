@@ -97,17 +97,19 @@
     .accordion-content {
         color: #ffffff !important;
     }
- 
-.iconbox {
-    padding:35px;
-    transition: box-shadow 2s, background-color 2s;
-    color: #ffffff !important;
-    border-radius: 50px;
-    background: #212121;
-    box-shadow:  -28px -28px 57px #1c1c1c, 
-                 28px 28px 57px #262626;
 
-}
+
+iframe {
+        padding:0;
+      
+        transition: box-shadow 2s, background-color 2s;
+        color: #ffffff !important;
+        border-radius: 50px;
+        background: #ffffff;
+        box-shadow:  20px 20px 60px #d9d9d9, 
+                     -20px -20px 60px #ffffff;
+    }
+
 .iconbox h3 {
     color: #ffffff !important;
 }
