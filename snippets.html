@@ -1,3 +1,72 @@
+@import url('https://fonts.googleapis.com/css?family=Odibee+Sans&display=swap');
+
+:root {
+  --body-bg-color: #e0e5ec;
+  
+  --bg-color: #e0e5ec;
+  
+  --primary-font-color: rgba(144,152,168,1);
+  --secondary-font-color: rgba(51,64,89,1);
+  
+  --soft-high-light: rgba(255,255,255,.43);
+  --dark-high-light: rgba(217,210,200,.51);
+}
+
+[data-theme="dark"] {
+  --bg-color: #131419;
+  
+  --primary-font-color: #c7c7c7;
+  --secondary-font-color: #03a9f4;
+  
+  --soft-high-light: rgba(255,255,255,.05);
+  --dark-high-light: rgba(0,0,0,.51);
+}
+
+@mixin neumorphic {
+  box-shadow: 6px 6px 16px 0 var(--dark-high-light), -6px -6px 16px 0 var(--soft-high-light);
+}
+
+@mixin insetNeumorphic {
+  box-shadow: inset 6px 6px 5px 0 var(--dark-high-light), inset -6px -6px 5px 0 var(--soft-high-light);
+}
+
+@mixin inOutNeumorphic {
+  box-shadow: 6px 6px 16px 0 var(--dark-high-light), -6px -6px 16px 0 var(--soft-high-light),inset 6px 6px 5px 0 var(--dark-high-light), inset -6px -6px 5px 0 var(--soft-high-light);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background:  var(--body-bg-color);
+  color: var(--primary-font-color);
+}
+
+.calculator {
+  background:  var(--bg-color);
+  color: var(--primary-font-color);
+}
+
+.display {
+  @include inOutNeumorphic;
+  border: 5px solid var(--soft-high-light);
+  color: var(--secondary-font-color);
+}
+
+.neumorphic {
+  @include neumorphic;
+  border-radius: 50%;
+  transition: .1s all ease-in-out;
+  border: 1px solid var(--soft-high-light);
+}
+
+.neumorphic:hover {
+  @include insetNeumorphic;
+  color: var(--secondary-font-color);
+}    
+    
+    
     <!--
         {% if page.title %}<meta content="{{ page.title }}" property="og:title">{% else %}<meta content="{{ site.title }}" property="og:title">{% endif %}
         {% if page.title %}<meta content="article" property="og:type">{% else %}<meta content="website" property="og:type">{% endif %}
