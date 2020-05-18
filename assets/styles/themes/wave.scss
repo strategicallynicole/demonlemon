@@ -1,9 +1,9 @@
-$color-primary: #7254c9 !important;
+$color-primary: #6c5ba7 !important;
 $color: #27282a !important;
-$color-secondary: darken(#7254c9, 25%) !important;
-$color-primary: #7254c9 !important;
-$color-gradient-start: #7254c9 !important;
-$color-gradient-stop: darken(#7254c9, 50%) !important;
+$color-secondary: darken(#6c5ba7, 25%) !important;
+$color-primary: #6c5ba7 !important;
+$color-gradient-start: #6c5ba7 !important;
+$color-gradient-stop: darken(#6c5ba7, 50%) !important;
 $white: #f2f2f2 !important;
 $muted-purple: #7D5BA6 !important;
 $blue: #7D5BA6 !important;
@@ -14,8 +14,8 @@ $bg-vulcan: #141622 !important;
 $bg-vulcan2: #3b3b3b  !important;
 
 :root {
-    --color-primary: #7254c9 !important;
-    --color-secondary: darken(#7254c9, 25%) !important;
+    --color-primary: #6c5ba7 !important;
+    --color-secondary: darken(#6c5ba7, 25%) !important;
     --color-gradient-start: $color-primary !important;
     --color-gradient-stop: darken($color-gradient-start, 50%) !important;
     --white: $white  !important;

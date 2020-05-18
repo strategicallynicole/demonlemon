@@ -36,7 +36,7 @@
     width: 300px;
     height: 100px;
     border-radius: 50%;
-    background: radial-gradient(#7254C9, rgb(103, 68, 209), rgb(39, 20, 95), black);
+    background: radial-gradient(#6c5ba7, rgb(103, 68, 209), rgb(39, 20, 95), black);
     border: 5px solid #000;
   }
   .gandalf .skirt {
@@ -127,7 +127,7 @@
   .gandalf .shoulders .right::after {
     content: "";
     position: absolute;
-    background-color: #7254C9;
+    background-color: #6c5ba7;
     width: 250px;
     height: 5px;
     border-radius: 2.5px;
@@ -213,7 +213,7 @@
   .gandalf .head .beard::before {
     content: "";
     position: absolute;
-    background-color: #7254C9;
+    background-color: #6c5ba7;
     width: 20px;
     height: 5px;
     border-radius: 40%;

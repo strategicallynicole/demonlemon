@@ -258,7 +258,7 @@ article twitter-widget {
 .subscribe button:hover,
 article .kg-bookmark-card:hover .kg-bookmark-title,
 article a span {
-    color: #7254c9
+    color: #6c5ba7
 }
 
 article .kg-bookmark-thumbnail {
@@ -465,7 +465,7 @@ button:focus {
     display: flex;
     flex-direction: column;
     padding: 30px;
-    border: 1px solid #7254c9;
+    border: 1px solid #6c5ba7;
     text-align: left;
     border-radius: 10px;
     background: #111
@@ -494,7 +494,7 @@ h6 {
 }
 
 .checkout-plan strong {
-    color: #7254c9;
+    color: #6c5ba7;
     font-size: 3.5rem;
     font-weight: 500
 }
@@ -525,7 +525,7 @@ h6 {
     left: 0;
     font-size: 1.6rem;
     font-weight: 600;
-    color: #7254c9;
+    color: #6c5ba7;
     content: "✓"
 }
 
@@ -953,7 +953,7 @@ a>i {
 }
 
 a:hover {
-    color: #7254c9!important;
+    color: #6c5ba7!important;
     text-decoration: none
 }
 
@@ -1100,7 +1100,7 @@ article hr {
 }
 
 .badge {
-    background-color: #7254c9;
+    background-color: #6c5ba7;
     padding: 4px 8px;
     border-radius: 5px;
     margin-right: 10px;
@@ -1254,7 +1254,7 @@ article {
 .post-presentation .share-icons .fa-globe:hover,
 article .mark,
 article mark {
-    background-color: #7254c9
+    background-color: #6c5ba7
 }
 
 .post-info-wrapper .ingradient .container:not(.author-wrapper) {
@@ -1371,7 +1371,7 @@ article mark {
 
 #featured-news-carousel .carousel-item h1,
 .post-info-wrapper h1 {
-    border-left: 3px solid #7254c9;
+    border-left: 3px solid #6c5ba7;
     padding: 0 0 0 1.875rem;
     color: #fff;
     letter-spacing: 1px;
@@ -1409,7 +1409,7 @@ article pre code {
     float: left;
     margin-bottom: 0;
     margin-right: 1.5625rem;
-    color: #7254c9
+    color: #6c5ba7
 }
 
 #featured-news-carousel .carousel-indicators .indicator-content h4 {
@@ -1675,7 +1675,7 @@ article pre[class*=language-] {
 
 #main .post.second-post.post-presentation h3 {
     margin: 0 0 .9375rem;
-    border-left: 2px solid #7254c9;
+    border-left: 2px solid #6c5ba7;
     padding: 0 0 0 1.25rem
 }
 
@@ -1799,7 +1799,7 @@ article th {
 }
 
 article td {
-    border-top: 1px solid #7254c9
+    border-top: 1px solid #6c5ba7
 }
 
 article>:not(img):not(blockquote):not(.highlighted-code):not(ul):not(ol):not(pre):not(figure.kg-code-card):not(.kg-width-wide):not(.kg-embed-card):not(.kg-width-full) {
@@ -1840,7 +1840,7 @@ article pre {
     overflow-y: hidden!important;
     padding-right: 4.0625rem!important;
     padding-left: 4.0625rem!important;
-    color: #7254c9
+    color: #6c5ba7
 }
 
 article pre code>* {
@@ -1863,7 +1863,7 @@ article li code,
 article p>code,
 article ul code {
     padding: 3px 5px;
-    color: #7254c9;
+    color: #6c5ba7;
     border-radius: 5px
 }
 
@@ -1895,11 +1895,11 @@ article p>img {
 
 article a {
     text-transform: none;
-    color: #7254c9
+    color: #6c5ba7
 }
 
 article .code>a {
-    color: #7254c9;
+    color: #6c5ba7;
     font-family: monospace
 }
 
@@ -2109,7 +2109,7 @@ input.form-control:active,
 input.form-control:focus,
 textarea.form-control:active,
 textarea.form-control:focus {
-    border-color: #7254c9
+    border-color: #6c5ba7
 }
 
 .form-template form {

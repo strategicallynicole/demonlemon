@@ -22,7 +22,7 @@
   <animateTransform attributeName="transform" type="scale" repeatCount="indefinite" dur="2s" begin="-0.36363636363636365s" keyTimes="0;0.5;1" values="0.995;1.005;0.995" keySplines="0.4 0 0.6 1;0.4 0 0.6 1" calcMode="spline"></animateTransform>
 </circle><circle cx="0" cy="0" r="144.92676976680784" fill="#684dba" fill-opacity="0.4" transform="scale(1.00472 1.00472)">
   <animateTransform attributeName="transform" type="scale" repeatCount="indefinite" dur="2s" begin="-0.18181818181818182s" keyTimes="0;0.5;1" values="0.995;1.005;0.995" keySplines="0.4 0 0.6 1;0.4 0 0.6 1" calcMode="spline"></animateTransform>
-</circle><circle cx="0" cy="0" r="0" fill="#7254c9" fill-opacity="0.4" transform="scale(1.0049 1.0049)">
+</circle><circle cx="0" cy="0" r="0" fill="#6c5ba7" fill-opacity="0.4" transform="scale(1.0049 1.0049)">
   <animateTransform attributeName="transform" type="scale" repeatCount="indefinite" dur="2s" begin="0s" keyTimes="0;0.5;1" values="0.995;1.005;0.995" keySplines="0.4 0 0.6 1;0.4 0 0.6 1" calcMode="spline"></animateTransform>
 </circle></g>
 </svg>

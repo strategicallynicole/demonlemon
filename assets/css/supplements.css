@@ -85,7 +85,7 @@ i {
     }
     .accordion-active-has-fill .active .accordion-title a {
         background-color: transparent !important;
-        color: #7245c9;
+        color: #6c5ba7;
         }
         a.collapsed {
             background-color: transparent !important;
@@ -222,8 +222,8 @@ div.transbox {
 }
 
 :root {
-    --color-primary: #7254c9 !important;
-    --color-secondary: #7254c9 !important;
+    --color-primary: #6c5ba7 !important;
+    --color-secondary: #6c5ba7 !important;
 }
 
 @media screen and (max-width: 1199px) {
@@ -238,14 +238,14 @@ div.transbox {
         z-index: -1;
         opacity: 0;
         transform: scale(1.75);
-        background-image: linear-gradient(to top left, #7245c9 0%, #212121 100%);
+        background-image: linear-gradient(to top left, #6c5ba7 0%, #212121 100%);
         transition: opacity 0.3s, transform 0.3s;
         transition-delay: 0.05s;
     }
 }
 
 .main-nav>li>a .link-ext {
-    background: #7254c9 !important;
+    background: #6c5ba7 !important;
 }
 
 .liquid-counter-huge .liquid-counter-element {
@@ -418,7 +418,7 @@ body {
 }
 
 .purple {
-    color: #7245c9;
+    color: #6c5ba7;
 }
 
 .fancy-box-travel:after {

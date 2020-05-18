@@ -128,11 +128,11 @@ h6 {
 }
 
 .main-footer {
-  color: #7254c9;
+  color: #6c5ba7;
 }
 
 .main-footer a:not(.btn) {
-  color: #7254c9;
+  color: #6c5ba7;
 }
 
 .main-footer a:not(.btn):hover {
@@ -154,13 +154,13 @@ h6 {
     color: #000 !important;
   }
   .megamenu-heading {
-    color: #7254c9;
+    color: #6c5ba7;
   }
   [data-megamenu-bg-scheme=light] .lqd-custom-menu a {
-    color: #7254c9;
+    color: #6c5ba7;
   }
   .megamenu .lqd-custom-menu a:hover {
-    color: #7254c9;
+    color: #6c5ba7;
   }
 }
 /*# sourceMappingURL=original.css.map */

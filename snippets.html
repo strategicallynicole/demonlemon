@@ -2,24 +2,23 @@
 
 :root {
   --body-bg-color: #e0e5ec;
-  
-  --bg-color: #e0e5ec;
-  
-  --primary-font-color: rgba(144,152,168,1);
-  --secondary-font-color: rgba(51,64,89,1);
-  
-  --soft-high-light: rgba(255,255,255,.43);
-  --dark-high-light: rgba(217,210,200,.51);
-}
-
-[data-theme="dark"] {
   --bg-color: #131419;
-  
+ 
   --primary-font-color: #c7c7c7;
   --secondary-font-color: #03a9f4;
-  
   --soft-high-light: rgba(255,255,255,.05);
   --dark-high-light: rgba(0,0,0,.51);
+
+}
+
+[data-theme="light"] {
+  --bg-color: #e0e5ec;
+  --primary-font-color: rgba(144,152,168,1);
+  --secondary-font-color: rgba(51,64,89,1);
+
+  --soft-high-light: rgba(255,255,255,.43);
+  --dark-high-light: rgba(217,210,200,.51);
+
 }
 
 @mixin neumorphic {
@@ -143,7 +142,7 @@ body {
 
 								{{{content}}}
 					<!-- /.blog-single-content entry-content -->
-						<div style="height: 25px; width: 25%; margin: 0 auto; padding-bottom: 25px; border-bottom-style:dotted; border-color: #7254c9; border-width: 2px;" ></div>
+						<div style="height: 25px; width: 25%; margin: 0 auto; padding-bottom: 25px; border-bottom-style:dotted; border-color: #6c5ba7; border-width: 2px;" ></div>
 						
 						</div><!-- /.col-md-8 -->
 
