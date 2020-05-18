@@ -1,28 +1,46 @@
 <div class="row" id="post-loop-wrapper">
-    {{#foreach posts visibility="all" limit="5"}}
+    {{#foreach posts visibility="all" limit="8"}}
         {{! Use firstCard partial if current post is the first one }}
         {{#if @first}}
         	<div class="lqd-column col-lg-8 col-md-8 col-sm-12">
-                
+                            
+            {{> "ui/fancy-post-card"}}
+            </div>  
             {{/if}}
 
         {{! Use secondCard partial if current post is the second one (has index #1) }}
         {{#has index="1"}}	
             <div class="lqd-column col-lg-4 col-md-4 col-sm-12">
+                            
+            {{> "ui/fancy-post-card"}}
+           
            
         {{/has}}
+        {{/foreach}}
+      {{#foreach posts visibility="all" limit="8"}}
+        {{#has index="2"}}	
+                            
+            {{> "ui/fancy-post-card"}}
+              </div>
+        {{/has}}
+        {{/foreach}}
+</div>
+    <div class="row">
+        {{#foreach posts visibility="all" limit="5"}}
 
         {{! Use squaredCard partial for the rest of them }}
-        {{^has index="0, 1"}} {{#has index="1"}}	
+        {{^has index="0, 1"}} 	
             <div class="lqd-column col-lg-4 col-md-4 col-sm-12">
-        {{/has}}  {{/has}}
-                 
-            
-            
-            
+                            
             {{> "ui/fancy-post-card"}}
             </div>  
+        {{/has}} 
+                 
+            
+                    {{/foreach}}
+
+
      
-    {{/foreach}}
+    
 </div>
 
