@@ -17,7 +17,7 @@ h4,
 h5,
 h6 {
   text-transform: uppercase !important;
-  font-family: 'Fjalla One', sans-serif !important;
+  font-family: 'Josefin Sans', sans-serif !important;
 }
 
 body {
@@ -78,7 +78,7 @@ h6 {
 }
 
 .font-family-amiri {
-  font-family: 'Fjalla One', sans-serif;
+  font-family: 'Josefin Sans', sans-serif;
 }
 
 .main-header .social-icon {

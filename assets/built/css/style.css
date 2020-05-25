@@ -490,7 +490,7 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: Fjalla One, sans-serif
+    font-family: Josefin Sans, sans-serif
 }
 
 .checkout-plan strong {
@@ -1602,7 +1602,7 @@ article figcaption {
 
 #main .post.second-post.post-presentation h3,
 .post-presentation h3>a {
-    font-family: Fjalla One, sans-serif;
+    font-family: Josefin Sans, sans-serif;
     text-transform: uppercase
 }
 
@@ -2297,7 +2297,7 @@ textarea.form-control:focus {
 
 .author-widget h2>a {
     font-weight: 400;
-    font-family: Fjalla One, sans-serif
+    font-family: Josefin Sans, sans-serif
 }
 
 .author-widget .author-additional-info p {

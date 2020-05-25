@@ -10,11 +10,28 @@ h3, .h3,
 h4, .h4,
 h5, .h5,
 h6, .h6 {
-	font-family: 'Fjalla One', sans-serif;
+	font-family: 'Raleway', sans-serif;
 	margin: 1.25em 0 0.75em;
 	font-weight: 500;
 	line-height: 1.2;
 }
+.oswald {
+    font-family: 'Oswald' !important;
+}
+
+.raleway {
+    font-family: 'Raleway' !important;
+}
+
+.fa {
+    font-family: "Font Awesome 5 Pro";
+    display: inline-block;
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+}
+
 h1, .h1 {
 	margin-top: 0;
 	font-size: 52px;

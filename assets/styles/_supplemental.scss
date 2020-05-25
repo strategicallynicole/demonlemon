@@ -6,7 +6,7 @@
     transition: all 0.5s ease;
 }
 .fancy-box-travel:after {
-    background-image: linear-gradient(to top, #000000 0%, rgba(33,33,33, 0.8) 100%) !important;
+    background-image: linear-gradient(to top, #000000 0%, rgba(33,33,33, 0.8) 100%);
     }
     .fancy-box-travel.fancy-box-small {
         padding-bottom: 109.5%;
@@ -16,12 +16,30 @@
     background: #ffffff;
 }
 
+
+.fad {
+    position: relative;
+    font-family: "Font Awesome 5 Duotone" !important;
+    font-weight: 900;
+}
+
+.btn-icon, .fas, {
+    font-family: "Font Awesome 5 Pro";
+
+}
+.fab {
+    font-family: "Font Awesome 5 Brands" !important;
+    font-weight: 400;
+
+}
+
+
 .icon-duotone {
     position: relative;
     padding-left: 1.25em; /* make space for the width of the absolutely positioned icon */
   }
 .lqd-stack-buttons-style-1 .lqd-stack-next-button .lqd-stack-button-ext:before { 
-    font-family: "Font Awesome 5 Pro" !important;
+    font-family: "Font Awesome 5 Pro";
     font-weight: 400;
     content: '\f061';
     display: inline-block;
@@ -36,7 +54,7 @@ i {
 }
   .btn-txt {
   
-        font-family: 'Noto Sans';
+        font-family: 'Raleway';
         text-transform: uppercase;
    
   }
@@ -46,7 +64,7 @@ i {
     }
 
   .lqd-stack-buttons-style-1 .lqd-stack-prev-button .lqd-stack-button-ext:before { 
-    font-family: "Font Awesome 5 Pro" !important;
+    font-family: "Font Awesome 5 Pro";
     font-weight: 400;
     content: '\f060';
     display: inline-block;
@@ -114,23 +132,10 @@ iframe {/*
 
 
 
-a,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-i,
-button,
-embed,
-iframe,
-input,
-.hbspt-form,
-.meetings-iframe-container {
+a, h1, .h1, .h2, .h3, .h4, .h5, .h6, h2, h3, h4, h5, h6, p, i, button, embed, iframe, input, .hbspt-form, .meetings-iframe-container {
     z-index: 1;
     position: relative;
+    font-family: 'Raleway' !important;
 }
 
 .grayme:hover,
@@ -179,25 +184,25 @@ div.transbox {
 
 .main-nav .link-txt .txt,
 .main-nav .link-txt .txt {
-    font-family: 'Noto Sans';
+    font-family: 'Raleway';
 }
 
 .box-shadow-dark {
     box-shadow: 10px 10px 5px #c4c4c4;
     transition: all 0.5s ease;
-    background: #000 !important;
+    background: #000;
 }
 
 .liquid-blog-item {
     padding: 25px;
     color: #212121;
     background-color: #efefef;
-    box-shadow: 20px 20px 20px #000000 !important;
+  
 }
 
 .liquid-blog-item span.btn-txt:focus,
 .liquid-blog-item span.btn-txt:hover {
-    color: #212121 !important;
+    color: #212121;
 }
 
 .liquid-blog-item .h1,
@@ -229,14 +234,14 @@ div.transbox {
         z-index: -1;
         opacity: 0;
         transform: scale(1.75);
-        background-image: linear-gradient(to top left, #6c5ba7 0%, #212121 100%);
+        background-image: linear-gradient(90deg, #26272B, #34393F) !important;
         transition: opacity 0.3s, transform 0.3s;
         transition-delay: 0.05s;
     }
 }
 
 .main-nav>li>a .link-ext {
-    background: #6c5ba7 !important;
+	background-image: linear-gradient(90deg, #6c5ab7, #7254c9) !important;
 }
 
 .liquid-counter-huge .liquid-counter-element {
@@ -248,10 +253,12 @@ div.transbox {
 }
 
 body {
-    font-family: 'Noto Sans';
+    font-family: 'Josefin Sans';
     font-weight: 400;
     line-height: 1.7;
     font-size: 18px;
+    background-image: linear-gradient(90deg, #26272B, #34393F) !important;
+
 }
 
 .blog-single {
@@ -430,7 +437,7 @@ body {
     display: flex;
     min-height: 148px;
     color: var(--darkgrey);
-    font-family: -apple-system, BlinkMacSystemFont, "Noto Sans", Roboto, Oxygen, Ubuntu, Cantarell, "Noto Sans", "Helvetica Neue", sans-serif;
+    font-family: -apple-system, BlinkMacSystemFont, "Josefin Sans", Roboto, Oxygen, Ubuntu, Cantarell, "Noto Sans", "Helvetica Neue", sans-serif;
     text-decoration: none;
     border-radius: 3px;
     -webkit-box-shadow: 18px 18px 29px -15px rgba(0, 0, 0, 0.75);
@@ -686,3 +693,8 @@ p.subtextforposts {
 .wow {
     visibility: hidden;
 }
+
+@media screen and (max-width: 1199px){
+.navbar-header>* {
+    flex: 0 0 13.3333333333%;
+}}

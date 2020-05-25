@@ -1,0 +1,76 @@
+.text-purple {
+  color: #6c5ba7;
+}
+
+body {
+    background-image: linear-gradient(90deg, #26272B, #34393F);
+    background-size: cover;
+    color: #fff;
+}
+
+
+.fancy-box-info {
+  background: #000000;
+}
+
+.neumorphic-static {
+  position: relative;
+  display: inline-block;
+  padding:   25px;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(165.64deg, #26272B 9.53%, #34393F 95.92%);
+  box-shadow: 10px 10px 40px #0D0E0F, -10px -10px 40px #40464E;
+  border-radius: 40px;
+  -webkit-transition: all 2s cubic-bezier(0.165, 0.84, 0.44, 1);
+  transition: all 2s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+.neumorphic {
+    position: relative;
+    display: inline-block;
+    padding:   25px;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(165.64deg, #26272B 9.53%, #34393F 95.92%);
+    box-shadow: 10px 10px 40px #0D0E0F, -10px -10px 40px #40464E;
+    border-radius: 40px;
+    -webkit-transition: all 2s cubic-bezier(0.165, 0.84, 0.44, 1);
+    transition: all 2s cubic-bezier(0.165, 0.84, 0.44, 1);
+  }
+  
+  .neumorphic::after {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(165.64deg, #26272B 9.53%, #34393F 95.92%);
+    box-shadow: inset 3px 3px 10px #0D0E0F, inset -3px -3px 10px #40464E;
+    border-radius: 40px;  opacity: 0;
+    -webkit-transition: all 2s cubic-bezier(0.165, 0.84, 0.44, 1);
+    transition: all 2s cubic-bezier(0.165, 0.84, 0.44, 1);
+  }
+  
+  .neumorphic:hover {
+    -webkit-transform: scale(1, 1);
+    transform: scale(1, 1);
+  }
+  
+  .neumorphic:hover::after {
+      opacity: 1;
+  }
+
+  
+
+
+
+.accordion-title-bordered .accordion-title a {
+    color: #ffffff;
+}
+
+.accordion-title-bordered .accordion-title .active a {
+    color: #6c5ba7;
+}
+    

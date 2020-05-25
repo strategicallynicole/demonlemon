@@ -1,8 +1,10 @@
 .bg-primary {
-	background: var(--color-primary) !important;
+	background-image: linear-gradient(90deg, #26272B, #34393F);
+	background-size: cover;
 }
 .bg-secondary {
-	background: var(--color-secondary) !important;
+	background-image: linear-gradient(90deg, #26272B, #34393F);
+	background-size: cover;
 }
 .bg-transparent {
 	background: transparent !important;
@@ -11,7 +13,8 @@
 	background: #fff !important;
 }
 .bg-black {
-	background: #000 !important;
+	background-image: linear-gradient(90deg, #26272B, #34393F);
+	background-size: cover;
 }
 .bg-gray {
 	background: #f4f5f8 !important;
@@ -26,13 +29,14 @@
 	background: #f7f8fb !important;
 }
 .bg-dark {
-	background: #212121 !important;
-}
+	background-image: linear-gradient(90deg, #26272B, #34393F);
+	background-size: cover;}
 .bg-mirage {
 	background: #181b31 !important;
 }
 .bg-vulcan {
-	background: #141622 !important;
+	background-image: linear-gradient(90deg, #26272B, #34393F);
+	background-size: cover;
 }
 .bg-charade {
 	background: #2D323D !important;
@@ -44,7 +48,8 @@
 	background: #27282a !important;
 }
 .bg-gigas {
-	background: #4439a9 !important;
+	background-image: linear-gradient(90deg, #26272B, #34393F);
+	background-size: cover;
 }
 .bg-athens-gray {
 	background: #F8F9FA !important;
@@ -100,7 +105,7 @@ $count: 0.05;
 	background-color: #f7f8fb !important;
 }
 .bg-hover-dark:hover {
-	background-color: #212121 !important;
+	background-image: linear-gradient(90deg, #26272B, #34393F) !important;
 }
 .bg-hover-charade:hover {
 	background-color: #2D323D !important;

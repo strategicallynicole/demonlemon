@@ -1,0 +1,217 @@
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap');
+
+p {
+    font-family: 'Josefin Sans'
+}
+.rectangle-container {
+    height: 64px;
+
+}
+
+.rectangle
+{
+    background: linear-gradient(162.03deg, #26272B 9.53%, #34393F 95.92%);
+    box-shadow: inset 3px 3px 10px #0D0E0F, inset -3px -3px 10px #40464E;
+    border-radius: 16px;
+    padding: 15px;
+}
+
+.square 
+{
+    background: linear-gradient(137.63deg, #26272B 9.53%, #34393F 95.92%);
+    box-shadow: inset 3px 3px 10px #0D0E0F, inset -3px -3px 10px #40464E;
+    border-radius: 12px;
+}
+
+.tab-box {
+background: linear-gradient(165.4deg, #26272B 12.58%, #34393F 93.19%);
+box-shadow: 4px 3px 19px #0D0E0F, -5px -5px 20px #40464E;
+border-radius: 20px;
+}
+
+.tab-box .pressed {
+background: linear-gradient(160.84deg, #26272B 9.53%, #34393F 95.92%);
+box-shadow: inset 2px 2px 6px #0D0E0F, inset -2px -2px 3px #40464E;
+border-radius: 16px;
+}
+
+
+body {
+background-image: linear-gradient(90deg, #26272B, #34393F);
+background-size: cover;
+color: #fff;
+font-family: Josefin Sans;
+}
+
+.fa {
+    margin:10px;
+}
+.label {
+font-style: normal;
+font-weight: 300;
+font-size: 20px;
+line-height: 20px;
+/* identical to box height */
+
+text-align: center;
+
+color: #FFFFFF;
+
+}
+
+.iconholder {
+background: linear-gradient(137.63deg, #26272B 9.53%, #34393F 95.92%);
+box-shadow: inset 3px 3px 10px #0D0E0F, inset -3px -3px 10px #40464E;
+border-radius: 40px;
+transition: box-shadow 10s, transform 10s;
+padding: 15px;
+text-align: center;
+vertical-align: middle;
+}
+
+.iconholder:hover, .iconholder:focus {
+    box-shadow: 3px 3px 10px #0D0E0F, inset -3px -3px 10px #40464E;
+    border-radius: 40px;
+    }
+
+.neubutton {
+  background: linear-gradient(165.64deg, #26272B 9.53%, #34393F 95.92%);
+  box-shadow: inset 3px 3px 10px #0D0E0F, inset -3px -3px 10px #40464E;
+  border-radius: 40px;
+  transition: ease-in-out 2s all;
+}
+
+
+.neubutton:hover, .neubutton:focus {
+
+  background: linear-gradient(161.78deg, #2F1B49 12.58%, #6C5BA7 89.78%);
+  border: 3px solid #6C5BA7;
+    }
+
+.neutextfield {
+background: linear-gradient(170.79deg, #26272B 9.53%, #34393F 95.92%);
+box-shadow: inset 2px 2px 6px #0D0E0F, inset -2px -2px 3px #40464E;
+border-radius: 20px;
+}
+
+.neulilsquare {
+    background: linear-gradient(137.63deg, #26272B 9.53%, #34393F 95.92%);
+    box-shadow: inset 3px 3px 10px #0D0E0F, inset -3px -3px 10px #40464E;
+    border-radius: 24px;
+}
+
+
+
+:root {
+  --body-bg-color: #212121;
+  --bg-color: #131419;
+ 
+  --primary-font-color: #c7c7c7;
+  --secondary-font-color: #6c5ba7;
+  --soft-high-light: rgba(255,255,255,.05);
+  --dark-high-light: rgba(0,0,0,.51);
+
+}
+
+[data-theme="light"] {
+  --bg-color: #e0e5ec;
+  --primary-font-color: rgba(144,152,168,1);
+  --secondary-font-color: rgba(51,64,89,1);
+
+  --soft-high-light: rgba(255,255,255,.43);
+  --dark-high-light: rgba(217,210,200,.51);
+
+}
+
+@mixin neumorphic {
+  background: linear-gradient(137.63deg, #26272B 9.53%, #34393F 95.92%);
+  box-shadow: 3px 3px 10px #0D0E0F, inset -3px -3px 10px #40464E;
+  transition: 3s all ease-in-out;
+
+
+} 
+
+@mixin insetNeumorphic {
+  box-shadow: inset 3px 3px 10px #0D0E0F, inset -3px -3px 10px #40464E;
+  transition: 3s all ease-in-out;
+
+
+}
+
+@mixin inOutNeumorphic {
+  box-shadow: 3px 3px 10px #0D0E0F, inset -3px -3px 10px #40464E;
+  transition: 3s all ease-in-out;
+
+
+}
+
+* {
+  box-sizing: border-box;
+}
+.accordion-title-bordered .accordion-title a {
+
+    border: 0px solid #d8dbe2;
+}
+
+.neumorphic-padding {
+    padding: 15px;
+}
+.neumorphic-color {
+  border-width: 1px;
+  border-color: #6c5ba7;
+
+}
+.bdr-prpl {
+  border: 1px solid #6c5ba7;
+  border-radius: 30px;
+margin-top: 20px;
+margin-bottom: 20px;
+}
+
+.bdr-white {
+  margin-top: 20px;
+margin-bottom: 20px;
+  border: 1px solid #ffffff;
+
+  border-radius: 30px;
+}
+.neumorphic-container {
+  background:  #333333;
+  border: 5px solid var(--soft-high-light);
+  @include inOutNeumorphic;
+  color: #ffffff;
+
+}
+.text-purple {
+  color: #6c5ba7;
+}
+
+.neumorphic {
+  @include neumorphic;
+  padding: 25px;
+  color: #ffffff;
+  transition: 3s all ease-in-out;
+  border: 1px solid var(--soft-high-light);
+}
+
+.neumorphic:hover {
+    transition: 2s all ease-in-out;
+  @include insetNeumorphic;
+  
+
+}    
+.accordion-title-bordered .accordion-title a {
+    color: #ffffff;
+}
+
+.accordion-title-bordered .accordion-title .active a {
+    color: #6c5ba7;
+}
+    
+.neumorphic-round {
+    border-radius: 30px;
+}
+
+.neumorphic-rounded-edges {
+    border-radius: 30px;
+}
