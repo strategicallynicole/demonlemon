@@ -1,40 +1,23 @@
-	<div class="col-md-3 col-md-offset-1 sidebar-container">
 
 						<aside class="main-sidebar">
-	<div class="widget widget_search">
-								<form role="search" method="get" class="search-form" action="#">
-									<label>
-										<span class="screen-reader-text">Search for:</span>
-										<input type="search" class="search-field" placeholder="Search …" value="" name="s">
-									</label>
-									<input type="submit" class="search-submit" value="Search">
-								</form>
-							</div>
- <div class="scheme-light widget widget_categories">
-								<h3 class="widget-title">Quick Links</h3>
-								<ul class="">
-                                    
-            {{#if @site.navigation}}
-            {{navigation}}
-        {{/if}}
-
-        </ul>
-        </div>
-							<div class="widget widget_categories">
+<picture>
+  <source srcset="{{asset "img/renderings/cthulu.webp"}}" type="image/webp">
+  <img  width="700" class="img-fluid metalpurple" src="{{asset "img/renderings/cthulu.png"}}" alt="OAKwave marketing strategy">
+</picture>								<div class="widget widget_categories">
 								<h3 class="widget-title">Tags</h3>
-								<ul>
+								<ul class="text-white">
 									{{#get 'tags' limit='all' include='count.posts' order='count.posts desc'}}
 
 
                     {{#foreach tags}}
-                    									<li><a class="whitish" href="{{url}}">{{name}} </a>     ({{plural ../pagination.total empty='posts' singular='% post' plural='% posts'}})
+                    									<li><a class="text-white whitish" href="{{url}}">{{name}} </a>     ({{plural ../pagination.total empty='posts' singular='% post' plural='% posts'}})
  </li>    {{/foreach}}{{/get}}
           
 								</ul>
 							</div><!-- /.widget_categories -->
 
 								
-<h3 class="widget-title"> get updates by email </h3>               <p>   <small>we promise to only send the juciest of emails.  seriously.  our emails rock.</small></p>
+<h3 class="widget-title text-white"> Get updates by email </h3>               <p>   <small>We promise to only send the juciest of emails.  seriously.  our emails rock.</small></p>
 <div style="width: 95%;">
            <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/shell.js"></script>
 <script>
@@ -45,4 +28,3 @@
 </script></div>
 						</aside>
 
-					</div><!-- /.col-md-3 col-md-offset-1 sidebar-container -->

@@ -1,3 +1,5 @@
+$purple: #6c5ba7;
+
 /* Size Variables */
 $size-xxs: 20;
 $size-xs: 45;
@@ -32,20 +34,12 @@ $size-xl: 125;
 	flex-direction: column;
 	// flex: 1 auto; // growing if row settings is set to equal columns height and middle the content
 	text-align: center;
-	transition: box-shadow 0.3s ease, background 0.3s ease;
 	
 	.iconbox-icon-container,
 	.contents,
 	> h3 {
 		position: relative;
 		z-index: 2;
-	}
-	.iconbox-icon-container,
-	p,
-	h3 {
-		transition-property: color, background;
-		transition-duration: 0.3s;
-		transition-timing-function: ease;
 	}
 	h3 {
 		display: inline-block; // for gradient fill
@@ -56,13 +50,12 @@ $size-xl: 125;
 	.iconbox-icon-container {
 		display: flex;
 		margin-bottom: 0.5em;
-		border: 0 solid #F2F4F7;
+		
 		align-items: center;
 		justify-content: center;
 		font-size: 40px;
 		line-height: 1em;
 		color: var(--color-primary);
-		transition: border 0.3s, box-shadow 0.3s;
 		
 		i,
 		img,
@@ -114,19 +107,7 @@ $size-xl: 125;
 	.contents {
 		max-width: 100%; // to fix IE11 overflow issue
 	}
-	.iconbox-fill-el,
-	.iconbox-icon-hover-bg {
-		display: inline-block;
-		width: 100%;
-		height: 100%;
-		position: absolute;
-		top: 0;
-		left: 0;
-		border-radius: inherit;
-		transition: opacity 0.3s;
-		opacity: 0;
-		background-size: cover;
-	}
+	
 	p {
 		margin-bottom: 0;
 	}
@@ -143,13 +124,7 @@ $size-xl: 125;
 		align-items: flex-end;
 	}
 
-	&:hover {
 
-		.iconbox-fill-el,
-		.iconbox-icon-hover-bg {
-			opacity: 1;
-		}
-	}
 }
 
 [data-animate-icon=true] {
@@ -450,8 +425,6 @@ $size-xl: 125;
 .iconbox-shadow-hover,
 .iconbox-bordered,
 .iconbox-filled {
-	padding: 25px 10%;
-	background-color: #fff;
 
 	&.iconbox-inline,
 	&.iconbox-side {
@@ -465,13 +438,10 @@ $size-xl: 125;
 	border-radius: 10px;
 }
 .iconbox-shadow {
-	box-shadow: 0 25px 70px rgba(#000, 0.07);
 }
 .iconbox-shadow-hover {
-	box-shadow: 0 0 0 rgba(#000, 0);
 
 	&:hover {
-		box-shadow: 0 25px 70px rgba(#000, 0.07);
 	}
 }
 .iconbox-bordered {
@@ -511,7 +481,6 @@ $size-xl: 125;
 
 			&:before,
 			&:after {
-				background: currentColor;
 			}
 		}
 		
@@ -591,18 +560,15 @@ $size-xl: 125;
 .iconbox-icon-shadow {
 
 	.iconbox-icon-container {
-		box-shadow: 0 17px 30px rgba(#000, 0.07);
 	}
 }
 .iconbox-icon-hover-shadow {
 
 	.iconbox-icon-container {
-		box-shadow: 0 0 0 rgba(#000, 0);
 	}
 	&:hover {
 
 		.iconbox-icon-container {
-			box-shadow: 0 17px 30px rgba(#000, 0.07);
 		}
 	}
 }
@@ -678,8 +644,8 @@ $size-xl: 125;
 	.backgroundcliptext & {
 
 		h3 {
-			background: -webkit-gradient(linear, left top, right top, from(#1DE1D1), to(#780BEE));
-			background: linear-gradient(to right, #1DE1D1 0%, #780BEE 100%);
+			background: -webkit-gradient(linear, left top, right top, from($purple), to(#780BEE));
+			background: linear-gradient(to right, $purple 0%, #780BEE 100%);
 			background-clip: text !important;
 			-webkit-background-clip: text !important;
 			text-fill-color: transparent !important;
@@ -859,7 +825,6 @@ $sizes: ( iconbox-xxs: $size-xxs, iconbox-xs: $size-xs, iconbox-sm: $size-sm, ic
 
 .lqd-parallax-iconboxes {
 	padding: 35px 35px 15px;
-	box-shadow: 0px 2px 14px 0px rgba(#000, 0.082);	
 }
 
 .iconbox-color-pippin {

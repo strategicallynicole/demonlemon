@@ -4,5 +4,7 @@ assets/ave
 assets/ave/
 assets/ave*
 assets/ave/*
+node_modules
+node-handleybars-twig
 
 

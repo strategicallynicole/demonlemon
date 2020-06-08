@@ -2,8 +2,9 @@
     {{#if prev}}
         <a class="newer-posts" href="{{page_url prev}}"><i class="fad fa-forward"></i> Newer Posts</a>
     {{/if}}
-    <span class="page-number">Page {{page}} of {{pages}}</span>
     {{#if next}}
-        <a class="older-posts" href="{{page_url next}}"><i class="fad fa-backward"></i> Older Posts &rarr;</a>
+        <a class="older-posts text-white" href="{{page_url next}}"><i class="fad fa-backward"></i> Older Posts </a>
+            <span style="float:right;" class="page-number">Page {{page}} of {{pages}}</span>
+
     {{/if}}
 </nav>
