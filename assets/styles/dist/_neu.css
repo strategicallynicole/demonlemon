@@ -31,7 +31,7 @@
   background-repeat: no-repeat !important;
   background-attachment: fixed !important;
   color: #fff;
-  font-family: 'Josefin Sans';
+  font-family: 'Raleway';
   font-weight: 100;
 }
 
@@ -54,7 +54,7 @@ body {
   background-repeat: no-repeat;
   background-attachment: fixed;
   color: #fff;
-  font-family: 'Josefin Sans';
+  font-family: 'Raleway';
   font-weight: 100;
 }
 
@@ -63,9 +63,9 @@ strong {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-weight: 300;
+  font-weight: 100;
   text-transform: uppercase;
-  font-family: 'Josefin Sans';
+  font-family: 'Roboto Slab';
 }
 
 .greedy-nav {
@@ -100,7 +100,7 @@ h1, h2, h3, h4, h5, h6 {
   background-repeat: no-repeat;
   background-attachment: fixed;
   color: #fff;
-  font-family: 'Josefin Sans';
+  font-family: 'Raleway';
   font-weight: 100;
 }
 
