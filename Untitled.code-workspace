@@ -20,6 +20,9 @@
 		},
 		{
 			"path": "../../../../eleventy-starter-ghost"
+		},
+		{
+			"path": "../../../../cleaned"
 		}
 	],
 	"settings": {}
