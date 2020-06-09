@@ -22,8 +22,8 @@
         <link rel="dns-prefetch" href="https://fonts.googleapis.com">
         
         <!--Fonts -->
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Fjalla+One&display=swap">
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+Sans:400,400italic,700,700italic&display=swap">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway&display=swap">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Slab:100,200,300,400&display=swap">
 
 
         <!-- Twitter cards -->
@@ -48,9 +48,7 @@
 
         {{> "vendor/fbpixel"}}
         {{!> "vendor/quora"}}
-        {{> "vendor/google-analytics"}}
         {{!> "vendor/hotjar"}}
-                {{> "vendor/mautic"}}
 
 
         <!-- The Almighty Ghost Head -->
@@ -76,11 +74,12 @@
         </div>           
         
         
-        {{> "layout/global-scripts"}}
-        
+        {{> "vendor/hubspot"}}
+        {{> "vendor/google-analytics"}}
         {{ghost_foot}}
+        {{> "layout/global-scripts"}}
+
         {{{block "scripts"}}}
-        <script async="" defer="" src="//survey.g.doubleclick.net/async_survey?site=uv2mgsqrhxcswcl7rnwqizy4qi"></script>
 
     </body>        
 </html>
