@@ -9,6 +9,20 @@ $darkchosenone: darken(#6c5ba7, 10%);
 .iconbox:hover, .iconbox:focus {
     box-shadow: none !important;
 }
+
+.bordered-text {
+    padding-left: 30px;
+    border-radius: 50em;
+    padding-right: 60px;
+
+    .white {
+      border: 1px solid #ffffff;
+    }
+    .purple {
+      border: 1px solid $purple;
+
+    }
+}
 @mixin bg-grad {
     background: -webkit-linear-gradient($bg-gradient) !important;
     background: -moz-linear-gradient($bg-gradient) !important;
@@ -61,7 +75,7 @@ $darkchosenone: darken(#6c5ba7, 10%);
     font-family: 'Josefin Sans';
     font-weight: 100;
     }
-    strong {
+    strong { 
         font-weight: 300;
         
     }
