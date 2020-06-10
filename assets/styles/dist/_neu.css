@@ -4,6 +4,10 @@
   box-shadow: none !important;
 }
 
+.fancy-box-travel .fancy-box-time {
+  font-weight: 300;
+}
+
 .bordered-text {
   padding-left: 30px;
   border-radius: 50em;
