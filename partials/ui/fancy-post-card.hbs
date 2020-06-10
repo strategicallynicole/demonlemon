@@ -1,36 +1,32 @@
 
-									<div class="neustyle neuradius">	
-										<article class="neuradius liquid-lp liquid-lp-sp-block liquid-lp-sp-instagram">
-								
-											<figure class="liquid-lp-media neuradius" style="background-image: url({{feature_image}});">
-								<a href="{{url}}">	<img src="{{feature_image}}" alt="{{title}}" class="neuradius"></a>
-											</figure>
-											
-											<div class="liquid-lp-inner">
-								
-												
-												<header class="liquid-lp-header">
-																								
 
-													<span class="liquid-lp-extra-icon">
-										{{reading_time}}
-													</span>
-													<ul class="liquid-lp-category">
-														{{#foreach tags limit="3"}}
-							<li>
-								<i class="fad fa-tags"></i>&nbsp;
-								<a href="{{url}}">{{name}}</a>
-							</li>
-						{{/foreach}}
-													</ul>
-												</header>	
-												<h3><a href="{{url}}">{{title}}</a></h3>				
+							<div class="fancy-box fancy-box-travel fancy-box-small neumorphic-static" data-slideelement-onhover="true" data-slideelement-options='{ "visibleElement": ".fancy-box-header", "hiddenElement": ".fancy-box-info" }'>
+
+								<figure class="fancy-box-image" style="background-image: url({{feature_image}});">
+								<a href="{{url}}">	<img src="{{feature_image}}" alt="Content Box"></a>
+								</figure>
 								
-											
-												<a class="neubutton alt" href="{{url}}">Read More <i class="fas fa-arrow-circle-right"></i></a>
-											</div><!-- /.liquid-lp-inner -->
-											
-										</article>
+								<div class="fancy-box-contents">
+									
+									<div class="fancy-box-header">
+										<span class="fancy-box-time lh-2">{{reading_time}}</span>
+										<h3><a class="text-white" href="{{url}}">{{title}}</a></h3>
+									</div><!-- /.fancy-box-header -->
+									
+									<div class="fancy-box-info neumorphic-static">
 										
-
-</div>
+										<p><a href="{{url}}" class="text-white">{{excerpt words="25"}}</a></p>
+										
+										<div class="fancy-box-footer"><a href="{{url}}" class="btn btn-underlined text-uppercase font-size-12 font-weight-bold ltr-sp-2  white text-hover-primary">
+												<span>
+													<span class="btn-txt purple">&nbsp; Read on <i class="fas fa-arrow-circle-right"></i></span>
+												</span>
+											</a>
+										
+										</div><!-- /.fancy-box-footer -->
+										
+									</div><!-- /.fancy-box-info -->
+									
+								</div><!-- /.fancy-box-contents -->
+								
+							</div><!-- /.fancy-box fancy-box-travel -->
