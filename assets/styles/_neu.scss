@@ -434,11 +434,11 @@ $darkchosenone: darken(#6c5ba7, 10%);
   
       .fancy-box-tags-container {
         float: right;
-        border-radius: 16px;
-        border: 1px solid #fff;
-        padding: 15px;
-        margin-left: 20px;
-        margin-right: 20px;
+        color: #fff;
+
+      }
+      .fancy-box-tags-container a {
+        float: right;
         color: #fff;
 
       }
@@ -449,15 +449,10 @@ $darkchosenone: darken(#6c5ba7, 10%);
       }
       .fancy-box-time-container {
         float: right;
-        border-radius: 16px;
-        border: 1px solid #fff;
-        padding: 15px;
-        margin-left: 20px;
-        margin-right: 20px;
         color: #fff;
     }
 .fancybody {
-  padding: 20px;
+  padding: 40px;
 }
     .smallerbtn {
       line-height: .5pt;
@@ -465,9 +460,15 @@ $darkchosenone: darken(#6c5ba7, 10%);
   }
 .fancy-box-footer {
   margin-bottom: 20px;
-  margin-left: 20px;
+  margin-left: 40px;
 }
  
+.fancy-box-header {
+  margin-left: 40px;
+  margin-top: 30px;
+  margin-right: 20px;
+
+}
 
   
   
