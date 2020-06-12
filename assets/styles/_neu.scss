@@ -432,8 +432,36 @@ $darkchosenone: darken(#6c5ba7, 10%);
           opacity: 1;
       }
   
-  
-  
+      .fancy-box-tags-container {
+        float: right;
+        border-radius: 16px;
+        border: 1px solid #fff;
+        padding: 15px;
+        margin-left: 20px;
+        margin-right: 20px;
+
+      }
+      .fancypostexcerpt {
+        margin-left: 20px;
+        margin-right: 20px;
+
+      }
+      span.fancy-box-time.lh-2 {
+        border-radius: 16px;
+        border: 1px solid #fff;
+        padding: 15px;
+        margin-left: 20px;
+    }
+.fancy-box-footer {
+  margin-bottom: 20px;
+  margin-left: 20px;
+}
+    a.titlefancycard.text-white {
+      margin-left: 20px;
+      margin-right: 20px;
+
+  }
+
   
   
   .accordion-title-bordered .accordion-title a {
