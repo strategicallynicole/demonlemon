@@ -439,6 +439,7 @@ $darkchosenone: darken(#6c5ba7, 10%);
         padding: 15px;
         margin-left: 20px;
         margin-right: 20px;
+        color: #fff;
 
       }
       .fancypostexcerpt {
@@ -446,11 +447,14 @@ $darkchosenone: darken(#6c5ba7, 10%);
         margin-right: 20px;
 
       }
-      span.fancy-box-time.lh-2 {
+      .fancy-box-time-container {
+        float: right;
         border-radius: 16px;
         border: 1px solid #fff;
         padding: 15px;
         margin-left: 20px;
+        margin-right: 20px;
+        color: #fff;
     }
 .fancybody {
   padding: 20px;

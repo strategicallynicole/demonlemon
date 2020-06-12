@@ -442,6 +442,7 @@ textarea, input {
   padding: 15px;
   margin-left: 20px;
   margin-right: 20px;
+  color: #fff;
 }
 
 .fancypostexcerpt {
@@ -449,11 +450,14 @@ textarea, input {
   margin-right: 20px;
 }
 
-span.fancy-box-time.lh-2 {
+.fancy-box-time-container {
+  float: right;
   border-radius: 16px;
   border: 1px solid #fff;
   padding: 15px;
   margin-left: 20px;
+  margin-right: 20px;
+  color: #fff;
 }
 
 .fancybody {
