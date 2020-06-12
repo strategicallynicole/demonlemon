@@ -456,6 +456,10 @@ span.fancy-box-time.lh-2 {
   margin-left: 20px;
 }
 
+.fancybody {
+  padding: 20px;
+}
+
 .smallerbtn {
   line-height: .5pt;
   font-size: 10px;
@@ -464,11 +468,6 @@ span.fancy-box-time.lh-2 {
 .fancy-box-footer {
   margin-bottom: 20px;
   margin-left: 20px;
-}
-
-a.titlefancycard.text-white {
-  margin-left: 20px;
-  margin-right: 20px;
 }
 
 .accordion-title-bordered .accordion-title a {
