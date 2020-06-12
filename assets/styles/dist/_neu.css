@@ -484,7 +484,7 @@ textarea, input {
   box-shadow: 4px 3px 19px #0D0E0F, -5px -5px 20px #40464E !important;
   border-radius: 40px;
   width: 100%;
-  min-height: 20vh;
+  min-height: 30vh;
 }
 
 .neucardimage {
