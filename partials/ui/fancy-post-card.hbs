@@ -8,11 +8,11 @@
 									
 									<div /*class="fancy-box-header">
 										<span class="fancy-box-time lh-2">{{reading_time}}</span>
-<span class="fancy-box-tags-container">
-                                        	{{#foreach tags limit="3"}}
+<span class="fancy-box-tags-container"><i class="fad fa-tags"></i>	&nbsp;
+                                        	{{#foreach tags limit="2"}}
 							
-								<i class="fad fa-tags"></i>&nbsp;
-								<a class="fancy-box-tags lh-2" href="{{url}}">{{name}}</a>
+							
+								<a class="fancy-box-tags" href="{{url}}">{{name}}</a>
 						
 						{{/foreach}}</span>
 										<h3><a class="text-white titlefancycard" href="{{url}}">{{title}}</a></h3>
@@ -22,7 +22,7 @@
 										
 										<p class="fancypostexcerpt"><a href="{{url}}" class="text-white">{{excerpt words="25"}}</a></p>
 										
-										<div class="fancy-box-footer"><a href="{{url}}" class="btn white text-hover-primary">
+										<div class="fancy-box-footer"><a href="{{url}}" class="btn white text-hover-primary smallerbtn">
 												<span>
 													<span class="btn-txt purple">&nbsp; Read on <i class="fas fa-arrow-circle-right"></i></span>
 												</span>
