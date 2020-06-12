@@ -143,10 +143,10 @@ iframe {/*
 
 
 
-a, h1, .h1, .h2, .h3, .h4, .h5, .h6, h2, h3, h4, h5, h6, p, i, button, embed, iframe, input, .hbspt-form, .meetings-iframe-container {
+h1, .h1, .h2, .h3, .h4, .h5, .h6, h2, h3, h4, h5, h6, p, i, button, embed, iframe, input, .hbspt-form, .meetings-iframe-container {
     z-index: 1;
     position: relative;
-    font-family: 'Raleway' !important;
+    font-family: 'Raleway';
 }
 
 .grayme:hover,
@@ -264,8 +264,8 @@ div.transbox {
 }
 
 body {
-    font-family: 'Raleway';
-    font-weight: 400;
+    font-family: 'Josefin Sans';
+    font-weight: 100;
     line-height: 1.7;
     font-size: 18px;
     background-image: linear-gradient(90deg, #26272B, #34393F) !important;

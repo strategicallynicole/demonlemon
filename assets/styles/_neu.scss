@@ -3,8 +3,8 @@ $light-text-on-dark-bg: #fff;
 $purple: #6c5ba7;
 $chosenone: $purple;
 $bold: 300;
-@import url('https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100&family=Josefin+Sans:wght@300&display=swap');
+
+
 $darkchosenone: darken(#6c5ba7, 10%);
 .iconbox:hover, .iconbox:focus {
     box-shadow: none !important;
