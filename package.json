@@ -7,8 +7,8 @@
     "ghost-api": "v3"
   },
   "author": "Nicole Choman",
-    "email": "n@oakwave.com",
-    "author.email": "n@oakwave.com",
+  "email": "n@oakwave.com",
+  "author.email": "n@oakwave.com",
   "scripts": {
     "dev": "gulp",
     "zip": "gulp zip",
