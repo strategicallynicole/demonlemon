@@ -168,7 +168,7 @@ $darkchosenone: darken(#6c5ba7, 10%);
     box-shadow: inset 3px 3px 10px #0D0E0F, inset -3px -3px 10px #40464E;
     opacity: 0;
     @include transition;
-    background: linear-gradient(130.46deg, #2E1A47 12.58%, $chosenone 89.78%);
+    background: linear-gradient(130.46deg, #2E1A47 12.58%, #6c5ba7 89.78%);
   }
   
   
